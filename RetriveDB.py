@@ -72,11 +72,39 @@ class DatabaseController:
         data = res.json()
         return data
 
+    def updateBlockChildren(self, blockID):
+        check_status = False
+        updateUrl = f"https://api.notion.com/v1/blocks/{blockID}"
+
+        res = requests.request("GET", updateUrl, headers=self.headers)
+        current_data = res.json()
+        current_status = current_data["to_do"]["checked"]
+
+        if current_status == False:
+            check_status = True
+        elif current_status == True:
+            check_status = False
+
+        update_data = {
+            "to_do": {
+                "checked": check_status
+                # "checked": check_status,
+                # "text": [{ 
+                #     "text": { "content": "review resume" } 
+                #     }]
+            }
+        }
+
+        data = json.dumps(update_data)
+        response = requests.request("PATCH", updateUrl, headers=self.headers, data=data)
+        # print(response.status_code)
+        # print(response.text)
 
 
 
-db = DatabaseController()
-db.readDatabase()
+# db = DatabaseController()
+# db.readDatabase()
 # readPage(page_id, headers)
 # readBlock(page_id, headers)
 # readBlockChildren(page_id, headers)
+# db.updateBlockChildren("3ea087d6-d5e0-4056-98de-3f3e6666d069")

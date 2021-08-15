@@ -4,13 +4,6 @@ from RetriveDB import DatabaseController
 from datetime import datetime, timedelta
 
 db = DatabaseController()
-date_dict = {
-    -2 : "the_day_before_yesterday",
-    -1 : "yesterday",
-    0 : "today",
-    1 : "tomorrow",
-    2 : "the_day_after_tomorrow"
-}
 
 # find the date today, yesterday, tomorrow, etc.
 today = datetime.now()
@@ -24,7 +17,6 @@ yesterday_str = datetime.strftime(yesterday, '%Y-%m-%d')
 the_day_before_yesterday_str = datetime.strftime(the_day_before_yesterday, '%Y-%m-%d')
 tomorrow_str = datetime.strftime(tomorrow, '%Y-%m-%d')
 the_day_after_tomorrow_str = datetime.strftime(the_day_after_tomorrow, '%Y-%m-%d')
-
 
 # find the page belong to today 
 def findPageIdList(date_str):
@@ -42,10 +34,11 @@ def findPageIdList(date_str):
             if dates.find(date_str) != -1:
                 page_list_id.append(page["id"])
 
-                for item in page["properties"]["Name"]["title"]:
-                    page_list_name.append(item.get("plain_text"))
+                # for item in page["properties"]["Name"]["title"]:
+                #     page_list_name.append(item.get("plain_text"))
         except:
             continue    
+    f.close()
     # return page_list_id, page_list_name
     return page_list_id
 
@@ -76,6 +69,8 @@ def generateBlocksFile():
 
     with open('./blocks.json', 'w', encoding='utf8') as f:
         json.dump(block_total_json, f, ensure_ascii=False, indent = 4, sort_keys=True)
+    
+    f.close()
 
         
 # generate blocks children based on page id list
@@ -118,6 +113,7 @@ def generateBlocksChildren():
             block_children_json4["task " + str(num4)] = db.readBlockChildren(data["the day after tomorrow"]["task " + str(num4)]["id"])
         else:
             continue    
+    f.close()
 
     block_children_total_json["today"] = block_children_json
     block_children_total_json["yesterday"] = block_children_json1
@@ -125,22 +121,140 @@ def generateBlocksChildren():
     block_children_total_json["tomorrow"] = block_children_json3
     block_children_total_json["the day after tomorrow"] = block_children_json4
 
-    with open('./block_children.json', 'w', encoding='utf8') as f:
-        json.dump(block_children_total_json, f, ensure_ascii=False, indent = 4, sort_keys=True)
+    with open('./block_children.json', 'w', encoding='utf8') as f1:
+        json.dump(block_children_total_json, f1, ensure_ascii=False, indent = 4, sort_keys=True)
+    f1.close()
+
+# call function to retrive block content
+def resetBlockContent():
+    # fetch the newest data into json file
+    generateBlocksFile()
+    time.sleep(1)
+    generateBlocksChildren()
+    time.sleep(1)
 
 
-# 
+# get page name list by date
+def getPageNameListWithChildrenStatus(date_str):
+    page_list_name = []
+    children_list_bool = []
+
+    date_dict = {
+        the_day_before_yesterday_str : "the day before yesterday",
+        yesterday_str : "yesterday",
+        today_str : "today",
+        tomorrow_str : "tomorrow",
+        the_day_after_tomorrow_str : "the day after tomorrow"
+    }
+
+    # load database.json
+    with open('./database.json', 'r', encoding='utf8') as f:
+        data = json.load(f)
+    
+    # load blocks.json
+    with open('./blocks.json', 'r', encoding='utf8') as f1:
+        data_blocks = json.load(f1)
+
+    for page in data["results"]:
+        try:
+            dates = page["properties"]["Date"]["date"]["start"]
+    
+            if dates.find(date_str) != -1:
+                for item in page["properties"]["Name"]["title"]:
+                    page_list_name.append(item.get("plain_text"))
+        except:
+            continue
+    
+    for num in range(0, len(data_blocks[date_dict[date_str]])):
+        if data_blocks[date_dict[date_str]]["task " + str(num)]["child_page"]["title"] in page_list_name:
+            children_list_bool.append(data_blocks[date_dict[date_str]]["task " + str(num)]["has_children"])
+
+    f.close()
+    f1.close()
+    # Format: [page name], [children status]
+    # return ["Email with office", "TODO_list"], [False, True]
+    return page_list_name, children_list_bool
+
+
+# get one page block children list by page name (if have children, if not return page name)
+def getChildrenName(date_str, page_name: str, children_bool: bool):
+    task_list = []
+
+    date_dict = {
+        the_day_before_yesterday_str : "the day before yesterday",
+        yesterday_str : "yesterday",
+        today_str : "today",
+        tomorrow_str : "tomorrow",
+        the_day_after_tomorrow_str : "the day after tomorrow"
+    }
+
+    with open('./blocks.json', 'r', encoding='utf8') as f:
+        data_blocks = json.load(f)
+
+    for i in range(0, len(data_blocks[date_dict[date_str]])):
+        if page_name == data_blocks[date_dict[date_str]]["task " + str(i)]["child_page"]["title"]:
+            task_num = "task " + str(i)
+
+    if children_bool == False:
+        return None
+
+    else:
+        with open('./block_children.json', 'r', encoding='utf8') as f:
+            data = json.load(f)
+        
+        for sub_task in data[date_dict[date_str]][task_num]["results"]:
+            if sub_task["type"] == "to_do":
+                to_do_json = sub_task.get("to_do")
+                text_json = to_do_json["text"]
+                task_list.append((text_json[0].get("plain_text"), to_do_json["checked"]))
+            else: 
+                continue
+        f.close()
+
+    # [(todo_list_name, check_status)]
+    # return [(Fix resume, True), (Start new project, False)]
+    return task_list
+
+
+# update todo check box by check or uncheck
+def updateTodoSubtask(task_id):
+    # "POST" method to notion api
+    db.updateBlockChildren(task_id)
 
 
 
+'''
+1. reset whole database when we make a change on Notion (press three buttons together)
+2. display page name of (task of) today
+    1. press button 1 with button 2 or 3 to switch days
+    2. press button 1 to confirm which page to get in to set sub-tasks (TODO_list: check boxs)
+    3. press button 2 or 3 to go up or down to choose different pages
+3. when get in one page to be able to see page sub-tasks
+    1. press button 1 to check completeness sub-tasks (check boxs)
+    2. press button 2 to go back last page
+    3. press button 3 to go down to other sub-tasks
+'''
 
-# fetch the newest data into json file
-generateBlocksFile()
-time.sleep(1)
-generateBlocksChildren()
-
-
+# TEST functions
 # while True:
+#     info = input('Message : ')
 
-
+#     if info == "1":
+#         db.readDatabase()
+#     elif info == "2":
+#         resetBlockContent()
+#     elif info == "3":
+#         print(getPageNameListWithChildrenStatus(today_str))
+#     elif info == 4:
+#         getPageNameListWithChildrenStatus(tomorrow_str)
+#     elif info == 5:
+#         getPageNameListWithChildrenStatus(the_day_after_tomorrow_str)
+#     elif info == "6":
+#         print(getPageNameListWithChildrenStatus(yesterday_str))
+#     elif info == 7:
+#         getPageNameListWithChildrenStatus(the_day_before_yesterday_str)
+#     elif info == 7:
+#         getChildrenName(today_str, "TODO", True)
+#     elif info == "7":
+#         print(getChildrenName(yesterday_str, "TODO", True))
 

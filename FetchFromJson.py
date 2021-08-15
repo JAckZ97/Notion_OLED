@@ -5,37 +5,48 @@ from datetime import datetime, timedelta
 
 db = DatabaseController()
 
-# find the date today, yesterday, tomorrow, etc.
-today = datetime.now()
-yesterday = datetime.now() - timedelta(1)
-the_day_before_yesterday = datetime.now() - timedelta(2)
-tomorrow = datetime.now() + timedelta(1)
-the_day_after_tomorrow = datetime.now() + timedelta(2)
+# # find the date today, yesterday, tomorrow, etc.
+# today = datetime.now()
+# yesterday = datetime.now() - timedelta(1)
+# the_day_before_yesterday = datetime.now() - timedelta(2)
+# tomorrow = datetime.now() + timedelta(1)
+# the_day_after_tomorrow = datetime.now() + timedelta(2)
 
-today_str = datetime.strftime(today, '%Y-%m-%d')
-yesterday_str = datetime.strftime(yesterday, '%Y-%m-%d')
-the_day_before_yesterday_str = datetime.strftime(the_day_before_yesterday, '%Y-%m-%d')
-tomorrow_str = datetime.strftime(tomorrow, '%Y-%m-%d')
-the_day_after_tomorrow_str = datetime.strftime(the_day_after_tomorrow, '%Y-%m-%d')
+# today_str = datetime.strftime(today, '%Y-%m-%d')
+# yesterday_str = datetime.strftime(yesterday, '%Y-%m-%d')
+# the_day_before_yesterday_str = datetime.strftime(the_day_before_yesterday, '%Y-%m-%d')
+# tomorrow_str = datetime.strftime(tomorrow, '%Y-%m-%d')
+# the_day_after_tomorrow_str = datetime.strftime(the_day_after_tomorrow, '%Y-%m-%d')
 
 class JsonFileController:
     def __init__(self):
-        pass
+        # find the date today, yesterday, tomorrow, etc.
+        self.today = datetime.now()
+        self.yesterday = datetime.now() - timedelta(1)
+        self.the_day_before_yesterday = datetime.now() - timedelta(2)
+        self.tomorrow = datetime.now() + timedelta(1)
+        self.the_day_after_tomorrow = datetime.now() + timedelta(2)
+
+        self.today_str = datetime.strftime(self.today, '%Y-%m-%d')
+        self.yesterday_str = datetime.strftime(self.yesterday, '%Y-%m-%d')
+        self.the_day_before_yesterday_str = datetime.strftime(self.the_day_before_yesterday, '%Y-%m-%d')
+        self.tomorrow_str = datetime.strftime(self.tomorrow, '%Y-%m-%d')
+        self.the_day_after_tomorrow_str = datetime.strftime(self.the_day_after_tomorrow, '%Y-%m-%d')
     
     def getTodayDate(self):
-        return today_str
+        return self.today_str
 
     def getTmrDate(self):
-        return tomorrow_str
+        return self.tomorrow_str
 
     def getTheDayAfterTmrDate(self):
-        return the_day_after_tomorrow_str
+        return self.the_day_after_tomorrow_str
 
     def getYesterdayDate(self):
-        return yesterday_str
+        return self.yesterday_str
 
     def getTheDayBeforeYesterdayDate(self):
-        return the_day_before_yesterday_str
+        return self.the_day_before_yesterday_str
 
     # find the page belong to today 
     def findPageIdList(self, date_str):
@@ -73,11 +84,11 @@ class JsonFileController:
 
 
     def generateBlocksFile(self):
-        today_page_list = self.findPageIdList(today_str)
-        yesterdaypage_list = self.findPageIdList(yesterday_str)
-        the_day_before_yesterday_page_list = self.findPageIdList(the_day_before_yesterday_str)
-        tomorrow_page_list = self.findPageIdList(tomorrow_str)
-        the_day_after_tomorrow_page_list = self.findPageIdList(the_day_after_tomorrow_str)
+        today_page_list = self.findPageIdList(self.today_str)
+        yesterdaypage_list = self.findPageIdList(self.yesterday_str)
+        the_day_before_yesterday_page_list = self.findPageIdList(self.the_day_before_yesterday_str)
+        tomorrow_page_list = self.findPageIdList(self.tomorrow_str)
+        the_day_after_tomorrow_page_list = self.findPageIdList(self.the_day_after_tomorrow_str)
 
         block_total_json = {}
         block_total_json["today"] = self.generateBlocks(today_page_list)
@@ -159,11 +170,11 @@ class JsonFileController:
         children_list_bool = []
 
         date_dict = {
-            the_day_before_yesterday_str : "the day before yesterday",
-            yesterday_str : "yesterday",
-            today_str : "today",
-            tomorrow_str : "tomorrow",
-            the_day_after_tomorrow_str : "the day after tomorrow"
+            self.the_day_before_yesterday_str : "the day before yesterday",
+            self.yesterday_str : "yesterday",
+            self.today_str : "today",
+            self.tomorrow_str : "tomorrow",
+            self.the_day_after_tomorrow_str : "the day after tomorrow"
         }
 
         # load database.json
@@ -200,11 +211,11 @@ class JsonFileController:
         task_list = []
 
         date_dict = {
-            the_day_before_yesterday_str : "the day before yesterday",
-            yesterday_str : "yesterday",
-            today_str : "today",
-            tomorrow_str : "tomorrow",
-            the_day_after_tomorrow_str : "the day after tomorrow"
+            self.the_day_before_yesterday_str : "the day before yesterday",
+            self.yesterday_str : "yesterday",
+            self.today_str : "today",
+            self.tomorrow_str : "tomorrow",
+            self.the_day_after_tomorrow_str : "the day after tomorrow"
         }
 
         with open('./blocks.json', 'r', encoding='utf8') as f:
@@ -256,7 +267,8 @@ class JsonFileController:
 
 # TEST functions
 # js = JsonFileController()
-# # js.resetBlockContent()
+# print(js.getTodayDate())
+# js.resetBlockContent()
 
 # while True:
 #     info = input('Message : ')
@@ -266,18 +278,18 @@ class JsonFileController:
 #     elif info == "2":
 #         js.resetBlockContent()
 #     elif info == "3":
-#         print(js.getPageNameListWithChildrenStatus(today_str))
+#         print(js.getPageNameListWithChildrenStatus("2021-08-15"))
 #     elif info == 4:
 #         js.getPageNameListWithChildrenStatus(tomorrow_str)
 #     elif info == 5:
 #         js.getPageNameListWithChildrenStatus(the_day_after_tomorrow_str)
 #     elif info == "6":
-#         print(js.getPageNameListWithChildrenStatus(yesterday_str))
+#         print(js.getPageNameListWithChildrenStatus("2021-08-14"))
 #     elif info == 7:
 #         js.getPageNameListWithChildrenStatus(the_day_before_yesterday_str)
 #     elif info == 7:
 #         js.getChildrenName(today_str, "TODO", True)
 #     elif info == "7":
-#         print(js.getChildrenName(today_str, "TODO", True))
+#         print(js.getChildrenName("2021-08-15", "TODO", True))
 
 

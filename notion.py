@@ -21,10 +21,10 @@ SPI_PORT = 0
 SPI_DEVICE = 0
 
 # 128x32 display with hardware I2C:
-disp = Adafruit_SSD1306.SSD1306_128_32(rst=RST)
+#disp = Adafruit_SSD1306.SSD1306_128_32(rst=RST)
 
 # 128x64 display with hardware I2C:
-# disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST)
+disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST)
 
 # Initialize library.
 disp.begin()
@@ -99,15 +99,16 @@ while True:
     draw.rectangle((0,0,width,height), outline=0, fill=0)
 
     # Write two lines of text.
-    draw.text((x, top), js.getTodayDate, font = font, fill = 255)
+    draw.text((x, top), js.getTodayDate(), font = font, fill = 255)
     # draw.text((x, top+8),	"this is jack", font = font, fill = 255)
     # draw.text((x, top+16),	"test 1", font = font, fill = 255)
     # draw.text((x, top+24),	"test 2", font = font, fill = 255)
 
     if GPIO.input(26) == False:
-        draw.text((x, top), js.getYesterdayDate, font = font, fill = 255)
+        draw.text((x, top), js.getYesterdayDate(), font = font, fill = 255)
         dayCount += 1
         time.sleep(0.1)
+
 
 
     # Display image.

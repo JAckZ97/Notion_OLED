@@ -7,6 +7,11 @@ from PIL import ImageDraw
 from PIL import ImageFont
 
 import subprocess
+import RPi.GPIO as GPIO
+import time
+
+from RetriveDB import DatabaseController
+from FetchFromJson import JsonFileController
 
 # Raspberry Pi pin configuration:
 RST = None     # on the PiOLED this pin isnt used
@@ -54,16 +59,56 @@ font = ImageFont.load_default()
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 # font = ImageFont.truetype('Minecraftia.ttf', 8)
 
-while True:
+# setup GPIO pins
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(5, GPIO.IN, pull_up_down = GPIO.PUD_UP)
+GPIO.setup(16, GPIO.IN, pull_up_down = GPIO.PUD_UP)
+GPIO.setup(17, GPIO.IN, pull_up_down = GPIO.PUD_UP)
+GPIO.setup(26, GPIO.IN, pull_up_down = GPIO.PUD_UP)
 
+# initialize dbcontroller and jsoncontroller
+db = DatabaseController()
+js = JsonFileController()
+
+
+# while True:
+# 	if GPIO.input(5) == False and GPIO.input(26) == False:
+# 		print("Button_5 pressed")
+# 		time.sleep(1)
+# 	elif GPIO.input(16) == False:
+# 		print("Reset Button pressed")
+# 		time.sleep(1)	
+# 	elif GPIO.input(17) == False:
+# 		print("Button_1 pressed")
+# 		time.sleep(1)
+
+# 	elif GPIO.input(5) == False:
+# 		print("Button_2 pressed")
+# 		time.sleep(1)
+
+# 	elif GPIO.input(26) == False:
+# 		print("Button_3 pressed")
+# 		time.sleep(1)
+
+# 	else:
+# 		continue
+
+dayCount = 0
+while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0,0,width,height), outline=0, fill=0)
 
     # Write two lines of text.
-    draw.text((x, top), 	"hello word", font = font, fill = 255)
-    draw.text((x, top+8),	"this is jack", font = font, fill = 255)
-    draw.text((x, top+16),	"test 1", font = font, fill = 255)
-    draw.text((x, top+24),	"test 2", font = font, fill = 255)
+    draw.text((x, top), js.getTodayDate, font = font, fill = 255)
+    # draw.text((x, top+8),	"this is jack", font = font, fill = 255)
+    # draw.text((x, top+16),	"test 1", font = font, fill = 255)
+    # draw.text((x, top+24),	"test 2", font = font, fill = 255)
+
+    if GPIO.input(26) == False:
+        draw.text((x, top), js.getYesterdayDate, font = font, fill = 255)
+        dayCount += 1
+        time.sleep(0.1)
+
 
     # Display image.
     disp.image(image)

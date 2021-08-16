@@ -9,6 +9,7 @@ from PIL import ImageFont
 import subprocess
 import RPi.GPIO as GPIO
 import time
+from datetime import datetime, timedelta
 
 from RetriveDB import DatabaseController
 from FetchFromJson import JsonFileController
@@ -21,10 +22,10 @@ SPI_PORT = 0
 SPI_DEVICE = 0
 
 # 128x32 display with hardware I2C:
-disp = Adafruit_SSD1306.SSD1306_128_32(rst=RST)
+# disp = Adafruit_SSD1306.SSD1306_128_32(rst=RST)
 
 # 128x64 display with hardware I2C:
-# disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST)
+disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST)
 
 # Initialize library.
 disp.begin()
@@ -94,42 +95,97 @@ js = JsonFileController()
 # 		continue
 
 dayCount = 0
-text_list = ["", "", "", ""]
+text_list = ["", "", "", "", "", "", "", ""]
+
+# find the date today, yesterday, tomorrow, etc.
+today = datetime.now()
+yesterday = datetime.now() - timedelta(1)
+the_day_before_yesterday = datetime.now() - timedelta(2)
+tomorrow = datetime.now() + timedelta(1)
+the_day_after_tomorrow = datetime.now() + timedelta(2)
+
+today_str = datetime.strftime(today, '%Y-%m-%d')
+yesterday_str = datetime.strftime(yesterday, '%Y-%m-%d')
+the_day_before_yesterday_str = datetime.strftime(the_day_before_yesterday, '%Y-%m-%d')
+tomorrow_str = datetime.strftime(tomorrow, '%Y-%m-%d')
+the_day_after_tomorrow_str = datetime.strftime(the_day_after_tomorrow, '%Y-%m-%d')
 
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0,0,width,height), outline=0, fill=0)
 
-    # Write two lines of text.
-    draw.text((x, top), 	text_list[0], font = font, fill = 255)
-    draw.text((x, top+8),	text_list[1], font = font, fill = 255)
-    draw.text((x, top+16),	text_list[2], font = font, fill = 255)
-    draw.text((x, top+24),	text_list[3], font = font, fill = 255)
-
-    if GPIO.input(5) == False:
-        if dayCount == 5 or dayCount == 0:
+    if GPIO.input(26) == False:
+        if dayCount == 0:
             text_list[0] = js.getTodayDate()
-            dayCount = 0
+            page_list, children_list = js.getPageNameListWithChildrenStatus(today_str)
+            for num in range(0, len(page_list)):
+                text_list[num+2] = page_list[num]
+            
+            for empty in range(len(page_list), 6):
+                text_list[empty+2] = ""
+            dayCount += 1
+            time.sleep(0.1)
+
         elif dayCount == 1:
             text_list[0] = js.getYesterdayDate()
-	        dayCount += 1
+            page_list, children_list = js.getPageNameListWithChildrenStatus(yesterday_str)
+            for num in range(0, len(page_list)):
+                text_list[num+2] = page_list[num]
+            
+            for empty in range(len(page_list), 6):
+                text_list[empty+2] = ""
+            dayCount += 1
+            time.sleep(0.1)
+
         elif dayCount == 2:
             text_list[0] = js.getTheDayBeforeYesterdayDate()
-	        dayCount += 1
+            page_list, children_list = js.getPageNameListWithChildrenStatus(the_day_before_yesterday_str)
+            for num in range(0, len(page_list)):
+                text_list[num+2] = page_list[num]
+            
+            for empty in range(len(page_list), 6):
+                text_list[empty+2] = ""
+            dayCount += 1
+            time.sleep(0.1)
+
         elif dayCount == 3:
             text_list[0] = js.getTheDayAfterTmrDate()
-	        dayCount += 1
+            page_list, children_list = js.getPageNameListWithChildrenStatus(tomorrow_str)
+            for num in range(0, len(page_list)):
+                text_list[num+2] = page_list[num]
+            
+            for empty in range(len(page_list), 6):
+                text_list[empty+2] = ""
+            dayCount += 1
+            time.sleep(0.1)
+
         elif dayCount == 4:
             text_list[0] = js.getTmrDate()
-	        dayCount += 1
+            page_list, children_list = js.getPageNameListWithChildrenStatus(the_day_after_tomorrow_str)
+            for num in range(0, len(page_list)):
+                text_list[num+2] = page_list[num]
+            
+            for empty in range(len(page_list), 6):
+                text_list[empty+2] = ""
+            dayCount = 0
+            time.sleep(0.1)
+        else:
+            continue
 
-        time.sleep(0.1)
-
-    if GPIO.input(26) == False:
+    if GPIO.input(5) == False:
         text_list[0] = js.getYesterdayDate()        
 	# dayCount += 1
         time.sleep(0.1)
 
+    # Write two lines of text.
+    draw.text((x, top), 	text_list[0], font = font, fill = 255)
+    draw.text((x, top+9),	text_list[1], font = font, fill = 255)
+    draw.text((x, top+17),	"-> " + text_list[2], font = font, fill = 255)
+    draw.text((x, top+25),	text_list[3], font = font, fill = 255)
+    draw.text((x, top+33),	text_list[4], font = font, fill = 255)
+    draw.text((x, top+41),	text_list[5], font = font, fill = 255)
+    draw.text((x, top+49),	text_list[6], font = font, fill = 255)
+    draw.text((x, top+57),	text_list[7], font = font, fill = 255)
 
 
     # Display image.

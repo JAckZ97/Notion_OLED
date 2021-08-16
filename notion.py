@@ -107,9 +107,22 @@ while True:
     draw.text((x, top+24),	text_list[3], font = font, fill = 255)
 
     if GPIO.input(5) == False:
-        
-        text_list[0] = js.getTodayDate()
-	dayCount += 1
+        if dayCount == 5 or dayCount == 0:
+            text_list[0] = js.getTodayDate()
+            dayCount = 0
+        elif dayCount == 1:
+            text_list[0] = js.getYesterdayDate()
+	        dayCount += 1
+        elif dayCount == 2:
+            text_list[0] = js.getTheDayBeforeYesterdayDate()
+	        dayCount += 1
+        elif dayCount == 3:
+            text_list[0] = js.getTheDayAfterTmrDate()
+	        dayCount += 1
+        elif dayCount == 4:
+            text_list[0] = js.getTmrDate()
+	        dayCount += 1
+
         time.sleep(0.1)
 
     if GPIO.input(26) == False:

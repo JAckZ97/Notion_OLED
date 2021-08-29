@@ -176,7 +176,6 @@ while True:
             continue
 
     if GPIO.input(5) == False:
-        toggle_list[]
         if toggleCount == 0:
             toggle_list[0] = "-> "
             toggle_list[1] = ""

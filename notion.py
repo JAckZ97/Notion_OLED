@@ -95,7 +95,9 @@ js = JsonFileController()
 # 		continue
 
 dayCount = 0
+toggleCount = 0
 text_list = ["", "", "", "", "", "", "", ""]
+toggle_list = ["", "", "", "", "", ""]
 
 # find the date today, yesterday, tomorrow, etc.
 today = datetime.now()
@@ -109,6 +111,7 @@ yesterday_str = datetime.strftime(yesterday, '%Y-%m-%d')
 the_day_before_yesterday_str = datetime.strftime(the_day_before_yesterday, '%Y-%m-%d')
 tomorrow_str = datetime.strftime(tomorrow, '%Y-%m-%d')
 the_day_after_tomorrow_str = datetime.strftime(the_day_after_tomorrow, '%Y-%m-%d')
+
 
 while True:
     # Draw a black filled box to clear the image.
@@ -173,19 +176,68 @@ while True:
             continue
 
     if GPIO.input(5) == False:
-        text_list[0] = js.getYesterdayDate()        
-	# dayCount += 1
+        toggle_list[]
+        if toggleCount == 0:
+            toggle_list[0] = "-> "
+            toggle_list[1] = ""
+            toggle_list[2] = ""
+            toggle_list[3] = ""
+            toggle_list[4] = ""
+            toggle_list[5] = ""
+
+        elif toggleCount == 1:
+            toggle_list[0] = ""
+            toggle_list[1] = "-> "
+            toggle_list[2] = ""
+            toggle_list[3] = ""
+            toggle_list[4] = ""
+            toggle_list[5] = ""
+
+        elif toggleCount == 2:
+            toggle_list[0] = ""
+            toggle_list[1] = ""
+            toggle_list[2] = "-> "
+            toggle_list[3] = ""
+            toggle_list[4] = ""
+            toggle_list[5] = ""
+
+        elif toggleCount == 3:
+            toggle_list[0] = ""
+            toggle_list[1] = ""
+            toggle_list[2] = ""
+            toggle_list[3] = "-> "
+            toggle_list[4] = ""
+            toggle_list[5] = ""
+
+        elif toggleCount == 4:
+            toggle_list[0] = ""
+            toggle_list[1] = ""
+            toggle_list[2] = ""
+            toggle_list[3] = ""
+            toggle_list[4] = "-> "
+            toggle_list[5] = ""
+
+        elif toggleCount == 5:
+            toggle_list[0] = ""
+            toggle_list[1] = ""
+            toggle_list[2] = ""
+            toggle_list[3] = ""
+            toggle_list[4] = ""
+            toggle_list[5] = "-> "
+        else:
+            continue
+
         time.sleep(0.1)
 
     # Write two lines of text.
     draw.text((x, top), 	text_list[0], font = font, fill = 255)
     draw.text((x, top+9),	text_list[1], font = font, fill = 255)
-    draw.text((x, top+17),	"-> " + text_list[2], font = font, fill = 255)
-    draw.text((x, top+25),	text_list[3], font = font, fill = 255)
-    draw.text((x, top+33),	text_list[4], font = font, fill = 255)
-    draw.text((x, top+41),	text_list[5], font = font, fill = 255)
-    draw.text((x, top+49),	text_list[6], font = font, fill = 255)
-    draw.text((x, top+57),	text_list[7], font = font, fill = 255)
+    draw.text((x, top+17),	toggle_list[0] + text_list[2], font = font, fill = 255)
+    draw.text((x, top+25),	toggle_list[1] + text_list[3], font = font, fill = 255)
+    draw.text((x, top+33),	toggle_list[2] + text_list[4], font = font, fill = 255)
+    draw.text((x, top+41),	toggle_list[3] + text_list[5], font = font, fill = 255)
+    draw.text((x, top+49),	toggle_list[4] + text_list[6], font = font, fill = 255)
+    draw.text((x, top+57),	toggle_list[5] + text_list[7], font = font, fill = 255)
 
 
     # Display image.

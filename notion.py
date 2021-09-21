@@ -113,6 +113,8 @@ tomorrow_str = datetime.strftime(tomorrow, '%Y-%m-%d')
 the_day_after_tomorrow_str = datetime.strftime(the_day_after_tomorrow, '%Y-%m-%d')
 
 
+# print(today_str)
+
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0,0,width,height), outline=0, fill=0)
@@ -175,6 +177,13 @@ while True:
         else:
             continue
 
+    if GPIO.input(16) == False:
+        db.readDatabase()
+        time.sleep(0.1)
+        print("1")
+        #js.resetBlockContent()
+        #time.sleep(0.1)
+
     if GPIO.input(5) == False:
         if toggleCount == 0:
             toggle_list[0] = "-> "
@@ -183,6 +192,8 @@ while True:
             toggle_list[3] = ""
             toggle_list[4] = ""
             toggle_list[5] = ""
+            toggleCount += 1
+            time.sleep(0.1)
 
         elif toggleCount == 1:
             toggle_list[0] = ""
@@ -191,6 +202,8 @@ while True:
             toggle_list[3] = ""
             toggle_list[4] = ""
             toggle_list[5] = ""
+            toggleCount += 1
+            time.sleep(0.1)
 
         elif toggleCount == 2:
             toggle_list[0] = ""
@@ -199,6 +212,8 @@ while True:
             toggle_list[3] = ""
             toggle_list[4] = ""
             toggle_list[5] = ""
+            toggleCount += 1
+            time.sleep(0.1)
 
         elif toggleCount == 3:
             toggle_list[0] = ""
@@ -207,6 +222,8 @@ while True:
             toggle_list[3] = "-> "
             toggle_list[4] = ""
             toggle_list[5] = ""
+            toggleCount += 1
+            time.sleep(0.1)
 
         elif toggleCount == 4:
             toggle_list[0] = ""
@@ -215,6 +232,8 @@ while True:
             toggle_list[3] = ""
             toggle_list[4] = "-> "
             toggle_list[5] = ""
+            toggleCount += 1
+            time.sleep(0.1)
 
         elif toggleCount == 5:
             toggle_list[0] = ""
@@ -223,6 +242,8 @@ while True:
             toggle_list[3] = ""
             toggle_list[4] = ""
             toggle_list[5] = "-> "
+            toggleCount = 0
+            time.sleep(0.1)
         else:
             continue
 

@@ -1,11 +1,1405 @@
 {
     "has_more": true,
-    "next_cursor": "0f8c9980-881f-498d-bbc7-d4b418e39842",
+    "next_cursor": "d5b06d26-f154-47d0-9d38-a15de03af0d4",
     "object": "list",
     "results": [
         {
             "archived": false,
+            "cover": null,
+            "created_time": "2021-09-20T17:26:00.000Z",
+            "icon": null,
+            "id": "7ec89120-7cb6-48ff-b497-143d1d96f951",
+            "last_edited_time": "2021-09-20T17:26:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-23"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Amazon money return",
+                            "text": {
+                                "content": "Amazon money return",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "green",
+                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
+                            "name": "Incomplete"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Amazon-money-return-7ec891207cb648ffb497143d1d96f951"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-17T04:44:00.000Z",
+            "icon": null,
+            "id": "af04f5f9-e787-40bb-b1a2-9f7e564f99f4",
+            "last_edited_time": "2021-09-17T04:44:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-27"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Docker",
+                            "text": {
+                                "content": "Docker",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "orange",
+                            "id": "824493ac-c72c-4b0a-a76d-698ae24a0fef",
+                            "name": "Learning_Plan"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Docker-af04f5f9e78740bbb1a29f7e564f99f4"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-17T04:44:00.000Z",
+            "icon": null,
+            "id": "f054afe7-96ad-49c5-8ed2-a4a324ed838a",
+            "last_edited_time": "2021-09-17T04:44:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-26"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "SQL",
+                            "text": {
+                                "content": "SQL",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "orange",
+                            "id": "824493ac-c72c-4b0a-a76d-698ae24a0fef",
+                            "name": "Learning_Plan"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/SQL-f054afe796ad49c58ed2a4a324ed838a"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-17T04:43:00.000Z",
+            "icon": null,
+            "id": "5ec3e26c-1e71-41d3-9a68-88e0d4ed365e",
+            "last_edited_time": "2021-09-17T04:44:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-25"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "JAVA",
+                            "text": {
+                                "content": "JAVA",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "orange",
+                            "id": "824493ac-c72c-4b0a-a76d-698ae24a0fef",
+                            "name": "Learning_Plan"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/JAVA-5ec3e26c1e7141d39a6888e0d4ed365e"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-16T18:44:00.000Z",
+            "icon": null,
+            "id": "7cb6c744-87c8-415e-9698-e9211ebf236e",
+            "last_edited_time": "2021-09-18T19:12:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-18"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Checklist",
+                            "text": {
+                                "content": "Checklist",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "blue",
+                            "id": "b827d299-7e8a-4cba-b0aa-528ac1b9a3f1",
+                            "name": "CheckList"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Checklist-7cb6c74487c8415e9698e9211ebf236e"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-14T03:25:00.000Z",
+            "icon": null,
+            "id": "0ec534c5-3687-443f-b915-047599c63d99",
+            "last_edited_time": "2021-09-17T04:54:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-17"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "TODO",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "purple",
+                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
+                            "name": "Daily"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/TODO-0ec534c53687443fb915047599c63d99"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-12T20:20:00.000Z",
+            "icon": null,
+            "id": "eba9a643-6d67-4d8a-9118-229deb75cf74",
+            "last_edited_time": "2021-09-14T03:25:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-12"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "shopping",
+                            "text": {
+                                "content": "shopping",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "blue",
+                            "id": "b827d299-7e8a-4cba-b0aa-528ac1b9a3f1",
+                            "name": "CheckList"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/shopping-eba9a6436d674d8a9118229deb75cf74"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-12T04:13:00.000Z",
+            "icon": null,
+            "id": "a4286348-6e2b-43a6-81f3-7b8a41681a2b",
+            "last_edited_time": "2021-09-12T04:14:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-10-05"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "In car 2",
+                            "text": {
+                                "content": "In car 2",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "green",
+                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
+                            "name": "Incomplete"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/In-car-2-a42863486e2b43a681f37b8a41681a2b"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-12T04:12:00.000Z",
+            "icon": null,
+            "id": "358455ba-5c5f-4228-ac9a-33a649b7ea22",
+            "last_edited_time": "2021-09-14T16:03:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-20"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "In car 1",
+                            "text": {
+                                "content": "In car 1",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "green",
+                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
+                            "name": "Incomplete"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/In-car-1-358455ba5c5f4228ac9a33a649b7ea22"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-11T16:40:00.000Z",
+            "icon": null,
+            "id": "f2949beb-d74f-4598-a18b-da84eeeabe33",
+            "last_edited_time": "2021-09-14T03:25:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-11"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "TODO",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "purple",
+                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
+                            "name": "Daily"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/TODO-f2949bebd74f4598a18bda84eeeabe33"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-08T00:01:00.000Z",
+            "icon": null,
+            "id": "5a1a4fa7-d3e3-4795-8788-59a2c04aa60a",
+            "last_edited_time": "2021-09-16T15:53:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-23"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "BMO session",
+                            "text": {
+                                "content": "BMO session",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "green",
+                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
+                            "name": "Incomplete"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/BMO-session-5a1a4fa7d3e34795878859a2c04aa60a"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-07T23:59:00.000Z",
+            "icon": null,
+            "id": "8075e0d8-0c6c-4d32-9e96-00aedad6089f",
+            "last_edited_time": "2021-09-07T23:59:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-22"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Microsoft session",
+                            "text": {
+                                "content": "Microsoft session",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "green",
+                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
+                            "name": "Incomplete"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Microsoft-session-8075e0d80c6c4d329e9600aedad6089f"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-07T23:58:00.000Z",
+            "icon": null,
+            "id": "a4f332b3-39e2-413b-a4fa-e488672b5a5d",
+            "last_edited_time": "2021-09-07T23:58:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-21"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Rogers session",
+                            "text": {
+                                "content": "Rogers session",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "green",
+                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
+                            "name": "Incomplete"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Rogers-session-a4f332b339e2413ba4fae488672b5a5d"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-07T23:58:00.000Z",
+            "icon": null,
+            "id": "c7f50148-adce-424b-8d55-859de4aed134",
+            "last_edited_time": "2021-09-07T23:59:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-22"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "AdMare session",
+                            "text": {
+                                "content": "AdMare session",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "green",
+                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
+                            "name": "Incomplete"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/AdMare-session-c7f50148adce424b8d55859de4aed134"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-07T23:57:00.000Z",
+            "icon": null,
+            "id": "790b41c0-d93e-4623-b143-157aa48a2024",
+            "last_edited_time": "2021-09-14T03:25:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-13"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Bell session",
+                            "text": {
+                                "content": "Bell session",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Bell-session-790b41c0d93e4623b143157aa48a2024"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-07T23:56:00.000Z",
+            "icon": null,
+            "id": "7f74efaf-65d0-4a0a-8fdb-363cd998ad35",
+            "last_edited_time": "2021-09-14T03:25:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-13"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "KPMG session",
+                            "text": {
+                                "content": "KPMG session",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/KPMG-session-7f74efaf65d04a0a8fdb363cd998ad35"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-07T23:56:00.000Z",
+            "icon": null,
+            "id": "f1fa0903-f2ae-4ccc-9377-e488c189d4e5",
+            "last_edited_time": "2021-09-11T17:48:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-09"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Soctia session",
+                            "text": {
+                                "content": "Soctia session",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Soctia-session-f1fa0903f2ae4ccc9377e488c189d4e5"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-02T14:47:00.000Z",
+            "icon": null,
+            "id": "24830799-fc98-4d25-9a12-6e956f904850",
+            "last_edited_time": "2021-09-11T17:48:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-08"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "IBM interview",
+                            "text": {
+                                "content": "IBM interview",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/IBM-interview-24830799fc984d259a126e956f904850"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-02T07:17:00.000Z",
+            "icon": null,
+            "id": "6e92f764-ff8c-4e19-90ad-3e56028aabce",
+            "last_edited_time": "2021-09-02T19:10:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-02"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "TODO",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "purple",
+                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
+                            "name": "Daily"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/TODO-6e92f764ff8c4e1990ad3e56028aabce"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-01T04:35:00.000Z",
+            "icon": null,
+            "id": "621a5337-99ca-412f-9a4b-09ec85e40098",
+            "last_edited_time": "2021-09-02T07:17:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-01"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "TODO",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "purple",
+                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
+                            "name": "Daily"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/TODO-621a533799ca412f9a4b09ec85e40098"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-08-31T04:05:00.000Z",
+            "icon": null,
+            "id": "3bf89c2d-3c5e-46d6-a777-04e735214414",
+            "last_edited_time": "2021-09-01T04:35:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-08-31"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "TODO",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "purple",
+                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
+                            "name": "Daily"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/TODO-3bf89c2d3c5e46d6a77704e735214414"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-08-31T04:05:00.000Z",
+            "icon": null,
+            "id": "8bc504bf-2103-48cd-be2d-9f9b247a3811",
+            "last_edited_time": "2021-09-07T23:57:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-03"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "PGWP application",
+                            "text": {
+                                "content": "PGWP application",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/PGWP-application-8bc504bf210348cdbe2d9f9b247a3811"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-08-25T03:55:00.000Z",
+            "icon": null,
+            "id": "dbc33f85-e609-48f7-8f56-dc0a9162ab48",
+            "last_edited_time": "2021-08-28T15:19:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-08-31"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Submit visitor visa if needed",
+                            "text": {
+                                "content": "Submit visitor visa if needed",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Submit-visitor-visa-if-needed-dbc33f85e60948f78f56dc0a9162ab48"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-08-22T04:04:00.000Z",
+            "icon": null,
+            "id": "beba87b0-7aa4-46ac-9e8f-89c18555aa7c",
+            "last_edited_time": "2021-08-26T01:52:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-08-25"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Reach to Nick",
+                            "text": {
+                                "content": "Reach to Nick",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Reach-to-Nick-beba87b07aa446ac9e8f89c18555aa7c"
+        },
+        {
+            "archived": false,
+            "cover": null,
             "created_time": "2021-08-15T03:25:00.000Z",
+            "icon": null,
             "id": "bd2cb440-125f-4fb5-86d5-1b9339658c49",
             "last_edited_time": "2021-08-15T03:26:00.000Z",
             "object": "page",
@@ -19,7 +1413,7 @@
                         "end": null,
                         "start": "2021-10-29"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -46,7 +1440,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -61,7 +1455,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-08-15T03:24:00.000Z",
+            "icon": null,
             "id": "43ac9a61-7c70-4ac2-a734-20beffbbb710",
             "last_edited_time": "2021-08-15T03:25:00.000Z",
             "object": "page",
@@ -75,7 +1471,7 @@
                         "end": null,
                         "start": "2021-10-12"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -102,7 +1498,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -117,7 +1513,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-08-15T03:24:00.000Z",
+            "icon": null,
             "id": "937f207a-7e1a-4f23-abd3-97f9e41d35af",
             "last_edited_time": "2021-08-15T03:24:00.000Z",
             "object": "page",
@@ -131,7 +1529,7 @@
                         "end": null,
                         "start": "2021-09-30"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -158,7 +1556,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -173,9 +1571,11 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-08-15T03:23:00.000Z",
+            "icon": null,
             "id": "323eed2e-a4f3-4817-8cd6-d8a903b178e9",
-            "last_edited_time": "2021-08-15T03:24:00.000Z",
+            "last_edited_time": "2021-09-10T23:57:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -187,7 +1587,7 @@
                         "end": null,
                         "start": "2021-09-10"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -214,7 +1614,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -229,7 +1629,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-08-13T17:23:00.000Z",
+            "icon": null,
             "id": "19fd96ec-11fb-425b-abbc-2a0f53e12314",
             "last_edited_time": "2021-08-15T03:26:00.000Z",
             "object": "page",
@@ -243,7 +1645,7 @@
                         "end": null,
                         "start": "2021-08-12"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -270,7 +1672,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -285,9 +1687,11 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-08-10T23:22:00.000Z",
+            "icon": null,
             "id": "10741cd8-5eae-4159-8e65-5dd6d06cb6bd",
-            "last_edited_time": "2021-08-10T23:22:00.000Z",
+            "last_edited_time": "2021-08-17T18:37:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -299,7 +1703,7 @@
                         "end": null,
                         "start": "2021-08-17"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -326,12 +1730,12 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
-                            "color": "green",
-                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
-                            "name": "Incomplete"
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
                         }
                     ],
                     "type": "multi_select"
@@ -341,7 +1745,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-08-09T05:42:00.000Z",
+            "icon": null,
             "id": "38be4349-bfd3-4982-90fa-76fd2bb8d3e4",
             "last_edited_time": "2021-08-10T17:54:00.000Z",
             "object": "page",
@@ -355,7 +1761,7 @@
                         "end": null,
                         "start": "2021-08-09"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -382,7 +1788,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -397,63 +1803,9 @@
         },
         {
             "archived": false,
-            "created_time": "2021-08-05T23:16:00.000Z",
-            "id": "591c0db7-1216-41d8-9582-e8544ad6fc61",
-            "last_edited_time": "2021-08-15T03:26:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-08-15"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "TODO",
-                            "text": {
-                                "content": "TODO",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "purple",
-                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
-                            "name": "Daily"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/TODO-591c0db7121641d89582e8544ad6fc61"
-        },
-        {
-            "archived": false,
+            "cover": null,
             "created_time": "2021-07-27T04:27:00.000Z",
+            "icon": null,
             "id": "d98bfc0d-c7cf-4af3-9024-5f1067231c5f",
             "last_edited_time": "2021-07-28T02:28:00.000Z",
             "object": "page",
@@ -467,7 +1819,7 @@
                         "end": null,
                         "start": "2021-07-27"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -494,7 +1846,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "red",
@@ -509,7 +1861,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-27T04:26:00.000Z",
+            "icon": null,
             "id": "7bd6fd01-5020-4671-a0f3-7a03b0c2f965",
             "last_edited_time": "2021-08-12T05:07:00.000Z",
             "object": "page",
@@ -523,7 +1877,7 @@
                         "end": null,
                         "start": "2021-08-09"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -550,7 +1904,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "red",
@@ -565,7 +1919,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-23T19:48:00.000Z",
+            "icon": null,
             "id": "06d256d2-87ca-4a14-b1e6-0b721f606a9c",
             "last_edited_time": "2021-08-05T23:16:00.000Z",
             "object": "page",
@@ -579,7 +1935,7 @@
                         "end": null,
                         "start": "2021-08-02"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -606,7 +1962,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -621,7 +1977,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-22T05:35:00.000Z",
+            "icon": null,
             "id": "d9e68262-862a-4d32-986d-e7e28921b79e",
             "last_edited_time": "2021-07-23T19:48:00.000Z",
             "object": "page",
@@ -635,7 +1993,7 @@
                         "end": null,
                         "start": "2021-07-22"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -662,7 +2020,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -677,9 +2035,11 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-19T19:30:00.000Z",
+            "icon": null,
             "id": "3cffff25-e4a0-4169-a63a-5823a1711fac",
-            "last_edited_time": "2021-07-19T19:31:00.000Z",
+            "last_edited_time": "2021-08-31T04:05:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -691,7 +2051,7 @@
                         "end": null,
                         "start": "2021-08-30"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -718,12 +2078,12 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
-                            "color": "green",
-                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
-                            "name": "Incomplete"
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
                         }
                     ],
                     "type": "multi_select"
@@ -733,7 +2093,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-17T18:21:00.000Z",
+            "icon": null,
             "id": "f0d7219c-4e2e-475e-8b99-752b78e882b9",
             "last_edited_time": "2021-07-19T18:54:00.000Z",
             "object": "page",
@@ -747,7 +2109,7 @@
                         "end": null,
                         "start": "2021-07-17"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -774,7 +2136,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "blue",
@@ -789,7 +2151,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-16T20:50:00.000Z",
+            "icon": null,
             "id": "2e4bb4e7-75bb-463a-bbba-c934e267bd62",
             "last_edited_time": "2021-07-19T19:31:00.000Z",
             "object": "page",
@@ -803,7 +2167,7 @@
                         "end": null,
                         "start": "2021-07-19"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -830,7 +2194,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "red",
@@ -845,7 +2209,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-14T02:00:00.000Z",
+            "icon": null,
             "id": "92a614e1-e99f-4355-a8f5-363949dc88d7",
             "last_edited_time": "2021-07-19T18:54:00.000Z",
             "object": "page",
@@ -859,7 +2225,7 @@
                         "end": null,
                         "start": "2021-07-15"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -886,7 +2252,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "blue",
@@ -901,9 +2267,11 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-13T03:07:00.000Z",
+            "icon": null,
             "id": "b6c48fd5-6656-4f23-999a-9a09452c1a57",
-            "last_edited_time": "2021-07-13T03:08:00.000Z",
+            "last_edited_time": "2021-08-17T18:42:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -915,7 +2283,7 @@
                         "end": null,
                         "start": "2021-08-16"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -942,12 +2310,12 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
-                            "color": "green",
-                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
-                            "name": "Incomplete"
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
                         }
                     ],
                     "type": "multi_select"
@@ -957,7 +2325,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-12T03:43:00.000Z",
+            "icon": null,
             "id": "aea9c490-9b17-45c2-886f-3c6952c10332",
             "last_edited_time": "2021-07-13T05:02:00.000Z",
             "object": "page",
@@ -971,7 +2341,7 @@
                         "end": null,
                         "start": "2021-07-12"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -998,7 +2368,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -1013,9 +2383,11 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-12T03:26:00.000Z",
+            "icon": null,
             "id": "d3a71acd-ebda-4202-9b31-7650231df406",
-            "last_edited_time": "2021-08-15T03:10:00.000Z",
+            "last_edited_time": "2021-08-28T03:10:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -1025,9 +2397,9 @@
                 "Date": {
                     "date": {
                         "end": null,
-                        "start": "2021-08-16"
+                        "start": "2021-08-27"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -1054,12 +2426,12 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
-                            "color": "green",
-                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
-                            "name": "Incomplete"
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
                         }
                     ],
                     "type": "multi_select"
@@ -1069,9 +2441,11 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-11T19:18:00.000Z",
+            "icon": null,
             "id": "277a7b5d-eca8-4e0b-9544-022b2309210e",
-            "last_edited_time": "2021-08-05T23:10:00.000Z",
+            "last_edited_time": "2021-08-22T03:43:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -1083,7 +2457,7 @@
                         "end": null,
                         "start": "2021-08-07"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -1110,7 +2484,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "blue",
@@ -1125,9 +2499,11 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-10T01:45:00.000Z",
+            "icon": null,
             "id": "242faa6c-71b9-4e26-83a4-18547f285c5d",
-            "last_edited_time": "2021-07-10T01:46:00.000Z",
+            "last_edited_time": "2021-08-25T03:55:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -1137,9 +2513,9 @@
                 "Date": {
                     "date": {
                         "end": null,
-                        "start": "2021-08-20"
+                        "start": "2021-08-24"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -1166,12 +2542,12 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
-                            "color": "green",
-                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
-                            "name": "Incomplete"
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
                         }
                     ],
                     "type": "multi_select"
@@ -1181,7 +2557,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-10T01:44:00.000Z",
+            "icon": null,
             "id": "22d563ac-648a-4f81-8db4-b45622761f4f",
             "last_edited_time": "2021-07-23T20:07:00.000Z",
             "object": "page",
@@ -1195,7 +2573,7 @@
                         "end": null,
                         "start": "2021-07-23"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -1222,7 +2600,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -1237,63 +2615,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-10T01:44:00.000Z",
-            "id": "52e2e84c-129c-4e95-9e26-abee02f76343",
-            "last_edited_time": "2021-07-31T23:21:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-07-31"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "Driving class",
-                            "text": {
-                                "content": "Driving class",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "purple",
-                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
-                            "name": "Daily"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/Driving-class-52e2e84c129c4e959e26abee02f76343"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-07-10T01:44:00.000Z",
+            "icon": null,
             "id": "27776495-73a6-4e7c-8e79-1e55e5d0d174",
             "last_edited_time": "2021-08-13T21:23:00.000Z",
             "object": "page",
@@ -1307,7 +2631,7 @@
                         "end": null,
                         "start": "2021-08-13"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -1334,7 +2658,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -1349,9 +2673,11 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-10T01:44:00.000Z",
-            "id": "728ba254-d54e-4b61-85d2-9e757c46df07",
-            "last_edited_time": "2021-08-06T20:03:00.000Z",
+            "icon": null,
+            "id": "52e2e84c-129c-4e95-9e26-abee02f76343",
+            "last_edited_time": "2021-07-31T23:21:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -1361,9 +2687,9 @@
                 "Date": {
                     "date": {
                         "end": null,
-                        "start": "2021-08-06"
+                        "start": "2021-07-31"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -1390,7 +2716,65 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "purple",
+                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
+                            "name": "Daily"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Driving-class-52e2e84c129c4e959e26abee02f76343"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-07-10T01:44:00.000Z",
+            "icon": null,
+            "id": "728ba254-d54e-4b61-85d2-9e757c46df07",
+            "last_edited_time": "2021-08-06T20:03:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-08-06"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Driving class",
+                            "text": {
+                                "content": "Driving class",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -1405,7 +2789,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-10T01:43:00.000Z",
+            "icon": null,
             "id": "9051c984-00fa-4832-9c0f-d9ad71d4722a",
             "last_edited_time": "2021-07-16T21:13:00.000Z",
             "object": "page",
@@ -1419,7 +2805,7 @@
                         "end": null,
                         "start": "2021-07-16"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -1446,7 +2832,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -1461,7 +2847,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-08T19:18:00.000Z",
+            "icon": null,
             "id": "0ec170de-d6aa-4da2-8217-a2513e25d85f",
             "last_edited_time": "2021-07-29T06:01:00.000Z",
             "object": "page",
@@ -1475,7 +2863,7 @@
                         "end": null,
                         "start": "2021-07-28"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -1502,7 +2890,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "red",
@@ -1517,7 +2905,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-08T17:39:00.000Z",
+            "icon": null,
             "id": "6eb4bc9e-e157-4aa3-8ce1-46d1cf2e0d23",
             "last_edited_time": "2021-07-30T18:10:00.000Z",
             "object": "page",
@@ -1531,7 +2921,7 @@
                         "end": null,
                         "start": "2021-07-30"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -1558,7 +2948,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "red",
@@ -1573,7 +2963,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-07T17:28:00.000Z",
+            "icon": null,
             "id": "1ee6284e-6f3c-47c9-b0f8-c40fccd7caf5",
             "last_edited_time": "2021-07-07T19:47:00.000Z",
             "object": "page",
@@ -1587,7 +2979,7 @@
                         "end": null,
                         "start": "2021-07-07"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -1614,7 +3006,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "blue",
@@ -1629,7 +3021,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-05T18:09:00.000Z",
+            "icon": null,
             "id": "0859d8b6-63ca-4751-9adb-c5151dc95d03",
             "last_edited_time": "2021-08-14T01:31:00.000Z",
             "object": "page",
@@ -1643,7 +3037,7 @@
                         "end": null,
                         "start": "2021-08-11"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -1670,7 +3064,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "red",
@@ -1685,7 +3079,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-03T03:57:00.000Z",
+            "icon": null,
             "id": "e35bc6a6-f839-478c-b620-494165d05fa4",
             "last_edited_time": "2021-07-05T04:34:00.000Z",
             "object": "page",
@@ -1699,7 +3095,7 @@
                         "end": null,
                         "start": "2021-07-03"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -1726,7 +3122,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -1741,7 +3137,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-07-02T06:20:00.000Z",
+            "icon": null,
             "id": "89a6d08e-8936-4bf0-983e-0aeeb222c0c1",
             "last_edited_time": "2021-07-03T03:57:00.000Z",
             "object": "page",
@@ -1755,7 +3153,7 @@
                         "end": null,
                         "start": "2021-07-02"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -1782,7 +3180,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -1797,7 +3195,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-27T18:54:00.000Z",
+            "icon": null,
             "id": "d03c9a44-8412-478c-a46b-4675d3087543",
             "last_edited_time": "2021-07-02T06:21:00.000Z",
             "object": "page",
@@ -1811,7 +3211,7 @@
                         "end": null,
                         "start": "2021-07-01"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -1838,7 +3238,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -1853,7 +3253,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-27T05:09:00.000Z",
+            "icon": null,
             "id": "5af98559-66f3-4c6f-a12c-b58302b8bb7c",
             "last_edited_time": "2021-06-28T17:16:00.000Z",
             "object": "page",
@@ -1867,7 +3269,7 @@
                         "end": null,
                         "start": "2021-06-28"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -1894,7 +3296,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -1909,7 +3311,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-26T04:33:00.000Z",
+            "icon": null,
             "id": "3b8cda18-23c3-4b03-a888-70e1f9777654",
             "last_edited_time": "2021-06-27T07:05:00.000Z",
             "object": "page",
@@ -1923,7 +3327,7 @@
                         "end": null,
                         "start": "2021-06-26"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -1950,7 +3354,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -1965,7 +3369,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-25T03:46:00.000Z",
+            "icon": null,
             "id": "bb75a95a-bc98-4173-894d-9df122265b72",
             "last_edited_time": "2021-06-26T04:33:00.000Z",
             "object": "page",
@@ -1979,7 +3385,7 @@
                         "end": null,
                         "start": "2021-06-25"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -2006,7 +3412,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -2021,7 +3427,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-23T22:38:00.000Z",
+            "icon": null,
             "id": "2c38ea21-bf43-4da8-8047-b61e02d2f4f4",
             "last_edited_time": "2021-06-26T02:04:00.000Z",
             "object": "page",
@@ -2035,7 +3443,7 @@
                         "end": null,
                         "start": "2021-06-25"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -2062,7 +3470,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "red",
@@ -2077,7 +3485,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-23T05:26:00.000Z",
+            "icon": null,
             "id": "061b0e3d-4d79-43c4-865f-0d314eac45ea",
             "last_edited_time": "2021-06-25T03:46:00.000Z",
             "object": "page",
@@ -2091,7 +3501,7 @@
                         "end": null,
                         "start": "2021-06-24"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -2118,7 +3528,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -2133,7 +3543,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-23T04:41:00.000Z",
+            "icon": null,
             "id": "8e741442-3056-4c31-9727-0ff0a4ba9a6e",
             "last_edited_time": "2021-07-05T23:49:00.000Z",
             "object": "page",
@@ -2147,7 +3559,7 @@
                         "end": null,
                         "start": "2021-07-05"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -2174,7 +3586,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "red",
@@ -2189,63 +3601,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-19T05:27:00.000Z",
-            "id": "cdefaf4f-18a5-4f18-88a6-519f9b6f4557",
-            "last_edited_time": "2021-06-22T05:07:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-06-21"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "TODO",
-                            "text": {
-                                "content": "TODO",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "purple",
-                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
-                            "name": "Daily"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/TODO-cdefaf4f18a54f1888a6519f9b6f4557"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-06-19T05:27:00.000Z",
+            "icon": null,
             "id": "60aa1276-b1c9-4cdc-af1b-c04a9efc716c",
             "last_edited_time": "2021-06-23T05:26:00.000Z",
             "object": "page",
@@ -2259,7 +3617,7 @@
                         "end": null,
                         "start": "2021-06-22"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -2286,7 +3644,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -2301,9 +3659,11 @@
         },
         {
             "archived": false,
-            "created_time": "2021-06-18T23:46:00.000Z",
-            "id": "84377466-54a7-413f-8a8c-914a08fb1d3d",
-            "last_edited_time": "2021-06-21T05:56:00.000Z",
+            "cover": null,
+            "created_time": "2021-06-19T05:27:00.000Z",
+            "icon": null,
+            "id": "cdefaf4f-18a5-4f18-88a6-519f9b6f4557",
+            "last_edited_time": "2021-06-22T05:07:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -2313,9 +3673,9 @@
                 "Date": {
                     "date": {
                         "end": null,
-                        "start": "2021-06-20"
+                        "start": "2021-06-21"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -2342,7 +3702,65 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "purple",
+                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
+                            "name": "Daily"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/TODO-cdefaf4f18a54f1888a6519f9b6f4557"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-06-18T23:46:00.000Z",
+            "icon": null,
+            "id": "84377466-54a7-413f-8a8c-914a08fb1d3d",
+            "last_edited_time": "2021-06-21T05:56:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-06-20"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "TODO",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -2357,7 +3775,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-18T00:43:00.000Z",
+            "icon": null,
             "id": "484e472c-1f74-4fac-b1c5-78bf71b7bd80",
             "last_edited_time": "2021-06-20T06:24:00.000Z",
             "object": "page",
@@ -2371,7 +3791,7 @@
                         "end": null,
                         "start": "2021-06-19"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -2398,7 +3818,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -2413,7 +3833,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-17T18:27:00.000Z",
+            "icon": null,
             "id": "f4f455f0-caf2-4a76-be52-5c462f37d673",
             "last_edited_time": "2021-06-19T05:43:00.000Z",
             "object": "page",
@@ -2427,7 +3849,7 @@
                         "end": null,
                         "start": "2021-06-18"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -2454,7 +3876,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -2469,7 +3891,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-16T17:12:00.000Z",
+            "icon": null,
             "id": "fe8dbbf6-4084-4998-a620-c4d138c3b0c7",
             "last_edited_time": "2021-06-18T22:21:00.000Z",
             "object": "page",
@@ -2483,7 +3907,7 @@
                         "end": null,
                         "start": "2021-06-17"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -2510,7 +3934,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -2525,7 +3949,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-16T17:11:00.000Z",
+            "icon": null,
             "id": "fa7b8913-49d0-4c36-85b2-2cbaf3f45428",
             "last_edited_time": "2021-06-17T06:13:00.000Z",
             "object": "page",
@@ -2539,7 +3965,7 @@
                         "end": null,
                         "start": "2021-06-16"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -2566,7 +3992,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -2581,7 +4007,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-15T03:48:00.000Z",
+            "icon": null,
             "id": "7d79c5a9-c217-44d1-8034-478a717b598b",
             "last_edited_time": "2021-06-16T17:11:00.000Z",
             "object": "page",
@@ -2595,7 +4023,7 @@
                         "end": null,
                         "start": "2021-06-15"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -2622,7 +4050,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -2637,7 +4065,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-14T00:41:00.000Z",
+            "icon": null,
             "id": "c4b50362-1cac-4810-9fcf-7ba0f8646fc1",
             "last_edited_time": "2021-06-15T06:05:00.000Z",
             "object": "page",
@@ -2651,7 +4081,7 @@
                         "end": null,
                         "start": "2021-06-14"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -2678,7 +4108,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -2693,7 +4123,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-12T04:16:00.000Z",
+            "icon": null,
             "id": "f2385676-35c8-456d-8911-09cb0da2cbbc",
             "last_edited_time": "2021-06-13T05:19:00.000Z",
             "object": "page",
@@ -2707,7 +4139,7 @@
                         "end": null,
                         "start": "2021-06-12"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -2734,7 +4166,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -2749,7 +4181,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-12T03:47:00.000Z",
+            "icon": null,
             "id": "4d55d978-55af-464c-9e26-aacc6e759f83",
             "last_edited_time": "2021-06-14T05:10:00.000Z",
             "object": "page",
@@ -2763,7 +4197,7 @@
                         "end": null,
                         "start": "2021-06-13"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -2790,7 +4224,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -2805,7 +4239,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-09T22:53:00.000Z",
+            "icon": null,
             "id": "6234e418-4dbe-457f-8819-7ee8d8a8de83",
             "last_edited_time": "2021-06-12T04:03:00.000Z",
             "object": "page",
@@ -2819,7 +4255,7 @@
                         "end": null,
                         "start": "2021-06-11"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -2846,7 +4282,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -2861,7 +4297,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-09T22:52:00.000Z",
+            "icon": null,
             "id": "e5a605e9-4a37-4d5a-b457-7e9b528366e7",
             "last_edited_time": "2021-06-12T19:58:00.000Z",
             "object": "page",
@@ -2875,7 +4313,7 @@
                         "end": null,
                         "start": "2021-06-12"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -2902,7 +4340,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "red",
@@ -2917,7 +4355,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-08T06:25:00.000Z",
+            "icon": null,
             "id": "3b92fc33-cc8f-4346-90f8-b6b2cf94d715",
             "last_edited_time": "2021-06-09T14:47:00.000Z",
             "object": "page",
@@ -2931,7 +4371,7 @@
                         "end": null,
                         "start": "2021-06-08"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -2958,7 +4398,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -2973,7 +4413,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-05T02:55:00.000Z",
+            "icon": null,
             "id": "92fbb3b7-5405-44c6-851d-ff5eba7164f3",
             "last_edited_time": "2021-06-07T00:45:00.000Z",
             "object": "page",
@@ -2987,7 +4429,7 @@
                         "end": null,
                         "start": "2021-06-07"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -3014,7 +4456,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -3029,7 +4471,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-04T16:18:00.000Z",
+            "icon": null,
             "id": "2b88f54a-f296-4772-ae87-5b297e5facec",
             "last_edited_time": "2021-06-17T15:19:00.000Z",
             "object": "page",
@@ -3043,7 +4487,7 @@
                         "end": null,
                         "start": "2021-07-05T13:30:00.000-04:00"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -3070,7 +4514,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -3085,7 +4529,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-02T00:32:00.000Z",
+            "icon": null,
             "id": "ba73d7b6-db50-460c-be60-e77d618d56b1",
             "last_edited_time": "2021-06-22T05:07:00.000Z",
             "object": "page",
@@ -3099,7 +4545,7 @@
                         "end": null,
                         "start": "2021-06-22"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -3126,7 +4572,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "red",
@@ -3141,7 +4587,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-01T01:34:00.000Z",
+            "icon": null,
             "id": "6bc94e3d-7143-4bcc-ab9a-15cea8677dec",
             "last_edited_time": "2021-06-03T05:17:00.000Z",
             "object": "page",
@@ -3155,7 +4603,7 @@
                         "end": null,
                         "start": "2021-06-02"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -3182,7 +4630,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -3197,7 +4645,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-06-01T01:28:00.000Z",
+            "icon": null,
             "id": "1fd2d513-4ecf-4f4b-b9aa-d994187ef5fe",
             "last_edited_time": "2021-06-08T19:29:00.000Z",
             "object": "page",
@@ -3211,7 +4661,7 @@
                         "end": null,
                         "start": "2021-06-04"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -3238,7 +4688,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -3253,7 +4703,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-05-31T15:19:00.000Z",
+            "icon": null,
             "id": "b66520ee-e9e7-4da5-9ada-ba124019c313",
             "last_edited_time": "2021-06-11T18:13:00.000Z",
             "object": "page",
@@ -3267,7 +4719,7 @@
                         "end": null,
                         "start": "2021-05-31"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -3294,7 +4746,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "blue",
@@ -3309,7 +4761,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-05-29T22:40:00.000Z",
+            "icon": null,
             "id": "b12e60b4-ece7-4578-8a2c-afc2899e411f",
             "last_edited_time": "2021-05-31T14:58:00.000Z",
             "object": "page",
@@ -3323,7 +4777,7 @@
                         "end": null,
                         "start": "2021-05-30"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -3350,7 +4804,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "blue",
@@ -3365,7 +4819,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-05-26T04:02:00.000Z",
+            "icon": null,
             "id": "2bceaeac-72bc-4d95-91a3-0a19fe23dbde",
             "last_edited_time": "2021-06-28T21:50:00.000Z",
             "object": "page",
@@ -3379,7 +4835,7 @@
                         "end": null,
                         "start": "2021-06-28"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -3406,7 +4862,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "red",
@@ -3421,7 +4877,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-05-25T17:39:00.000Z",
+            "icon": null,
             "id": "50a30880-31c7-4efc-bf97-9af23aeb83e7",
             "last_edited_time": "2021-06-02T05:37:00.000Z",
             "object": "page",
@@ -3435,7 +4893,7 @@
                         "end": null,
                         "start": "2021-06-01"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -3462,7 +4920,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -3477,7 +4935,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-05-25T16:12:00.000Z",
+            "icon": null,
             "id": "e4fb9be0-aede-4c75-8d30-7734b475a7f0",
             "last_edited_time": "2021-06-11T21:40:00.000Z",
             "object": "page",
@@ -3491,7 +4951,7 @@
                         "end": null,
                         "start": "2021-05-31"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -3518,7 +4978,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "blue",
@@ -3533,7 +4993,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-05-25T05:46:00.000Z",
+            "icon": null,
             "id": "b024ef64-cdb0-4abe-b281-fec99edac4a5",
             "last_edited_time": "2021-05-26T16:16:00.000Z",
             "object": "page",
@@ -3547,7 +5009,7 @@
                         "end": null,
                         "start": "2021-05-26"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -3574,7 +5036,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -3589,7 +5051,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-05-25T02:09:00.000Z",
+            "icon": null,
             "id": "f08d0d44-d99f-44c6-a949-fadf8e752e41",
             "last_edited_time": "2021-05-25T02:10:00.000Z",
             "object": "page",
@@ -3603,7 +5067,7 @@
                         "end": null,
                         "start": "2021-05-15"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -3630,7 +5094,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "blue",
@@ -3645,7 +5109,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-05-24T05:42:00.000Z",
+            "icon": null,
             "id": "20778af4-5f09-4945-87d0-e150d3875b4b",
             "last_edited_time": "2021-05-25T05:46:00.000Z",
             "object": "page",
@@ -3659,7 +5125,7 @@
                         "end": null,
                         "start": "2021-05-24"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -3686,7 +5152,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -3701,7 +5167,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-05-23T05:08:00.000Z",
+            "icon": null,
             "id": "07a49858-83ed-4c5c-8b18-7faa5639abe7",
             "last_edited_time": "2021-05-24T05:42:00.000Z",
             "object": "page",
@@ -3715,7 +5183,7 @@
                         "end": null,
                         "start": "2021-05-23"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -3742,7 +5210,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -3757,7 +5225,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-05-21T04:29:00.000Z",
+            "icon": null,
             "id": "2752cab8-8023-48a8-8443-c3d814222022",
             "last_edited_time": "2021-05-23T05:09:00.000Z",
             "object": "page",
@@ -3771,7 +5241,7 @@
                         "end": null,
                         "start": "2021-05-22"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -3798,7 +5268,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -3813,7 +5283,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-05-18T20:09:00.000Z",
+            "icon": null,
             "id": "2aebaaa5-5603-419a-bdab-3f0c0460d4e1",
             "last_edited_time": "2021-05-22T14:48:00.000Z",
             "object": "page",
@@ -3827,7 +5299,7 @@
                         "end": null,
                         "start": "2021-05-24"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -3854,7 +5326,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "red",
@@ -3869,7 +5341,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-05-17T18:39:00.000Z",
+            "icon": null,
             "id": "b89e9fe2-b130-4983-8190-6c23a7d505bd",
             "last_edited_time": "2021-05-21T04:29:00.000Z",
             "object": "page",
@@ -3883,7 +5357,7 @@
                         "end": null,
                         "start": "2021-05-20"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -3910,7 +5384,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -3925,7 +5399,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-05-17T03:40:00.000Z",
+            "icon": null,
             "id": "cba35a02-bafb-4ee2-92ba-775899cc165b",
             "last_edited_time": "2021-05-19T16:08:00.000Z",
             "object": "page",
@@ -3939,7 +5415,7 @@
                         "end": null,
                         "start": "2021-05-19T00:00:00.000-04:00"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -3966,7 +5442,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "red",
@@ -3981,7 +5457,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-05-15T21:12:00.000Z",
+            "icon": null,
             "id": "16d66b7b-daba-4d67-8c08-87193791125c",
             "last_edited_time": "2021-06-14T20:16:00.000Z",
             "object": "page",
@@ -3995,7 +5473,7 @@
                         "end": null,
                         "start": "2021-06-14T00:20:00.000-04:00"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -4022,7 +5500,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "red",
@@ -4037,7 +5515,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-05-14T15:48:00.000Z",
+            "icon": null,
             "id": "29ab78d1-7446-460f-b482-b27db594bfce",
             "last_edited_time": "2021-05-17T03:25:00.000Z",
             "object": "page",
@@ -4051,7 +5531,7 @@
                         "end": null,
                         "start": "2021-05-14"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -4078,7 +5558,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -4093,7 +5573,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-05-14T00:00:00.000Z",
+            "icon": null,
             "id": "474ade5d-8385-49f5-a4ba-d5c577237bac",
             "last_edited_time": "2021-05-14T03:40:00.000Z",
             "object": "page",
@@ -4107,7 +5589,7 @@
                         "end": null,
                         "start": "2021-05-13"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -4134,7 +5616,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "purple",
@@ -4149,63 +5631,9 @@
         },
         {
             "archived": false,
+            "cover": null,
             "created_time": "2021-05-12T16:29:00.000Z",
-            "id": "acc71615-0718-4af8-a5d3-b766fad6cf51",
-            "last_edited_time": "2021-06-09T22:50:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-06-09"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "COMP472 QUIZ2",
-                            "text": {
-                                "content": "COMP472 QUIZ2",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/COMP472-QUIZ2-acc7161507184af8a5d3b766fad6cf51"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-05-12T16:29:00.000Z",
+            "icon": null,
             "id": "4d7a22be-2d22-41d8-af37-4ab2864818e9",
             "last_edited_time": "2021-06-22T05:07:00.000Z",
             "object": "page",
@@ -4219,7 +5647,7 @@
                         "end": null,
                         "start": "2021-06-21"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -4246,7 +5674,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "red",
@@ -4261,7 +5689,67 @@
         },
         {
             "archived": false,
+            "cover": null,
+            "created_time": "2021-05-12T16:29:00.000Z",
+            "icon": null,
+            "id": "acc71615-0718-4af8-a5d3-b766fad6cf51",
+            "last_edited_time": "2021-06-09T22:50:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-06-09"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "COMP472 QUIZ2",
+                            "text": {
+                                "content": "COMP472 QUIZ2",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/COMP472-QUIZ2-acc7161507184af8a5d3b766fad6cf51"
+        },
+        {
+            "archived": false,
+            "cover": null,
             "created_time": "2021-05-12T16:28:00.000Z",
+            "icon": null,
             "id": "3722d5bd-9aaf-4e0e-83a7-0afc112c6c8f",
             "last_edited_time": "2021-06-23T19:52:00.000Z",
             "object": "page",
@@ -4275,7 +5763,7 @@
                         "end": null,
                         "start": "2021-06-23"
                     },
-                    "id": "z?^i",
+                    "id": "z%3F%5Ei",
                     "type": "date"
                 },
                 "Name": {
@@ -4302,7 +5790,7 @@
                     "type": "title"
                 },
                 "Status": {
-                    "id": "c};a",
+                    "id": "c%7D%3Ba",
                     "multi_select": [
                         {
                             "color": "red",
@@ -4314,1294 +5802,6 @@
                 }
             },
             "url": "https://www.notion.so/COMP472-Presentation-3722d5bd9aaf4e0e83a70afc112c6c8f"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-05-12T16:28:00.000Z",
-            "id": "d5b06d26-f154-47d0-9d38-a15de03af0d4",
-            "last_edited_time": "2021-06-22T21:12:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-06-23"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "COMP472 Assignment2",
-                            "text": {
-                                "content": "COMP472 Assignment2",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/COMP472-Assignment2-d5b06d26f15447d09d38a15de03af0d4"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-05-12T16:27:00.000Z",
-            "id": "3ddb6731-d70c-4038-9b30-15190d7b8d73",
-            "last_edited_time": "2021-05-27T01:27:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-05-26"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "COMP472 QUIZ1",
-                            "text": {
-                                "content": "COMP472 QUIZ1",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/COMP472-QUIZ1-3ddb6731d70c40389b3015190d7b8d73"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-05-12T16:26:00.000Z",
-            "id": "a6852fd9-0596-46ab-b100-97fc09244f76",
-            "last_edited_time": "2021-06-07T05:11:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-06-06"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "COMP472 Assignment1",
-                            "text": {
-                                "content": "COMP472 Assignment1",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/COMP472-Assignment1-a6852fd9059646abb10097fc09244f76"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-05-12T16:24:00.000Z",
-            "id": "833c9541-0535-4f1e-81bb-b804179455e4",
-            "last_edited_time": "2021-06-02T03:43:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-06-01"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "COEN422 Assignment2",
-                            "text": {
-                                "content": "COEN422 Assignment2",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/COEN422-Assignment2-833c954105354f1e81bbb804179455e4"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-05-12T16:24:00.000Z",
-            "id": "fb5be69a-fe85-4dd1-861c-af04c3f0357b",
-            "last_edited_time": "2021-06-09T00:05:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-06-08"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "COEN422 Assignment3",
-                            "text": {
-                                "content": "COEN422 Assignment3",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/COEN422-Assignment3-fb5be69afe854dd1861caf04c3f0357b"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-05-12T16:24:00.000Z",
-            "id": "e4cff90d-a7df-4a9f-a65e-933684a56a71",
-            "last_edited_time": "2021-06-25T03:45:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-06-24"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "COEN422 Assignment5",
-                            "text": {
-                                "content": "COEN422 Assignment5",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/COEN422-Assignment5-e4cff90da7df4a9fa65e933684a56a71"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-05-12T16:24:00.000Z",
-            "id": "15400fe0-9806-4751-8cbc-142f65aa5d66",
-            "last_edited_time": "2021-06-15T03:48:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-06-15"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "COEN422 Assignment4",
-                            "text": {
-                                "content": "COEN422 Assignment4",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/COEN422-Assignment4-15400fe0980647518cbc142f65aa5d66"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-05-12T16:23:00.000Z",
-            "id": "53a50f8a-559b-4e3e-912b-b644ad137b15",
-            "last_edited_time": "2021-05-24T21:24:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-05-25"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "COEN422 Assignment1",
-                            "text": {
-                                "content": "COEN422 Assignment1",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/COEN422-Assignment1-53a50f8a559b4e3e912bb644ad137b15"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-05-11T16:07:00.000Z",
-            "id": "cc81f704-3c2f-4a0d-b40d-519ab82dcac0",
-            "last_edited_time": "2021-06-04T13:27:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-06-03"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "COEN422 MIDTERM",
-                            "text": {
-                                "content": "COEN422 MIDTERM",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/COEN422-MIDTERM-cc81f7043c2f4a0db40d519ab82dcac0"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-05-10T03:39:00.000Z",
-            "id": "c5f1fcf9-9812-49ee-9a4d-5cdfc0866372",
-            "last_edited_time": "2021-06-08T19:30:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-05-27T12:00:00.000-04:00"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "Virtual Coop event",
-                            "text": {
-                                "content": "Virtual Coop event",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "purple",
-                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
-                            "name": "Daily"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/Virtual-Coop-event-c5f1fcf9981249ee9a4d5cdfc0866372"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-04-30T17:04:00.000Z",
-            "id": "2682f233-e156-4ce1-a544-497b62931b7f",
-            "last_edited_time": "2021-05-03T05:23:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-05-02"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "0_Daily_TODO",
-                            "text": {
-                                "content": "0_Daily_TODO",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "purple",
-                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
-                            "name": "Daily"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/0_Daily_TODO-2682f233e1564ce1a544497b62931b7f"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-04-29T04:40:00.000Z",
-            "id": "b885a30f-0294-4068-a4a5-7684daa054ed",
-            "last_edited_time": "2021-05-21T04:31:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-04-29"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "Learning JAVA basic",
-                            "text": {
-                                "content": "Learning JAVA basic",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "orange",
-                            "id": "824493ac-c72c-4b0a-a76d-698ae24a0fef",
-                            "name": "Learning_Plan"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/Learning-JAVA-basic-b885a30f02944068a4a57684daa054ed"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-04-27T14:44:00.000Z",
-            "id": "30d1799e-b6c4-4bcf-b6b3-8e2bc3387682",
-            "last_edited_time": "2021-07-11T19:18:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-07-10"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "Check_list",
-                            "text": {
-                                "content": "Check_list",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "blue",
-                            "id": "b827d299-7e8a-4cba-b0aa-528ac1b9a3f1",
-                            "name": "CheckList"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/Check_list-30d1799eb6c44bcfb6b38e2bc3387682"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-04-27T14:23:00.000Z",
-            "id": "72d610b6-f493-4184-9e4e-37ffa9d90433",
-            "last_edited_time": "2021-04-27T14:24:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-04-22"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "Check_list",
-                            "text": {
-                                "content": "Check_list",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "blue",
-                            "id": "b827d299-7e8a-4cba-b0aa-528ac1b9a3f1",
-                            "name": "CheckList"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/Check_list-72d610b6f49341849e4e37ffa9d90433"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-04-26T17:50:00.000Z",
-            "id": "42a9be3c-9c67-42b6-a2d4-3988d3b7c45d",
-            "last_edited_time": "2021-05-25T05:45:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": "2021-04-27T12:00:00.000-04:00",
-                        "start": "2021-04-27T11:30:00.000-04:00"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "Maria meeting",
-                            "text": {
-                                "content": "Maria meeting",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/Maria-meeting-42a9be3c9c6742b6a2d43988d3b7c45d"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-04-26T03:11:00.000Z",
-            "id": "10c504c5-1ab3-4cc0-9f3f-1857fe3263b1",
-            "last_edited_time": "2021-04-29T21:36:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-04-29"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "0_Daily_TODO",
-                            "text": {
-                                "content": "0_Daily_TODO",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "purple",
-                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
-                            "name": "Daily"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/0_Daily_TODO-10c504c51ab34cc09f3f1857fe3263b1"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-04-26T03:07:00.000Z",
-            "id": "c7f5903b-c38c-40cc-8712-885da9915d6d",
-            "last_edited_time": "2021-06-08T19:30:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-04-26"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "0_Daily_TODO",
-                            "text": {
-                                "content": "0_Daily_TODO",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "purple",
-                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
-                            "name": "Daily"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/0_Daily_TODO-c7f5903bc38c40cc8712885da9915d6d"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-04-24T19:38:00.000Z",
-            "id": "19d30ebc-4e87-4200-895d-f186b71d7076",
-            "last_edited_time": "2021-04-25T05:45:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-04-24"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "0_Daily_TODO",
-                            "text": {
-                                "content": "0_Daily_TODO",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "purple",
-                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
-                            "name": "Daily"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/0_Daily_TODO-19d30ebc4e874200895df186b71d7076"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-04-24T04:01:00.000Z",
-            "id": "1a60bf36-5802-48e8-a33c-a97ed3af1626",
-            "last_edited_time": "2021-07-07T17:28:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-07-06T10:00:00.000-04:00"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "ISO work permit drop in",
-                            "text": {
-                                "content": "ISO work permit drop in",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/ISO-work-permit-drop-in-1a60bf36580248e8a33ca97ed3af1626"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-04-24T03:58:00.000Z",
-            "id": "430c99ad-642e-4b39-8bbc-327f6f1a8786",
-            "last_edited_time": "2021-07-07T16:03:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-07-07"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "Post-graduation work permit EVENT",
-                            "text": {
-                                "content": "Post-graduation work permit EVENT",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/Post-graduation-work-permit-EVENT-430c99ad642e4b398bbc327f6f1a8786"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-04-24T02:36:00.000Z",
-            "id": "0cca792f-da73-48a1-b855-5cf2462ce344",
-            "last_edited_time": "2021-04-26T03:15:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-04-25"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "0_Daily_TODO",
-                            "text": {
-                                "content": "0_Daily_TODO",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "purple",
-                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
-                            "name": "Daily"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/0_Daily_TODO-0cca792fda7348a1b8555cf2462ce344"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-04-20T00:12:00.000Z",
-            "id": "4761788b-1e72-4bfe-9c07-867efbef5622",
-            "last_edited_time": "2021-04-24T04:24:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-04-23"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "0_Daily_TODO",
-                            "text": {
-                                "content": "0_Daily_TODO",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "purple",
-                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
-                            "name": "Daily"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/0_Daily_TODO-4761788b1e724bfe9c07867efbef5622"
-        },
-        {
-            "archived": false,
-            "created_time": "2021-04-17T03:40:00.000Z",
-            "id": "f6c70edf-12ba-4e57-8286-5982045598a7",
-            "last_edited_time": "2021-04-28T04:58:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-04-28"
-                    },
-                    "id": "z?^i",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "Check_list",
-                            "text": {
-                                "content": "Check_list",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c};a",
-                    "multi_select": [
-                        {
-                            "color": "blue",
-                            "id": "b827d299-7e8a-4cba-b0aa-528ac1b9a3f1",
-                            "name": "CheckList"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/Check_list-f6c70edf12ba4e5782865982045598a7"
         }
     ]
 }

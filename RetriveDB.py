@@ -17,7 +17,7 @@ class DatabaseController:
         self.headers = {
             "Authorization": "Bearer " + self.token,
             "Content-Type": "application/json",
-            "Notion-Version": "2021-07-27"
+            "Notion-Version": "2021-08-16"
         }
 
     # read the entire database and load it into json format
@@ -102,8 +102,8 @@ class DatabaseController:
 
 
 
-# db = DatabaseController()
-# db.readDatabase()
+db = DatabaseController()
+db.readDatabase()
 # readPage(page_id, headers)
 # readBlock(page_id, headers)
 # readBlockChildren(page_id, headers)

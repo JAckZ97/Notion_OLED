@@ -8,7 +8,6 @@ from PIL import ImageFont
 
 import subprocess
 import RPi.GPIO as GPIO
-import time
 from datetime import datetime, timedelta
 
 from RetriveDB import DatabaseController
@@ -72,28 +71,6 @@ db = DatabaseController()
 js = JsonFileController()
 
 
-# while True:
-# 	if GPIO.input(5) == False and GPIO.input(26) == False:
-# 		print("Button_5 pressed")
-# 		time.sleep(1)
-# 	elif GPIO.input(16) == False:
-# 		print("Reset Button pressed")
-# 		time.sleep(1)	
-# 	elif GPIO.input(17) == False:
-# 		print("Button_1 pressed")
-# 		time.sleep(1)
-
-# 	elif GPIO.input(5) == False:
-# 		print("Button_2 pressed")
-# 		time.sleep(1)
-
-# 	elif GPIO.input(26) == False:
-# 		print("Button_3 pressed")
-# 		time.sleep(1)
-
-# 	else:
-# 		continue
-
 dayCount = 0
 toggleCount = 0
 text_list = ["", "", "", "", "", "", "", ""]
@@ -119,6 +96,119 @@ while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0,0,width,height), outline=0, fill=0)
 
+    # button for reset local database
+    if GPIO.input(16) == False:
+        # Write two lines of text.
+        draw.text((x, top), 	"Resetting!", font = font, fill = 255)
+        draw.text((x, top+9),	"", font = font, fill = 255)
+        draw.text((x, top+17),	"", font = font, fill = 255)
+        draw.text((x, top+25),	"", font = font, fill = 255)
+        draw.text((x, top+33),	"", font = font, fill = 255)
+        draw.text((x, top+41),	"", font = font, fill = 255)
+        draw.text((x, top+49),	"", font = font, fill = 255)
+        draw.text((x, top+57),	"", font = font, fill = 255)
+
+        # Display image.
+        disp.image(image)
+        disp.display()
+        time.sleep(0.1)
+
+        db.readDatabase()
+        time.sleep(0.1)
+        js.resetBlockContent()
+        time.sleep(0.1)
+
+    # button for picking tasks by "->"
+    if GPIO.input(5) == False:
+        if dayCount == 1:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(today_str)
+        elif dayCount == 2:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(yesterday_str)
+        elif dayCount == 3:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(the_day_before_yesterday_str)
+        elif dayCount == 4:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(the_day_after_tomorrow_str)
+        elif dayCount == 0:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(tomorrow_str)
+        else:
+            continue
+
+        # print(dayCount)
+        # print("list %d" %len(page_list))
+        print(toggleCount)
+        if toggleCount < len(page_list) and toggleCount == 0:
+            toggle_list[0] = "-> "
+            toggle_list[1] = ""
+            toggle_list[2] = ""
+            toggle_list[3] = ""
+            toggle_list[4] = ""
+            toggle_list[5] = ""
+            toggleCount += 1
+            time.sleep(0.1)
+
+        elif toggleCount < len(page_list) and toggleCount == 1:
+            toggle_list[0] = ""
+            toggle_list[1] = "-> "
+            toggle_list[2] = ""
+            toggle_list[3] = ""
+            toggle_list[4] = ""
+            toggle_list[5] = ""
+            toggleCount += 1
+            time.sleep(0.1)
+
+        elif toggleCount < len(page_list) and toggleCount == 2:
+            toggle_list[0] = ""
+            toggle_list[1] = ""
+            toggle_list[2] = "-> "
+            toggle_list[3] = ""
+            toggle_list[4] = ""
+            toggle_list[5] = ""
+            toggleCount += 1
+            time.sleep(0.1)
+
+        elif toggleCount < len(page_list) and toggleCount == 3:
+            toggle_list[0] = ""
+            toggle_list[1] = ""
+            toggle_list[2] = ""
+            toggle_list[3] = "-> "
+            toggle_list[4] = ""
+            toggle_list[5] = ""
+            toggleCount += 1
+            time.sleep(0.1)
+
+        elif toggleCount < len(page_list) and toggleCount == 4:
+            toggle_list[0] = ""
+            toggle_list[1] = ""
+            toggle_list[2] = ""
+            toggle_list[3] = ""
+            toggle_list[4] = "-> "
+            toggle_list[5] = ""
+            toggleCount += 1
+            time.sleep(0.1)
+
+        elif toggleCount < len(page_list) and toggleCount == 5:
+            toggle_list[0] = ""
+            toggle_list[1] = ""
+            toggle_list[2] = ""
+            toggle_list[3] = ""
+            toggle_list[4] = ""
+            toggle_list[5] = "-> "
+            toggleCount = 0
+            time.sleep(0.1)
+
+        elif toggleCount >= len(page_list):
+            toggle_list[0] = "-> "
+            toggle_list[1] = ""
+            toggle_list[2] = ""
+            toggle_list[3] = ""
+            toggle_list[4] = ""
+            toggle_list[5] = ""
+            toggleCount = 1
+            time.sleep(0.1)
+        else:
+            continue
+
+    # button for switching days
     if GPIO.input(26) == False:
         if dayCount == 0:
             text_list[0] = js.getTodayDate()
@@ -155,7 +245,7 @@ while True:
 
         elif dayCount == 3:
             text_list[0] = js.getTheDayAfterTmrDate()
-            page_list, children_list = js.getPageNameListWithChildrenStatus(tomorrow_str)
+            page_list, children_list = js.getPageNameListWithChildrenStatus(the_day_after_tomorrow_str)
             for num in range(0, len(page_list)):
                 text_list[num+2] = page_list[num]
             
@@ -166,7 +256,7 @@ while True:
 
         elif dayCount == 4:
             text_list[0] = js.getTmrDate()
-            page_list, children_list = js.getPageNameListWithChildrenStatus(the_day_after_tomorrow_str)
+            page_list, children_list = js.getPageNameListWithChildrenStatus(tomorrow_str)
             for num in range(0, len(page_list)):
                 text_list[num+2] = page_list[num]
             
@@ -177,77 +267,6 @@ while True:
         else:
             continue
 
-    if GPIO.input(16) == False:
-        db.readDatabase()
-        time.sleep(0.1)
-        print("1")
-        #js.resetBlockContent()
-        #time.sleep(0.1)
-
-    if GPIO.input(5) == False:
-        if toggleCount == 0:
-            toggle_list[0] = "-> "
-            toggle_list[1] = ""
-            toggle_list[2] = ""
-            toggle_list[3] = ""
-            toggle_list[4] = ""
-            toggle_list[5] = ""
-            toggleCount += 1
-            time.sleep(0.1)
-
-        elif toggleCount == 1:
-            toggle_list[0] = ""
-            toggle_list[1] = "-> "
-            toggle_list[2] = ""
-            toggle_list[3] = ""
-            toggle_list[4] = ""
-            toggle_list[5] = ""
-            toggleCount += 1
-            time.sleep(0.1)
-
-        elif toggleCount == 2:
-            toggle_list[0] = ""
-            toggle_list[1] = ""
-            toggle_list[2] = "-> "
-            toggle_list[3] = ""
-            toggle_list[4] = ""
-            toggle_list[5] = ""
-            toggleCount += 1
-            time.sleep(0.1)
-
-        elif toggleCount == 3:
-            toggle_list[0] = ""
-            toggle_list[1] = ""
-            toggle_list[2] = ""
-            toggle_list[3] = "-> "
-            toggle_list[4] = ""
-            toggle_list[5] = ""
-            toggleCount += 1
-            time.sleep(0.1)
-
-        elif toggleCount == 4:
-            toggle_list[0] = ""
-            toggle_list[1] = ""
-            toggle_list[2] = ""
-            toggle_list[3] = ""
-            toggle_list[4] = "-> "
-            toggle_list[5] = ""
-            toggleCount += 1
-            time.sleep(0.1)
-
-        elif toggleCount == 5:
-            toggle_list[0] = ""
-            toggle_list[1] = ""
-            toggle_list[2] = ""
-            toggle_list[3] = ""
-            toggle_list[4] = ""
-            toggle_list[5] = "-> "
-            toggleCount = 0
-            time.sleep(0.1)
-        else:
-            continue
-
-        time.sleep(0.1)
 
     # Write two lines of text.
     draw.text((x, top), 	text_list[0], font = font, fill = 255)

@@ -159,9 +159,9 @@ class JsonFileController:
     def resetBlockContent(self):
         # fetch the newest data into json file
         self.generateBlocksFile()
-        time.sleep(1)
+        time.sleep(.1)
         self.generateBlocksChildren()
-        time.sleep(1)
+        time.sleep(.1)
 
 
     # get page name list by date

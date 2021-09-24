@@ -1,8 +1,66 @@
 {
     "has_more": true,
-    "next_cursor": "d5b06d26-f154-47d0-9d38-a15de03af0d4",
+    "next_cursor": "3722d5bd-9aaf-4e0e-83a7-0afc112c6c8f",
     "object": "list",
     "results": [
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-24T17:39:00.000Z",
+            "icon": null,
+            "id": "a2739b1d-59e5-486a-b66b-8aa37ce69a6b",
+            "last_edited_time": "2021-09-24T17:39:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-10-23"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Thon clothes",
+                            "text": {
+                                "content": "Thon clothes",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "green",
+                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
+                            "name": "Incomplete"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Thon-clothes-a2739b1d59e5486ab66b8aa37ce69a6b"
+        },
         {
             "archived": false,
             "cover": null,
@@ -5744,64 +5802,6 @@
                 }
             },
             "url": "https://www.notion.so/COMP472-QUIZ2-acc7161507184af8a5d3b766fad6cf51"
-        },
-        {
-            "archived": false,
-            "cover": null,
-            "created_time": "2021-05-12T16:28:00.000Z",
-            "icon": null,
-            "id": "3722d5bd-9aaf-4e0e-83a7-0afc112c6c8f",
-            "last_edited_time": "2021-06-23T19:52:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-06-23"
-                    },
-                    "id": "z%3F%5Ei",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "COMP472 Presentation",
-                            "text": {
-                                "content": "COMP472 Presentation",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c%7D%3Ba",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/COMP472-Presentation-3722d5bd9aaf4e0e83a70afc112c6c8f"
         }
     ]
 }

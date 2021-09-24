@@ -73,8 +73,12 @@ js = JsonFileController()
 
 dayCount = 0
 toggleCount = 0
+toggleInsideCount = 0
 text_list = ["", "", "", "", "", "", "", ""]
 toggle_list = ["", "", "", "", "", ""]
+toggle_inside_list = ["", "", "", "", "", ""]
+bracket_list = ["", "", "", "", "", ""]
+content_list = ["", "", "", "", "", ""]
 
 # find the date today, yesterday, tomorrow, etc.
 today = datetime.now()
@@ -119,9 +123,55 @@ while True:
         time.sleep(0.1)
 
     # button for confiming selections
-    if GPIO.input(5) == False:
-        pass
+    if GPIO.input(17) == False:
+        if dayCount == 1:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(today_str)
+            time = js.getTodayDate()
+        elif dayCount == 2:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(yesterday_str)
+            time = js.getYesterdayDate()
+        elif dayCount == 3:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(the_day_before_yesterday_str)
+            time = js.getTheDayBeforeYesterdayDate()
+        elif dayCount == 4:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(the_day_after_tomorrow_str)
+            time = js.getTheDayAfterTmrDate()
+        elif dayCount == 0:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(tomorrow_str)
+            time = js.getTmrDate()
+        else:
+            continue
+        
+        if children_list[toggleCount] = False:
+            continue
+        elif children_list[toggleCount] = True:
+            # task has children
+            while True:
+                if GPIO.input(17) == False:
+                    pass
+                
+                if GPIO.input(5) == False:
+                    pass
+                
+                if GPIO.input(26) == False:
+                    break
+                
+                
+                # Write two lines of text.
+                draw.text((x, top), 	text_list[0], font = font, fill = 255)
+                draw.text((x, top+9),	text_list[1], font = font, fill = 255)
+                draw.text((x, top+17),	toggle_list[0] + text_list[2], font = font, fill = 255)
+                draw.text((x, top+25),	toggle_list[1] + text_list[3], font = font, fill = 255)
+                draw.text((x, top+33),	toggle_list[2] + text_list[4], font = font, fill = 255)
+                draw.text((x, top+41),	toggle_list[3] + text_list[5], font = font, fill = 255)
+                draw.text((x, top+49),	toggle_list[4] + text_list[6], font = font, fill = 255)
+                draw.text((x, top+57),	toggle_list[5] + text_list[7], font = font, fill = 255)
 
+                # Display image.
+                disp.image(image)
+                disp.display()
+                time.sleep(.1)
+                
     # button for picking tasks by "->"
     if GPIO.input(5) == False:
         if dayCount == 1:
@@ -139,7 +189,7 @@ while True:
 
         # print(dayCount)
         # print("list %d" %len(page_list))
-        print(toggleCount)
+        # print(toggleCount)
 
         if toggleCount < len(page_list) and toggleCount == 0:
             toggle_list[0] = "-> "

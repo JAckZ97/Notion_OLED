@@ -78,7 +78,7 @@ text_list = ["", "", "", "", "", "", "", ""]
 toggle_list = ["", "", "", "", "", ""]
 toggle_inside_list = ["", "", "", "", "", ""]
 bracket_list = ["", "", "", "", "", ""]
-content_list = ["", "", "", "", "", ""]
+content_list = ["", "", "", "", "", "", "", ""]
 
 # find the date today, yesterday, tomorrow, etc.
 today = datetime.now()
@@ -93,8 +93,6 @@ the_day_before_yesterday_str = datetime.strftime(the_day_before_yesterday, '%Y-%
 tomorrow_str = datetime.strftime(tomorrow, '%Y-%m-%d')
 the_day_after_tomorrow_str = datetime.strftime(the_day_after_tomorrow, '%Y-%m-%d')
 
-
-# print(today_str)
 
 while True:
     # Draw a black filled box to clear the image.
@@ -142,11 +140,20 @@ while True:
         else:
             continue
         
-        if children_list[toggleCount] = False:
+        if children_list[toggleCount] == False:
             continue
-        elif children_list[toggleCount] = True:
-            # task has children
+        # task has children
+        elif children_list[toggleCount] == True:
+            # get the children list
+            task_list = js.getChildrenName(time, page_list(toggleCount), True)
+
             while True:
+                for item in range(0, len(task_list)):
+                    if task_list[item][1] == True:
+                        bracket_list[item] = "[x]"
+                    elif task_list[item][1] == False:
+                        bracket_list[item] = "[ ]"
+                
                 if GPIO.input(17) == False:
                     pass
                 
@@ -158,14 +165,14 @@ while True:
                 
                 
                 # Write two lines of text.
-                draw.text((x, top), 	text_list[0], font = font, fill = 255)
-                draw.text((x, top+9),	text_list[1], font = font, fill = 255)
-                draw.text((x, top+17),	toggle_list[0] + text_list[2], font = font, fill = 255)
-                draw.text((x, top+25),	toggle_list[1] + text_list[3], font = font, fill = 255)
-                draw.text((x, top+33),	toggle_list[2] + text_list[4], font = font, fill = 255)
-                draw.text((x, top+41),	toggle_list[3] + text_list[5], font = font, fill = 255)
-                draw.text((x, top+49),	toggle_list[4] + text_list[6], font = font, fill = 255)
-                draw.text((x, top+57),	toggle_list[5] + text_list[7], font = font, fill = 255)
+                draw.text((x, top), 	content_list[0], font = font, fill = 255)
+                draw.text((x, top+9),	content_list[1], font = font, fill = 255)
+                draw.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)
+                draw.text((x, top+25),	toggle_inside_list[1] + bracket_list[1] + content_list[3], font = font, fill = 255)
+                draw.text((x, top+33),	toggle_inside_list[2] + bracket_list[2] + content_list[4], font = font, fill = 255)
+                draw.text((x, top+41),	toggle_inside_list[3] + bracket_list[3] + content_list[5], font = font, fill = 255)
+                draw.text((x, top+49),	toggle_inside_list[4] + bracket_list[4] + content_list[6], font = font, fill = 255)
+                draw.text((x, top+57),	toggle_inside_list[5] + bracket_list[5] + content_list[7], font = font, fill = 255)
 
                 # Display image.
                 disp.image(image)

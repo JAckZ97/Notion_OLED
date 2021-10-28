@@ -120,7 +120,7 @@ while True:
         js.resetBlockContent()
         time.sleep(0.1)
 
-    # button for confiming selections
+    # button for confirming selections
     if GPIO.input(17) == False:
         if dayCount == 1:
             page_list, children_list = js.getPageNameListWithChildrenStatus(today_str)
@@ -198,7 +198,19 @@ while True:
         # print("list %d" %len(page_list))
         # print(toggleCount)
 
-        if toggleCount < len(page_list) and toggleCount == 0:
+        if len(children_list) == 0:
+            toggle_list[0] = "No task..."
+            toggle_list[1] = ""
+            toggle_list[2] = ""
+            toggle_list[3] = ""
+            toggle_list[4] = ""
+            toggle_list[5] = ""
+            
+            if toggleCount >= len(page_list):
+                toggleCount = 0
+            time.sleep(0.1)
+        
+        elif toggleCount < len(page_list) and toggleCount == 0:
             toggle_list[0] = "-> "
             toggle_list[1] = ""
             toggle_list[2] = ""
@@ -297,12 +309,20 @@ while True:
                 text_list[empty+2] = ""
             dayCount += 1
             toggleCount = 0
-            toggle_list[0] = "-> "
-            toggle_list[1] = ""
-            toggle_list[2] = ""
-            toggle_list[3] = ""
-            toggle_list[4] = ""
-            toggle_list[5] = ""
+            if len(children_list) == 0:
+                toggle_list[0] = "No task..."
+                toggle_list[1] = ""
+                toggle_list[2] = ""
+                toggle_list[3] = ""
+                toggle_list[4] = ""
+                toggle_list[5] = ""
+            else:
+                toggle_list[0] = "-> "
+                toggle_list[1] = ""
+                toggle_list[2] = ""
+                toggle_list[3] = ""
+                toggle_list[4] = ""
+                toggle_list[5] = ""
             time.sleep(0.1)
 
         elif dayCount == 1:
@@ -315,12 +335,20 @@ while True:
                 text_list[empty+2] = ""
             dayCount += 1
             toggleCount = 0
-            toggle_list[0] = "-> "
-            toggle_list[1] = ""
-            toggle_list[2] = ""
-            toggle_list[3] = ""
-            toggle_list[4] = ""
-            toggle_list[5] = ""
+            if len(children_list) == 0:
+                toggle_list[0] = "No task..."
+                toggle_list[1] = ""
+                toggle_list[2] = ""
+                toggle_list[3] = ""
+                toggle_list[4] = ""
+                toggle_list[5] = ""
+            else:
+                toggle_list[0] = "-> "
+                toggle_list[1] = ""
+                toggle_list[2] = ""
+                toggle_list[3] = ""
+                toggle_list[4] = ""
+                toggle_list[5] = ""
             time.sleep(0.1)
 
         elif dayCount == 2:
@@ -333,12 +361,20 @@ while True:
                 text_list[empty+2] = ""
             dayCount += 1
             toggleCount = 0
-            toggle_list[0] = "-> "
-            toggle_list[1] = ""
-            toggle_list[2] = ""
-            toggle_list[3] = ""
-            toggle_list[4] = ""
-            toggle_list[5] = ""
+            if len(children_list) == 0:
+                toggle_list[0] = "No task..."
+                toggle_list[1] = ""
+                toggle_list[2] = ""
+                toggle_list[3] = ""
+                toggle_list[4] = ""
+                toggle_list[5] = ""
+            else:
+                toggle_list[0] = "-> "
+                toggle_list[1] = ""
+                toggle_list[2] = ""
+                toggle_list[3] = ""
+                toggle_list[4] = ""
+                toggle_list[5] = ""
             time.sleep(0.1)
 
         elif dayCount == 3:
@@ -351,12 +387,20 @@ while True:
                 text_list[empty+2] = ""
             dayCount += 1
             toggleCount = 0
-            toggle_list[0] = "-> "
-            toggle_list[1] = ""
-            toggle_list[2] = ""
-            toggle_list[3] = ""
-            toggle_list[4] = ""
-            toggle_list[5] = ""
+            if len(children_list) == 0:
+                toggle_list[0] = "No task..."
+                toggle_list[1] = ""
+                toggle_list[2] = ""
+                toggle_list[3] = ""
+                toggle_list[4] = ""
+                toggle_list[5] = ""
+            else:
+                toggle_list[0] = "-> "
+                toggle_list[1] = ""
+                toggle_list[2] = ""
+                toggle_list[3] = ""
+                toggle_list[4] = ""
+                toggle_list[5] = ""
             time.sleep(0.1)
 
         elif dayCount == 4:
@@ -369,12 +413,20 @@ while True:
                 text_list[empty+2] = ""
             dayCount = 0
             toggleCount = 0
-            toggle_list[0] = "-> "
-            toggle_list[1] = ""
-            toggle_list[2] = ""
-            toggle_list[3] = ""
-            toggle_list[4] = ""
-            toggle_list[5] = ""
+            if len(children_list) == 0:
+                toggle_list[0] = "No task..."
+                toggle_list[1] = ""
+                toggle_list[2] = ""
+                toggle_list[3] = ""
+                toggle_list[4] = ""
+                toggle_list[5] = ""
+            else:
+                toggle_list[0] = "-> "
+                toggle_list[1] = ""
+                toggle_list[2] = ""
+                toggle_list[3] = ""
+                toggle_list[4] = ""
+                toggle_list[5] = ""
             time.sleep(0.1)
         else:
             continue

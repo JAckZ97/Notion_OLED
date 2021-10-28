@@ -1,15 +1,769 @@
 {
     "has_more": true,
-    "next_cursor": "3722d5bd-9aaf-4e0e-83a7-0afc112c6c8f",
+    "next_cursor": "b024ef64-cdb0-4abe-b281-fec99edac4a5",
     "object": "list",
     "results": [
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-10-28T18:16:00.000Z",
+            "icon": null,
+            "id": "42dd1c3a-37d5-4ba4-bb79-eab21d447a46",
+            "last_edited_time": "2021-10-28T18:16:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-10-29"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Test",
+                            "text": {
+                                "content": "Test",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "purple",
+                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
+                            "name": "Daily"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Test-42dd1c3a37d54ba4bb79eab21d447a46"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-10-13T00:14:00.000Z",
+            "icon": null,
+            "id": "1ea81570-5042-4dd7-81ae-7d910f74fc2b",
+            "last_edited_time": "2021-10-13T00:15:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-12-16"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Driving class M11",
+                            "text": {
+                                "content": "Driving class M11",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "purple",
+                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
+                            "name": "Daily"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Driving-class-M11-1ea8157050424dd781ae7d910f74fc2b"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-10-13T00:14:00.000Z",
+            "icon": null,
+            "id": "50347fa3-cd0f-42f7-baa4-2b2bd538ed3b",
+            "last_edited_time": "2021-10-13T00:15:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-12-28"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Driving class M12",
+                            "text": {
+                                "content": "Driving class M12",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "purple",
+                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
+                            "name": "Daily"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Driving-class-M12-50347fa3cd0f42f7baa42b2bd538ed3b"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-10-13T00:01:00.000Z",
+            "icon": null,
+            "id": "6eb85f49-3737-4d74-a05b-79540fdea1fc",
+            "last_edited_time": "2021-10-13T00:15:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-11-19"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Driving class M10",
+                            "text": {
+                                "content": "Driving class M10",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "purple",
+                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
+                            "name": "Daily"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Driving-class-M10-6eb85f4937374d74a05b79540fdea1fc"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-10-10T15:49:00.000Z",
+            "icon": null,
+            "id": "8a891c68-1466-4c0c-8a78-57892a8b485e",
+            "last_edited_time": "2021-10-10T15:49:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-11-19"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "In car4",
+                            "text": {
+                                "content": "In car4",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "green",
+                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
+                            "name": "Incomplete"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/In-car4-8a891c6814664c0c8a7857892a8b485e"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-10-10T15:48:00.000Z",
+            "icon": null,
+            "id": "69e6557f-66d4-41c9-8ed8-0a5b38d42929",
+            "last_edited_time": "2021-10-13T00:41:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-11-15"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "In car3",
+                            "text": {
+                                "content": "In car3",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "green",
+                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
+                            "name": "Incomplete"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/In-car3-69e6557f66d441c98ed80a5b38d42929"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-10-05T03:36:00.000Z",
+            "icon": null,
+            "id": "016c61b6-1d6b-4afb-8856-eb65d200e904",
+            "last_edited_time": "2021-10-05T17:26:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-10-05"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "TODO",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "purple",
+                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
+                            "name": "Daily"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/TODO-016c61b61d6b4afb8856eb65d200e904"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-10-01T17:04:00.000Z",
+            "icon": null,
+            "id": "343f0beb-3cde-4d02-a9e2-9a2a758ec2eb",
+            "last_edited_time": "2021-10-03T19:44:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-10-01"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Shopping list",
+                            "text": {
+                                "content": "Shopping list",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "blue",
+                            "id": "b827d299-7e8a-4cba-b0aa-528ac1b9a3f1",
+                            "name": "CheckList"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Shopping-list-343f0beb3cde4d02a9e29a2a758ec2eb"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-30T05:08:00.000Z",
+            "icon": null,
+            "id": "db32fe22-3597-40e7-b862-e738eb267cdb",
+            "last_edited_time": "2021-10-20T16:48:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-10-01"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "TODO",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "purple",
+                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
+                            "name": "Daily"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/TODO-db32fe22359740e7b862e738eb267cdb"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-29T19:49:00.000Z",
+            "icon": null,
+            "id": "cc16bf18-b6fc-4599-bc5a-5d637e1a2354",
+            "last_edited_time": "2021-09-30T23:02:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-30"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Clinic",
+                            "text": {
+                                "content": "Clinic",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Clinic-cc16bf18b6fc4599bc5a5d637e1a2354"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-27T01:53:00.000Z",
+            "icon": null,
+            "id": "b0f36aaf-a846-48af-b2c7-18e2b49a60e6",
+            "last_edited_time": "2021-09-28T15:56:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-27"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Apply more jobs",
+                            "text": {
+                                "content": "Apply more jobs",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Apply-more-jobs-b0f36aafa84648afb2c718e2b49a60e6"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-27T00:04:00.000Z",
+            "icon": null,
+            "id": "e963899d-e8b8-479e-aadf-7c6377875771",
+            "last_edited_time": "2021-09-28T19:55:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-09-28"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Bell recuriment",
+                            "text": {
+                                "content": "Bell recuriment",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Bell-recuriment-e963899de8b8479eaadf7c6377875771"
+        },
+        {
+            "archived": false,
+            "cover": null,
+            "created_time": "2021-09-26T23:14:00.000Z",
+            "icon": null,
+            "id": "eb6bbb12-c48a-4b0c-aadb-0a2b33a8295f",
+            "last_edited_time": "2021-09-26T23:24:00.000Z",
+            "object": "page",
+            "parent": {
+                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
+                "type": "database_id"
+            },
+            "properties": {
+                "Date": {
+                    "date": {
+                        "end": null,
+                        "start": "2021-10-03"
+                    },
+                    "id": "z%3F%5Ei",
+                    "type": "date"
+                },
+                "Name": {
+                    "id": "title",
+                    "title": [
+                        {
+                            "annotations": {
+                                "bold": false,
+                                "code": false,
+                                "color": "default",
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false
+                            },
+                            "href": null,
+                            "plain_text": "Ring cenermony",
+                            "text": {
+                                "content": "Ring cenermony",
+                                "link": null
+                            },
+                            "type": "text"
+                        }
+                    ],
+                    "type": "title"
+                },
+                "Status": {
+                    "id": "c%7D%3Ba",
+                    "multi_select": [
+                        {
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
+                        }
+                    ],
+                    "type": "multi_select"
+                }
+            },
+            "url": "https://www.notion.so/Ring-cenermony-eb6bbb12c48a4b0caadb0a2b33a8295f"
+        },
         {
             "archived": false,
             "cover": null,
             "created_time": "2021-09-24T17:39:00.000Z",
             "icon": null,
             "id": "a2739b1d-59e5-486a-b66b-8aa37ce69a6b",
-            "last_edited_time": "2021-09-24T17:39:00.000Z",
+            "last_edited_time": "2021-10-27T22:37:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -51,9 +805,9 @@
                     "id": "c%7D%3Ba",
                     "multi_select": [
                         {
-                            "color": "green",
-                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
-                            "name": "Incomplete"
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
                         }
                     ],
                     "type": "multi_select"
@@ -67,7 +821,7 @@
             "created_time": "2021-09-20T17:26:00.000Z",
             "icon": null,
             "id": "7ec89120-7cb6-48ff-b497-143d1d96f951",
-            "last_edited_time": "2021-09-23T16:58:00.000Z",
+            "last_edited_time": "2021-09-26T05:01:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -109,9 +863,9 @@
                     "id": "c%7D%3Ba",
                     "multi_select": [
                         {
-                            "color": "green",
-                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
-                            "name": "Incomplete"
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
                         }
                     ],
                     "type": "multi_select"
@@ -125,7 +879,7 @@
             "created_time": "2021-09-17T04:44:00.000Z",
             "icon": null,
             "id": "af04f5f9-e787-40bb-b1a2-9f7e564f99f4",
-            "last_edited_time": "2021-09-17T04:44:00.000Z",
+            "last_edited_time": "2021-10-27T22:37:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -135,7 +889,7 @@
                 "Date": {
                     "date": {
                         "end": null,
-                        "start": "2021-09-27"
+                        "start": "2021-11-13"
                     },
                     "id": "z%3F%5Ei",
                     "type": "date"
@@ -183,7 +937,7 @@
             "created_time": "2021-09-17T04:44:00.000Z",
             "icon": null,
             "id": "f054afe7-96ad-49c5-8ed2-a4a324ed838a",
-            "last_edited_time": "2021-09-17T04:44:00.000Z",
+            "last_edited_time": "2021-10-27T22:37:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -193,7 +947,7 @@
                 "Date": {
                     "date": {
                         "end": null,
-                        "start": "2021-09-26"
+                        "start": "2021-11-06"
                     },
                     "id": "z%3F%5Ei",
                     "type": "date"
@@ -241,7 +995,7 @@
             "created_time": "2021-09-17T04:43:00.000Z",
             "icon": null,
             "id": "5ec3e26c-1e71-41d3-9a68-88e0d4ed365e",
-            "last_edited_time": "2021-09-17T04:44:00.000Z",
+            "last_edited_time": "2021-10-27T22:37:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -251,7 +1005,7 @@
                 "Date": {
                     "date": {
                         "end": null,
-                        "start": "2021-09-25"
+                        "start": "2021-10-30"
                     },
                     "id": "z%3F%5Ei",
                     "type": "date"
@@ -357,7 +1111,7 @@
             "created_time": "2021-09-14T03:25:00.000Z",
             "icon": null,
             "id": "0ec534c5-3687-443f-b915-047599c63d99",
-            "last_edited_time": "2021-09-23T16:57:00.000Z",
+            "last_edited_time": "2021-09-27T01:53:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -367,7 +1121,7 @@
                 "Date": {
                     "date": {
                         "end": null,
-                        "start": "2021-09-24"
+                        "start": "2021-09-26"
                     },
                     "id": "z%3F%5Ei",
                     "type": "date"
@@ -473,7 +1227,7 @@
             "created_time": "2021-09-12T04:13:00.000Z",
             "icon": null,
             "id": "a4286348-6e2b-43a6-81f3-7b8a41681a2b",
-            "last_edited_time": "2021-09-12T04:14:00.000Z",
+            "last_edited_time": "2021-10-06T17:51:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -515,9 +1269,9 @@
                     "id": "c%7D%3Ba",
                     "multi_select": [
                         {
-                            "color": "green",
-                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
-                            "name": "Incomplete"
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
                         }
                     ],
                     "type": "multi_select"
@@ -647,7 +1401,7 @@
             "created_time": "2021-09-08T00:01:00.000Z",
             "icon": null,
             "id": "5a1a4fa7-d3e3-4795-8788-59a2c04aa60a",
-            "last_edited_time": "2021-09-16T15:53:00.000Z",
+            "last_edited_time": "2021-09-26T05:00:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -689,9 +1443,9 @@
                     "id": "c%7D%3Ba",
                     "multi_select": [
                         {
-                            "color": "green",
-                            "id": "e2a07864-c0d1-4951-894b-5dc548159556",
-                            "name": "Incomplete"
+                            "color": "red",
+                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
+                            "name": "Finished"
                         }
                     ],
                     "type": "multi_select"
@@ -1517,7 +2271,7 @@
             "created_time": "2021-08-15T03:24:00.000Z",
             "icon": null,
             "id": "43ac9a61-7c70-4ac2-a734-20beffbbb710",
-            "last_edited_time": "2021-08-15T03:25:00.000Z",
+            "last_edited_time": "2021-10-12T23:17:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -1575,7 +2329,7 @@
             "created_time": "2021-08-15T03:24:00.000Z",
             "icon": null,
             "id": "937f207a-7e1a-4f23-abd3-97f9e41d35af",
-            "last_edited_time": "2021-08-15T03:24:00.000Z",
+            "last_edited_time": "2021-09-30T23:02:00.000Z",
             "object": "page",
             "parent": {
                 "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
@@ -5048,760 +5802,6 @@
                 }
             },
             "url": "https://www.notion.so/Check_list_change_address-e4fb9be0aede4c758d307734b475a7f0"
-        },
-        {
-            "archived": false,
-            "cover": null,
-            "created_time": "2021-05-25T05:46:00.000Z",
-            "icon": null,
-            "id": "b024ef64-cdb0-4abe-b281-fec99edac4a5",
-            "last_edited_time": "2021-05-26T16:16:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-05-26"
-                    },
-                    "id": "z%3F%5Ei",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "TODO",
-                            "text": {
-                                "content": "TODO",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c%7D%3Ba",
-                    "multi_select": [
-                        {
-                            "color": "purple",
-                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
-                            "name": "Daily"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/TODO-b024ef64cdb04abeb281fec99edac4a5"
-        },
-        {
-            "archived": false,
-            "cover": null,
-            "created_time": "2021-05-25T02:09:00.000Z",
-            "icon": null,
-            "id": "f08d0d44-d99f-44c6-a949-fadf8e752e41",
-            "last_edited_time": "2021-05-25T02:10:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-05-15"
-                    },
-                    "id": "z%3F%5Ei",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "Check_list",
-                            "text": {
-                                "content": "Check_list",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c%7D%3Ba",
-                    "multi_select": [
-                        {
-                            "color": "blue",
-                            "id": "b827d299-7e8a-4cba-b0aa-528ac1b9a3f1",
-                            "name": "CheckList"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/Check_list-f08d0d44d99f44c6a949fadf8e752e41"
-        },
-        {
-            "archived": false,
-            "cover": null,
-            "created_time": "2021-05-24T05:42:00.000Z",
-            "icon": null,
-            "id": "20778af4-5f09-4945-87d0-e150d3875b4b",
-            "last_edited_time": "2021-05-25T05:46:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-05-24"
-                    },
-                    "id": "z%3F%5Ei",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "TODO",
-                            "text": {
-                                "content": "TODO",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c%7D%3Ba",
-                    "multi_select": [
-                        {
-                            "color": "purple",
-                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
-                            "name": "Daily"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/TODO-20778af45f09494587d0e150d3875b4b"
-        },
-        {
-            "archived": false,
-            "cover": null,
-            "created_time": "2021-05-23T05:08:00.000Z",
-            "icon": null,
-            "id": "07a49858-83ed-4c5c-8b18-7faa5639abe7",
-            "last_edited_time": "2021-05-24T05:42:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-05-23"
-                    },
-                    "id": "z%3F%5Ei",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "TODO",
-                            "text": {
-                                "content": "TODO",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c%7D%3Ba",
-                    "multi_select": [
-                        {
-                            "color": "purple",
-                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
-                            "name": "Daily"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/TODO-07a4985883ed4c5c8b187faa5639abe7"
-        },
-        {
-            "archived": false,
-            "cover": null,
-            "created_time": "2021-05-21T04:29:00.000Z",
-            "icon": null,
-            "id": "2752cab8-8023-48a8-8443-c3d814222022",
-            "last_edited_time": "2021-05-23T05:09:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-05-22"
-                    },
-                    "id": "z%3F%5Ei",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "TODO",
-                            "text": {
-                                "content": "TODO",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c%7D%3Ba",
-                    "multi_select": [
-                        {
-                            "color": "purple",
-                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
-                            "name": "Daily"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/TODO-2752cab8802348a88443c3d814222022"
-        },
-        {
-            "archived": false,
-            "cover": null,
-            "created_time": "2021-05-18T20:09:00.000Z",
-            "icon": null,
-            "id": "2aebaaa5-5603-419a-bdab-3f0c0460d4e1",
-            "last_edited_time": "2021-05-22T14:48:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-05-24"
-                    },
-                    "id": "z%3F%5Ei",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "Last day to Check ECON203 book refund",
-                            "text": {
-                                "content": "Last day to Check ECON203 book refund",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c%7D%3Ba",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/Last-day-to-Check-ECON203-book-refund-2aebaaa55603419abdab3f0c0460d4e1"
-        },
-        {
-            "archived": false,
-            "cover": null,
-            "created_time": "2021-05-17T18:39:00.000Z",
-            "icon": null,
-            "id": "b89e9fe2-b130-4983-8190-6c23a7d505bd",
-            "last_edited_time": "2021-05-21T04:29:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-05-20"
-                    },
-                    "id": "z%3F%5Ei",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "TODO",
-                            "text": {
-                                "content": "TODO",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c%7D%3Ba",
-                    "multi_select": [
-                        {
-                            "color": "purple",
-                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
-                            "name": "Daily"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/TODO-b89e9fe2b130498381906c23a7d505bd"
-        },
-        {
-            "archived": false,
-            "cover": null,
-            "created_time": "2021-05-17T03:40:00.000Z",
-            "icon": null,
-            "id": "cba35a02-bafb-4ee2-92ba-775899cc165b",
-            "last_edited_time": "2021-05-19T16:08:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-05-19T00:00:00.000-04:00"
-                    },
-                    "id": "z%3F%5Ei",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "COMP472 live lecture",
-                            "text": {
-                                "content": "COMP472 live lecture",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c%7D%3Ba",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/COMP472-live-lecture-cba35a02bafb4ee292ba775899cc165b"
-        },
-        {
-            "archived": false,
-            "cover": null,
-            "created_time": "2021-05-15T21:12:00.000Z",
-            "icon": null,
-            "id": "16d66b7b-daba-4d67-8c08-87193791125c",
-            "last_edited_time": "2021-06-14T20:16:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-06-14T00:20:00.000-04:00"
-                    },
-                    "id": "z%3F%5Ei",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "Vaccines covid",
-                            "text": {
-                                "content": "Vaccines covid",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c%7D%3Ba",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/Vaccines-covid-16d66b7bdaba4d678c0887193791125c"
-        },
-        {
-            "archived": false,
-            "cover": null,
-            "created_time": "2021-05-14T15:48:00.000Z",
-            "icon": null,
-            "id": "29ab78d1-7446-460f-b482-b27db594bfce",
-            "last_edited_time": "2021-05-17T03:25:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-05-14"
-                    },
-                    "id": "z%3F%5Ei",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "TODO",
-                            "text": {
-                                "content": "TODO",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c%7D%3Ba",
-                    "multi_select": [
-                        {
-                            "color": "purple",
-                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
-                            "name": "Daily"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/TODO-29ab78d17446460fb482b27db594bfce"
-        },
-        {
-            "archived": false,
-            "cover": null,
-            "created_time": "2021-05-14T00:00:00.000Z",
-            "icon": null,
-            "id": "474ade5d-8385-49f5-a4ba-d5c577237bac",
-            "last_edited_time": "2021-05-14T03:40:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-05-13"
-                    },
-                    "id": "z%3F%5Ei",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "TODO",
-                            "text": {
-                                "content": "TODO",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c%7D%3Ba",
-                    "multi_select": [
-                        {
-                            "color": "purple",
-                            "id": "8ca37837-fa14-44a6-be1a-75846e388859",
-                            "name": "Daily"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/TODO-474ade5d838549f5a4bad5c577237bac"
-        },
-        {
-            "archived": false,
-            "cover": null,
-            "created_time": "2021-05-12T16:29:00.000Z",
-            "icon": null,
-            "id": "4d7a22be-2d22-41d8-af37-4ab2864818e9",
-            "last_edited_time": "2021-06-22T05:07:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-06-21"
-                    },
-                    "id": "z%3F%5Ei",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "COMP472 QUIZ3",
-                            "text": {
-                                "content": "COMP472 QUIZ3",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c%7D%3Ba",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/COMP472-QUIZ3-4d7a22be2d2241d8af374ab2864818e9"
-        },
-        {
-            "archived": false,
-            "cover": null,
-            "created_time": "2021-05-12T16:29:00.000Z",
-            "icon": null,
-            "id": "acc71615-0718-4af8-a5d3-b766fad6cf51",
-            "last_edited_time": "2021-06-09T22:50:00.000Z",
-            "object": "page",
-            "parent": {
-                "database_id": "9bc98e7c-ba3a-4653-9d9c-bc211088783a",
-                "type": "database_id"
-            },
-            "properties": {
-                "Date": {
-                    "date": {
-                        "end": null,
-                        "start": "2021-06-09"
-                    },
-                    "id": "z%3F%5Ei",
-                    "type": "date"
-                },
-                "Name": {
-                    "id": "title",
-                    "title": [
-                        {
-                            "annotations": {
-                                "bold": false,
-                                "code": false,
-                                "color": "default",
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false
-                            },
-                            "href": null,
-                            "plain_text": "COMP472 QUIZ2",
-                            "text": {
-                                "content": "COMP472 QUIZ2",
-                                "link": null
-                            },
-                            "type": "text"
-                        }
-                    ],
-                    "type": "title"
-                },
-                "Status": {
-                    "id": "c%7D%3Ba",
-                    "multi_select": [
-                        {
-                            "color": "red",
-                            "id": "bc8907ab-85a7-41a4-b936-8153e42c00d2",
-                            "name": "Finished"
-                        }
-                    ],
-                    "type": "multi_select"
-                }
-            },
-            "url": "https://www.notion.so/COMP472-QUIZ2-acc7161507184af8a5d3b766fad6cf51"
         }
     ]
 }

@@ -141,13 +141,16 @@ while True:
             continue
 
         try:
-            print("t1" + str(toggleCount))
             if children_list[toggleCount] == False:
                 continue
             # task has children
             elif children_list[toggleCount] == True:
+                if toggleCount < len(page_list)
+                    toggleCount -= 1
+                    if toggleCount == -1:
+                        toggleCount = len(page_list) - 1
+                        
                 # get the children list
-                print("t2" + str(toggleCount))
                 task_list, taks_id_list = js.getChildrenName(time_str, page_list[toggleCount], True)
                 print(task_list)
 

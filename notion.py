@@ -124,19 +124,19 @@ while True:
     if GPIO.input(17) == False:
         if dayCount == 1:
             page_list, children_list = js.getPageNameListWithChildrenStatus(today_str)
-            time = js.getTodayDate()
+            time_str = js.getTodayDate()
         elif dayCount == 2:
             page_list, children_list = js.getPageNameListWithChildrenStatus(yesterday_str)
-            time = js.getYesterdayDate()
+            time_str = js.getYesterdayDate()
         elif dayCount == 3:
             page_list, children_list = js.getPageNameListWithChildrenStatus(the_day_before_yesterday_str)
-            time = js.getTheDayBeforeYesterdayDate()
+            time_str = js.getTheDayBeforeYesterdayDate()
         elif dayCount == 4:
             page_list, children_list = js.getPageNameListWithChildrenStatus(the_day_after_tomorrow_str)
-            time = js.getTheDayAfterTmrDate()
+            time_str = js.getTheDayAfterTmrDate()
         elif dayCount == 0:
             page_list, children_list = js.getPageNameListWithChildrenStatus(tomorrow_str)
-            time = js.getTmrDate()
+            time_str = js.getTmrDate()
         else:
             continue
         
@@ -145,7 +145,8 @@ while True:
         # task has children
         elif children_list[toggleCount] == True:
             # get the children list
-            task_list = js.getChildrenName(time, page_list(toggleCount), True)
+            task_list = js.getChildrenName(time_str, page_list[toggleCount], True)
+            print(task_list)
 
             while True:
                 for item in range(0, len(task_list)):

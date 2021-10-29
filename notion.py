@@ -144,19 +144,21 @@ while True:
                 continue
             # task has children
             elif children_list[toggleCount] == True:
-                if toggleCount < len(page_list):
+                if toggleCount < len(page_list) and toggleCount != 0:
                     toggleCount -= 1
-                    if toggleCount == -1:
-                        toggleCount = len(page_list) - 1
+                else:
+                    toggleCount = len(page_list) - 1
+                
+                print(toggleCount)
 
                 # get the children list
                 task_list, taks_id_list = js.getChildrenName(time_str, page_list[toggleCount], True)
                 print(task_list)
-                print(page_list[toggleCount])
+                # print(page_list[toggleCount])
 
                 while True:
                     content_list = ["", "", "", "", "", "", "", ""]
-                    content_list[0] == page_list[toggleCount]
+                    # content_list[0] == page_list[toggleCount]
 
                     for item in range(0, len(task_list)):
                         if task_list[item][1] == True:
@@ -179,7 +181,7 @@ while True:
                     
                     
                     # Write two lines of text.
-                    draw.text((x, top), 	content_list[0], font = font, fill = 255)
+                    draw.text((x, top), 	page_list[toggleCount], font = font, fill = 255)
                     draw.text((x, top+9),	content_list[1], font = font, fill = 255)
                     draw.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)
                     draw.text((x, top+25),	toggle_inside_list[1] + bracket_list[1] + content_list[3], font = font, fill = 255)

@@ -227,8 +227,8 @@ while True:
             time.sleep(0.1)
         
         elif toggleCount < len(page_list) and toggleCount == 0:
-            toggle_list[0] = "-> "
-            toggle_list[1] = ""
+            toggle_list[0] = ""
+            toggle_list[1] = "-> "
             toggle_list[2] = ""
             toggle_list[3] = ""
             toggle_list[4] = ""
@@ -241,8 +241,8 @@ while True:
 
         elif toggleCount < len(page_list) and toggleCount == 1:
             toggle_list[0] = ""
-            toggle_list[1] = "-> "
-            toggle_list[2] = ""
+            toggle_list[1] = ""
+            toggle_list[2] = "-> "
             toggle_list[3] = ""
             toggle_list[4] = ""
             toggle_list[5] = ""
@@ -255,8 +255,8 @@ while True:
         elif toggleCount < len(page_list) and toggleCount == 2:
             toggle_list[0] = ""
             toggle_list[1] = ""
-            toggle_list[2] = "-> "
-            toggle_list[3] = ""
+            toggle_list[2] = ""
+            toggle_list[3] = "-> "
             toggle_list[4] = ""
             toggle_list[5] = ""
             toggleCount += 1
@@ -269,8 +269,8 @@ while True:
             toggle_list[0] = ""
             toggle_list[1] = ""
             toggle_list[2] = ""
-            toggle_list[3] = "-> "
-            toggle_list[4] = ""
+            toggle_list[3] = ""
+            toggle_list[4] = "-> "
             toggle_list[5] = ""
             toggleCount += 1
 
@@ -283,8 +283,8 @@ while True:
             toggle_list[1] = ""
             toggle_list[2] = ""
             toggle_list[3] = ""
-            toggle_list[4] = "-> "
-            toggle_list[5] = ""
+            toggle_list[4] = ""
+            toggle_list[5] = "-> "
             toggleCount += 1
 
             if toggleCount >= len(page_list):
@@ -292,12 +292,12 @@ while True:
             time.sleep(0.1)
 
         elif toggleCount < len(page_list) and toggleCount == 5:
-            toggle_list[0] = ""
+            toggle_list[0] = "-> "
             toggle_list[1] = ""
             toggle_list[2] = ""
             toggle_list[3] = ""
             toggle_list[4] = ""
-            toggle_list[5] = "-> "
+            toggle_list[5] = ""
             toggleCount = 0
             time.sleep(0.1)
 

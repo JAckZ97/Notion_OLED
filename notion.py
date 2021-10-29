@@ -237,6 +237,7 @@ while True:
             
             if toggleCount >= len(page_list):
                 toggleCount = 0
+                toggle_list = ["-> ", "", "", "", "", ""]
             time.sleep(0.1)
 
         elif toggleCount < len(page_list) and toggleCount == 1:
@@ -250,6 +251,7 @@ while True:
 
             if toggleCount >= len(page_list):
                 toggleCount = 0
+                toggle_list = ["-> ", "", "", "", "", ""]
             time.sleep(0.1)
 
         elif toggleCount < len(page_list) and toggleCount == 2:
@@ -263,6 +265,7 @@ while True:
 
             if toggleCount >= len(page_list):
                 toggleCount = 0
+                toggle_list = ["-> ", "", "", "", "", ""]
             time.sleep(0.1)
 
         elif toggleCount < len(page_list) and toggleCount == 3:
@@ -276,6 +279,7 @@ while True:
 
             if toggleCount >= len(page_list):
                 toggleCount = 0
+                toggle_list = ["-> ", "", "", "", "", ""]
             time.sleep(0.1)
 
         elif toggleCount < len(page_list) and toggleCount == 4:
@@ -289,6 +293,7 @@ while True:
 
             if toggleCount >= len(page_list):
                 toggleCount = 0
+                toggle_list = ["-> ", "", "", "", "", ""]
             time.sleep(0.1)
 
         elif toggleCount < len(page_list) and toggleCount == 5:

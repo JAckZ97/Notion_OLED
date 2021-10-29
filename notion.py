@@ -140,12 +140,14 @@ while True:
         else:
             continue
 
-        try:  
+        try:
+            print("t1" + str(toggleCount))
             if children_list[toggleCount] == False:
                 continue
             # task has children
             elif children_list[toggleCount] == True:
                 # get the children list
+                print("t2" + str(toggleCount))
                 task_list, taks_id_list = js.getChildrenName(time_str, page_list[toggleCount], True)
                 print(task_list)
 
@@ -158,7 +160,7 @@ while True:
                         elif task_list[item][1] == False:
                             bracket_list[item] = "[ ]"
                         
-                        content_list[item] = task_list[item][0]
+                        content_list[item+2] = task_list[item][0]
                     
                     if GPIO.input(17) == False:
                         print(task_id_list)

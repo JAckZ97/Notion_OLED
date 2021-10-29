@@ -167,8 +167,9 @@ while True:
                         content_list[item+2] = task_list[item][0]
                     
                     if GPIO.input(17) == False:
-                        print(task_id_list)
-                        continue
+                        # print(task_id_list)
+                        # continue
+                        pass
                     
                     if GPIO.input(5) == False:
                         pass

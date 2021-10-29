@@ -139,46 +139,55 @@ while True:
             time_str = js.getTmrDate()
         else:
             continue
+
+        try:  
+            if children_list[toggleCount] == False:
+                continue
+            # task has children
+            elif children_list[toggleCount] == True:
+                # get the children list
+                task_list, taks_id_list = js.getChildrenName(time_str, page_list[toggleCount], True)
+                print(task_list)
+
+                while True:
+                    content_list[0] == page_list[toggleCount]
+
+                    for item in range(0, len(task_list)):
+                        if task_list[item][1] == True:
+                            bracket_list[item] = "[x]"
+                        elif task_list[item][1] == False:
+                            bracket_list[item] = "[ ]"
+                        
+                        content_list[item] = task_list[item][0]
+                    
+                    if GPIO.input(17) == False:
+                        print(task_id_list)
+                        continue
+                    
+                    if GPIO.input(5) == False:
+                        pass
+                    
+                    if GPIO.input(26) == False:
+                        break
+                    
+                    
+                    # Write two lines of text.
+                    draw.text((x, top), 	content_list[0], font = font, fill = 255)
+                    draw.text((x, top+9),	content_list[1], font = font, fill = 255)
+                    draw.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)
+                    draw.text((x, top+25),	toggle_inside_list[1] + bracket_list[1] + content_list[3], font = font, fill = 255)
+                    draw.text((x, top+33),	toggle_inside_list[2] + bracket_list[2] + content_list[4], font = font, fill = 255)
+                    draw.text((x, top+41),	toggle_inside_list[3] + bracket_list[3] + content_list[5], font = font, fill = 255)
+                    draw.text((x, top+49),	toggle_inside_list[4] + bracket_list[4] + content_list[6], font = font, fill = 255)
+                    draw.text((x, top+57),	toggle_inside_list[5] + bracket_list[5] + content_list[7], font = font, fill = 255)
+
+                    # Display image.
+                    disp.image(image)
+                    disp.display()
+                    time.sleep(.1)
         
-        if children_list[toggleCount] == False:
+        except:
             continue
-        # task has children
-        elif children_list[toggleCount] == True:
-            # get the children list
-            task_list = js.getChildrenName(time_str, page_list[toggleCount], True)
-            print(task_list)
-
-            while True:
-                for item in range(0, len(task_list)):
-                    if task_list[item][1] == True:
-                        bracket_list[item] = "[x]"
-                    elif task_list[item][1] == False:
-                        bracket_list[item] = "[ ]"
-                
-                if GPIO.input(17) == False:
-                    pass
-                
-                if GPIO.input(5) == False:
-                    pass
-                
-                if GPIO.input(26) == False:
-                    break
-                
-                
-                # Write two lines of text.
-                draw.text((x, top), 	content_list[0], font = font, fill = 255)
-                draw.text((x, top+9),	content_list[1], font = font, fill = 255)
-                draw.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)
-                draw.text((x, top+25),	toggle_inside_list[1] + bracket_list[1] + content_list[3], font = font, fill = 255)
-                draw.text((x, top+33),	toggle_inside_list[2] + bracket_list[2] + content_list[4], font = font, fill = 255)
-                draw.text((x, top+41),	toggle_inside_list[3] + bracket_list[3] + content_list[5], font = font, fill = 255)
-                draw.text((x, top+49),	toggle_inside_list[4] + bracket_list[4] + content_list[6], font = font, fill = 255)
-                draw.text((x, top+57),	toggle_inside_list[5] + bracket_list[5] + content_list[7], font = font, fill = 255)
-
-                # Display image.
-                disp.image(image)
-                disp.display()
-                time.sleep(.1)
                 
     # button for picking tasks by "->"
     if GPIO.input(5) == False:

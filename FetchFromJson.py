@@ -209,6 +209,7 @@ class JsonFileController:
     # get one page block children list by page name (if have children, if not return page name)
     def getChildrenName(self, date_str, page_name: str, children_bool: bool):
         task_list = []
+        task_id_list = []
 
         date_dict = {
             self.the_day_before_yesterday_str : "the day before yesterday",
@@ -237,13 +238,14 @@ class JsonFileController:
                     to_do_json = sub_task.get("to_do")
                     text_json = to_do_json["text"]
                     task_list.append((text_json[0].get("plain_text"), to_do_json["checked"]))
+                    task_id_list.append(sub_task.get("id"))
                 else: 
                     continue
             f.close()
 
         # [(todo_list_name, check_status)]
         # return [(Fix resume, True), (Start new project, False)]
-        return task_list
+        return task_list, task_id_list
 
 
     # update todo check box by check or uncheck

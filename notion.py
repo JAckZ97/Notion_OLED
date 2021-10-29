@@ -144,6 +144,8 @@ while True:
                 continue
             # task has children
             elif children_list[toggleCount] == True:
+                print(toggleCount)
+                
                 if toggleCount < len(page_list) and toggleCount != 0:
                     toggleCount -= 1
                 else:

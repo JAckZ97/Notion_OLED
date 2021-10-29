@@ -145,7 +145,7 @@ while True:
             # task has children
             elif children_list[toggleCount] == True:
                 print(toggleCount)
-                
+
                 if toggleCount < len(page_list) and toggleCount != 0:
                     toggleCount -= 1
                 else:
@@ -156,11 +156,10 @@ while True:
                 # get the children list
                 task_list, taks_id_list = js.getChildrenName(time_str, page_list[toggleCount], True)
                 print(task_list)
-                # print(page_list[toggleCount])
 
                 while True:
                     content_list = ["", "", "", "", "", "", "", ""]
-                    # content_list[0] == page_list[toggleCount]
+                    content_list[0] = page_list[toggleCount]
 
                     for item in range(0, len(task_list)):
                         if task_list[item][1] == True:
@@ -183,7 +182,7 @@ while True:
                     
                     
                     # Write two lines of text.
-                    draw.text((x, top), 	page_list[toggleCount], font = font, fill = 255)
+                    draw.text((x, top), 	content_list[0], font = font, fill = 255)
                     draw.text((x, top+9),	content_list[1], font = font, fill = 255)
                     draw.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)
                     draw.text((x, top+25),	toggle_inside_list[1] + bracket_list[1] + content_list[3], font = font, fill = 255)
@@ -214,10 +213,6 @@ while True:
             page_list, children_list = js.getPageNameListWithChildrenStatus(tomorrow_str)
         else:
             continue
-
-        # print(dayCount)
-        # print("list %d" %len(page_list))
-        # print(toggleCount)
 
         if len(children_list) == 0:
             toggle_list[0] = "No task..."
@@ -463,7 +458,7 @@ while True:
     draw.text((x, top+49),	toggle_list[4] + text_list[6], font = font, fill = 255)
     draw.text((x, top+57),	toggle_list[5] + text_list[7], font = font, fill = 255)
 
-
+    print("t1" + str(toggleCount))
     # Display image.
     disp.image(image)
     disp.display()

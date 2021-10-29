@@ -78,7 +78,6 @@ text_list = ["", "", "", "", "", "", "", ""]
 toggle_list = ["", "", "", "", "", ""]
 toggle_inside_list = ["", "", "", "", "", ""]
 bracket_list = ["", "", "", "", "", ""]
-content_list = ["", "", "", "", "", "", "", ""]
 
 # find the date today, yesterday, tomorrow, etc.
 today = datetime.now()
@@ -153,8 +152,10 @@ while True:
                 # get the children list
                 task_list, taks_id_list = js.getChildrenName(time_str, page_list[toggleCount], True)
                 print(task_list)
+                print(page_list[toggleCount])
 
                 while True:
+                    content_list = ["", "", "", "", "", "", "", ""]
                     content_list[0] == page_list[toggleCount]
 
                     for item in range(0, len(task_list)):

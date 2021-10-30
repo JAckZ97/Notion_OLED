@@ -301,7 +301,7 @@ while True:
 
                     print(toggle_inside_list)
                     print(bracket_list)
-                    
+
                     # Write two lines of text.
                     draw.text((x, top), 	content_list[0], font = font, fill = 255)
                     draw.text((x, top+9),	content_list[1], font = font, fill = 255)
@@ -316,6 +316,10 @@ while True:
                     disp.image(image)
                     disp.display()
                     time.sleep(0.1)
+
+                    disp.clear()
+                    disp.display()
+                    
                 
 
         except:

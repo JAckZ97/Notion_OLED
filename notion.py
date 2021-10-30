@@ -182,7 +182,6 @@ while True:
                     # button for picking subtasks by "->"
                     if GPIO.input(5) == False:
                         if toggleInsideCount < len(task_list) and toggleInsideCount == 0:
-                            toggle_inside_list = ["", "", "", "", "", ""]
                             toggle_inside_list[0] = "   "
                             toggle_inside_list[1] = "-> "
                             toggle_inside_list[2] = "   "
@@ -197,7 +196,6 @@ while True:
                             time.sleep(0.1)
 
                         elif toggleInsideCount < len(task_list) and toggleInsideCount == 1:
-                            toggle_inside_list = ["", "", "", "", "", ""]
                             toggle_inside_list[0] = "   "
                             toggle_inside_list[1] = "   "
                             toggle_inside_list[2] = "-> "
@@ -212,7 +210,6 @@ while True:
                             time.sleep(0.1)
 
                         elif toggleInsideCount < len(task_list) and toggleInsideCount == 2:
-                            toggle_inside_list = ["", "", "", "", "", ""]
                             toggle_inside_list[0] = "   "
                             toggle_inside_list[1] = "   "
                             toggle_inside_list[2] = "   "
@@ -227,7 +224,6 @@ while True:
                             time.sleep(0.1)
 
                         elif toggleInsideCount < len(task_list) and toggleInsideCount == 3:
-                            toggle_inside_list = ["", "", "", "", "", ""]
                             toggle_inside_list[0] = "   "
                             toggle_inside_list[1] = "   "
                             toggle_inside_list[2] = "   "
@@ -242,7 +238,6 @@ while True:
                             time.sleep(0.1)
 
                         elif toggleInsideCount < len(task_list) and toggleInsideCount == 4:
-                            toggle_inside_list = ["", "", "", "", "", ""]
                             toggle_inside_list[0] = "   "
                             toggle_inside_list[1] = "   "
                             toggle_inside_list[2] = "   "
@@ -257,7 +252,6 @@ while True:
                             time.sleep(0.1)
 
                         elif toggleInsideCount < len(task_list) and toggleInsideCount == 5:
-                            toggle_inside_list = ["", "", "", "", "", ""]
                             toggle_inside_list[0] = "-> "
                             toggle_inside_list[1] = "   "
                             toggle_inside_list[2] = "   "
@@ -272,7 +266,6 @@ while True:
                             time.sleep(0.1)
                     
                         elif toggleInsideCount >= len(task_list):
-                            toggle_inside_list = ["", "", "", "", "", ""]
                             toggle_inside_list[0] = "-> "
                             toggle_inside_list[1] = "   "
                             toggle_inside_list[2] = "   "
@@ -305,7 +298,6 @@ while True:
                     disp.display()
                     time.sleep(.1)
 
-                    toggle_inside_list = ["", "", "", "", "", ""]
         except:
             continue
                 

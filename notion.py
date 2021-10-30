@@ -288,6 +288,7 @@ while True:
                         toggleInsideCount = 0
                         break
                     
+                    print(toggle_inside_list)
                     
                     # Write two lines of text.
                     draw.text((x, top), 	content_list[0], font = font, fill = 255)

@@ -289,8 +289,6 @@ while True:
                         break
                     
                     print(toggle_inside_list)
-                    toggle_inside_list = ["", "", "", "", "", ""]
-                    print(toggle_inside_list)
 
                     # Write two lines of text.
                     draw.text((x, top), 	content_list[0], font = font, fill = 255)
@@ -306,7 +304,8 @@ while True:
                     disp.image(image)
                     disp.display()
                     time.sleep(.1)
-        
+
+                    toggle_inside_list = ["", "", "", "", "", ""]
         except:
             continue
                 

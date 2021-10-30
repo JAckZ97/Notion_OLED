@@ -327,14 +327,14 @@ while True:
                     # time.sleep(0.1)
 
                     # Write two lines of text.
-                    draw.text((x, top), 	counter, font = font, fill = 255)
-                    draw.text((x, top+9),	'', font = font, fill = 255)
-                    draw.text((x, top+17),	'', font = font, fill = 255)
-                    draw.text((x, top+25),	'', font = font, fill = 255)
-                    draw.text((x, top+33),	'', font = font, fill = 255)
-                    draw.text((x, top+41),	'', font = font, fill = 255)
-                    draw.text((x, top+49),	'', font = font, fill = 255)
-                    draw.text((x, top+57),	'', font = font, fill = 255)
+                    draw.text((x, top), 	str(counter), font = font, fill = 255)
+                    draw.text((x, top+9),	"", font = font, fill = 255)
+                    draw.text((x, top+17),	"", font = font, fill = 255)
+                    draw.text((x, top+25),	"", font = font, fill = 255)
+                    draw.text((x, top+33),	"", font = font, fill = 255)
+                    draw.text((x, top+41),	"", font = font, fill = 255)
+                    draw.text((x, top+49),	"", font = font, fill = 255)
+                    draw.text((x, top+57),	"", font = font, fill = 255)
                     
                     # Display image.
                     disp.image(image)

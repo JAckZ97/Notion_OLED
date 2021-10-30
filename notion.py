@@ -143,16 +143,9 @@ while True:
         try:
             if children_list[toggleCount] == False:
                 continue
+
             # task has children
             elif children_list[toggleCount] == True:
-                # print(toggleCount)
-                # if toggleCount < len(page_list) and toggleCount != 0:
-                #     toggleCount -= 1
-                # else:
-                #     toggleCount = len(page_list) - 1
-                # print(toggleCount)
-                # print(task_id_list)
-
                 # get the children list
                 task_list, task_id_list = js.getChildrenName(time_str, page_list[toggleCount], True)
                 sub_task_status_list = [1, 1, 1, 1, 1, 1]
@@ -166,7 +159,6 @@ while True:
                     elif task_list[item][1] == False:
                         bracket_list[item] = "[ ]"
                         sub_task_status_list[item] = 0
-                    
                     content_list[item+2] = task_list[item][0]
 
                 # initial the toggle_inside
@@ -177,16 +169,9 @@ while True:
                 toggle_inside_list[4] = "   "
                 toggle_inside_list[5] = "   "
 
-                while True:                    
+                while True:
+                    # get subtask title                  
                     content_list[0] = page_list[toggleCount]
-
-                    # for item in range(0, len(task_list)):
-                    #     if task_list[item][1] == True:
-                    #         bracket_list[item] = "[x]"
-                    #     elif task_list[item][1] == False:
-                    #         bracket_list[item] = "[ ]"
-
-                    #     content_list[item+2] = task_list[item][0]
             
                     # button for confirming selections
                     if GPIO.input(17) == False:

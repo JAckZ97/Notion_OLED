@@ -176,6 +176,9 @@ while True:
                 toggle_inside_list[5] = "   "
 
                 while True:
+                    toggle_inside_list = ["", "", "", "", "", ""]
+                    content_list = ["", "", "", "", "", "", "", ""]
+                    bracket_list = ["", "", "", "", "", ""]
                     content_list[0] = page_list[toggleCount]
 
                     # for item in range(0, len(task_list)):
@@ -316,7 +319,6 @@ while True:
                     disp.image(image)
                     disp.display()
                     time.sleep(0.1)
-
 
         except:
             continue

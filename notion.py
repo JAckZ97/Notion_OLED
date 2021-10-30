@@ -165,7 +165,6 @@ while True:
                 while True:
                     content_list = ["", "", "", "", "", "", "", ""]
                     bracket_list = ["", "", "", "", "", ""]
-                    toggle_inside_list = ["   ", "   ", "   ", "   ", "   ", "   "]
                     content_list[0] = page_list[toggleCount]
 
                     for item in range(0, len(task_list)):

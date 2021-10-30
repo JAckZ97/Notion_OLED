@@ -181,20 +181,6 @@ while True:
                     
                     # button for picking subtasks by "->"
                     if GPIO.input(5) == False:
-                        draw.text((x, top), 	"", font = font, fill = 255)
-                        draw.text((x, top+9),	"", font = font, fill = 255)
-                        draw.text((x, top+17),	"", font = font, fill = 255)
-                        draw.text((x, top+25),	"", font = font, fill = 255)
-                        draw.text((x, top+33),	"", font = font, fill = 255)
-                        draw.text((x, top+41),	"", font = font, fill = 255)
-                        draw.text((x, top+49),	"", font = font, fill = 255)
-                        draw.text((x, top+57),	"", font = font, fill = 255)
-
-                        # Display image.
-                        disp.image(image)
-                        disp.display()
-                        time.sleep(0.1)
-
                         if toggleInsideCount < len(task_list) and toggleInsideCount == 0:
                             toggle_inside_list = ["", "", "", "", "", ""]
                             toggle_inside_list[0] = "   "
@@ -302,6 +288,8 @@ while True:
                         toggleInsideCount = 0
                         break
                     
+                    print(toggle_inside_list)
+                    toggle_inside_list = ["", "", "", "", "", ""]
                     print(toggle_inside_list)
 
                     # Write two lines of text.

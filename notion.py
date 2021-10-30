@@ -314,7 +314,7 @@ while True:
                     # Display image.
                     disp.image(image)
                     disp.display()
-                    time.sleep(.1)
+                    time.sleep(5)
 
                     draw.text((x, top), 	"", font = font, fill = 255)
                     draw.text((x, top+9),	"", font = font, fill = 255)
@@ -328,7 +328,7 @@ while True:
                     # Display image.
                     disp.image(image)
                     disp.display()
-                    time.sleep(2)
+                    time.sleep(5)
 
         except:
             continue

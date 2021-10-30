@@ -160,10 +160,10 @@ while True:
                 for item in range(0, len(task_list)):
                     if task_list[item][1] == True:
                         bracket_list[item] = "[x]"
-                        sub_task_status[item] = 1
+                        sub_task_status_list[item] = 1
                     elif task_list[item][1] == False:
                         bracket_list[item] = "[ ]"
-                        sub_task_status[item] = 0
+                        sub_task_status_list[item] = 0
                     
                     content_list[item+2] = task_list[item][0]
 
@@ -188,12 +188,12 @@ while True:
             
                     # button for confirming selections
                     if GPIO.input(17) == False:
-                        if sub_task_status[toggleInsideCount] == 1:
+                        if sub_task_status_list[toggleInsideCount] == 1:
                             bracket_list[toggleInsideCount] = "[ ]"
-                            sub_task_status[toggleInsideCount] = 0
-                        elif sub_task_status[toggleInsideCount] == 0:
+                            sub_task_status_list[toggleInsideCount] = 0
+                        elif sub_task_status_list[toggleInsideCount] == 0:
                             bracket_list[toggleInsideCount] = "[x]"
-                            sub_task_status[toggleInsideCount] = 1
+                            sub_task_status_list[toggleInsideCount] = 1
                             
                         js.updateTodoSubtask(task_id_list[toggleInsideCount])
                     

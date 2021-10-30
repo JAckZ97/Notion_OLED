@@ -156,6 +156,8 @@ while True:
                 # get the children list
                 task_list, task_id_list = js.getChildrenName(time_str, page_list[toggleCount], True)
                 sub_task_status_list = [1, 1, 1, 1, 1, 1]
+                content_list = ["", "", "", "", "", "", "", ""]
+                bracket_list = ["", "", "", "", "", ""]
 
                 for item in range(0, len(task_list)):
                     if task_list[item][1] == True:
@@ -175,10 +177,7 @@ while True:
                 toggle_inside_list[4] = "   "
                 toggle_inside_list[5] = "   "
 
-                while True:
-                    toggle_inside_list = ["", "", "", "", "", ""]
-                    content_list = ["", "", "", "", "", "", "", ""]
-                    bracket_list = ["", "", "", "", "", ""]
+                while True:                    
                     content_list[0] = page_list[toggleCount]
 
                     # for item in range(0, len(task_list)):

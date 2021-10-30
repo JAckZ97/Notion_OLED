@@ -155,15 +155,15 @@ while True:
 
                 # get the children list
                 task_list, task_id_list = js.getChildrenName(time_str, page_list[toggleCount], True)
-                sub_task_status = True
+                sub_task_status_list = [True, True, True, True, True, True]
 
                 for item in range(0, len(task_list)):
                     if task_list[item][1] == True:
                         bracket_list[item] = "[x]"
-                        sub_task_status = True
+                        sub_task_status[item] = True
                     elif task_list[item][1] == False:
-                        sub_task_status = False
                         bracket_list[item] = "[ ]"
+                        sub_task_status[item] = False
                     
                     content_list[item+2] = task_list[item][0]
 
@@ -188,12 +188,12 @@ while True:
             
                     # button for confirming selections
                     if GPIO.input(17) == False:
-                        if sub_task_status == True:
+                        if sub_task_status[toggleInsideCount] == True:
                             bracket_list[toggleInsideCount] = "[ ]"
-                            sub_task_status = False
-                        elif sub_task_status == False:
+                            sub_task_status[toggleInsideCount] = False
+                        elif sub_task_status[toggleInsideCount] == False:
                             bracket_list[toggleInsideCount] = "[x]"
-                            sub_task_status = True
+                            sub_task_status[toggleInsideCount] = True
                             
                         js.updateTodoSubtask(task_id_list[toggleInsideCount])
                     

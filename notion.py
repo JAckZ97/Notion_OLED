@@ -77,6 +77,8 @@ toggleInsideCount = 0
 text_list = ["", "", "", "", "", "", "", ""]
 toggle_list = ["", "", "", "", "", ""]
 toggle_inside_list = ["", "", "", "", "", ""]
+content_list = ["", "", "", "", "", "", "", ""]
+bracket_list = ["", "", "", "", "", ""]
 
 # find the date today, yesterday, tomorrow, etc.
 today = datetime.now()
@@ -153,6 +155,17 @@ while True:
 
                 # get the children list
                 task_list, task_id_list = js.getChildrenName(time_str, page_list[toggleCount], True)
+                sub_task_status = True
+
+                for item in range(0, len(task_list)):
+                    if task_list[item][1] == True:
+                        bracket_list[item] = "[x]"
+                        sub_task_status = True
+                    elif task_list[item][1] == False:
+                        sub_task_status = False
+                        bracket_list[item] = "[ ]"
+                    
+                    content_list[item+2] = task_list[item][0]
 
                 # initial the toggle_inside
                 toggle_inside_list[0] = "-> "
@@ -163,20 +176,25 @@ while True:
                 toggle_inside_list[5] = "   "
 
                 while True:
-                    content_list = ["", "", "", "", "", "", "", ""]
-                    bracket_list = ["", "", "", "", "", ""]
                     content_list[0] = page_list[toggleCount]
 
-                    for item in range(0, len(task_list)):
-                        if task_list[item][1] == True:
-                            bracket_list[item] = "[x]"
-                        elif task_list[item][1] == False:
-                            bracket_list[item] = "[ ]"
+                    # for item in range(0, len(task_list)):
+                    #     if task_list[item][1] == True:
+                    #         bracket_list[item] = "[x]"
+                    #     elif task_list[item][1] == False:
+                    #         bracket_list[item] = "[ ]"
 
-                        content_list[item+2] = task_list[item][0]
+                    #     content_list[item+2] = task_list[item][0]
             
                     # button for confirming selections
                     if GPIO.input(17) == False:
+                        if sub_task_status == True:
+                            bracket_list[toggleInsideCount] = "[ ]"
+                            sub_task_status = False
+                        elif sub_task_status == False:
+                            bracket_list[toggleInsideCount] = "[x]"
+                            sub_task_status = True
+                            
                         js.updateTodoSubtask(task_id_list[toggleInsideCount])
                     
                     # button for picking subtasks by "->"
@@ -280,10 +298,7 @@ while True:
                     if GPIO.input(26) == False:
                         toggleInsideCount = 0
                         break
-                    
-
-                    
-
+                
                     # Write two lines of text.
                     draw.text((x, top), 	content_list[0], font = font, fill = 255)
                     draw.text((x, top+9),	content_list[1], font = font, fill = 255)
@@ -294,7 +309,7 @@ while True:
                     draw.text((x, top+49),	toggle_inside_list[4] + bracket_list[4] + content_list[6], font = font, fill = 255)
                     draw.text((x, top+57),	toggle_inside_list[5] + bracket_list[5] + content_list[7], font = font, fill = 255)
                     
-                    print(toggle_inside_list)
+                    # print(toggle_inside_list)
                     
                     # Display image.
                     disp.image(image)

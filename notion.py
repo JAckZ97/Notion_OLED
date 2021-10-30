@@ -165,6 +165,7 @@ while True:
                 while True:
                     content_list = ["", "", "", "", "", "", "", ""]
                     bracket_list = ["", "", "", "", "", ""]
+                    toggle_inside_list = ["   ", "   ", "   ", "   ", "   ", "   "]
                     content_list[0] = page_list[toggleCount]
 
                     for item in range(0, len(task_list)):
@@ -328,92 +329,92 @@ while True:
             time.sleep(0.1)
         
         elif toggleCount < len(page_list) and toggleCount == 0:
-            toggle_list[0] = ""
+            toggle_list[0] = "   "
             toggle_list[1] = "-> "
-            toggle_list[2] = ""
-            toggle_list[3] = ""
-            toggle_list[4] = ""
-            toggle_list[5] = ""
+            toggle_list[2] = "   "
+            toggle_list[3] = "   "
+            toggle_list[4] = "   "
+            toggle_list[5] = "   "
             toggleCount += 1
             
             if toggleCount >= len(page_list):
                 toggleCount = 0
-                toggle_list = ["-> ", "", "", "", "", ""]
+                toggle_list = ["-> ", "   ", "   ", "   ", "   ", "   "]
             time.sleep(0.1)
 
         elif toggleCount < len(page_list) and toggleCount == 1:
-            toggle_list[0] = ""
-            toggle_list[1] = ""
+            toggle_list[0] = "   "
+            toggle_list[1] = "   "
             toggle_list[2] = "-> "
-            toggle_list[3] = ""
-            toggle_list[4] = ""
-            toggle_list[5] = ""
+            toggle_list[3] = "   "
+            toggle_list[4] = "   "
+            toggle_list[5] = "   "
             toggleCount += 1
 
             if toggleCount >= len(page_list):
                 toggleCount = 0
-                toggle_list = ["-> ", "", "", "", "", ""]
+                toggle_list = ["-> ", "   ", "   ", "   ", "   ", "   "]
             time.sleep(0.1)
 
         elif toggleCount < len(page_list) and toggleCount == 2:
-            toggle_list[0] = ""
-            toggle_list[1] = ""
-            toggle_list[2] = ""
+            toggle_list[0] = "   "
+            toggle_list[1] = "   "
+            toggle_list[2] = "   "
             toggle_list[3] = "-> "
-            toggle_list[4] = ""
-            toggle_list[5] = ""
+            toggle_list[4] = "   "
+            toggle_list[5] = "   "
             toggleCount += 1
 
             if toggleCount >= len(page_list):
                 toggleCount = 0
-                toggle_list = ["-> ", "", "", "", "", ""]
+                toggle_list = ["-> ", "   ", "   ", "   ", "   ", "   "]
             time.sleep(0.1)
 
         elif toggleCount < len(page_list) and toggleCount == 3:
-            toggle_list[0] = ""
-            toggle_list[1] = ""
-            toggle_list[2] = ""
-            toggle_list[3] = ""
+            toggle_list[0] = "   "
+            toggle_list[1] = "   "
+            toggle_list[2] = "   "
+            toggle_list[3] = "   "
             toggle_list[4] = "-> "
-            toggle_list[5] = ""
+            toggle_list[5] = "   "
             toggleCount += 1
 
             if toggleCount >= len(page_list):
                 toggleCount = 0
-                toggle_list = ["-> ", "", "", "", "", ""]
+                toggle_list = ["-> ", "   ", "   ", "   ", "   ", "   "]
             time.sleep(0.1)
 
         elif toggleCount < len(page_list) and toggleCount == 4:
-            toggle_list[0] = ""
-            toggle_list[1] = ""
-            toggle_list[2] = ""
-            toggle_list[3] = ""
-            toggle_list[4] = ""
+            toggle_list[0] = "   "
+            toggle_list[1] = "   "
+            toggle_list[2] = "   "
+            toggle_list[3] = "   "
+            toggle_list[4] = "   "
             toggle_list[5] = "-> "
             toggleCount += 1
 
             if toggleCount >= len(page_list):
                 toggleCount = 0
-                toggle_list = ["-> ", "", "", "", "", ""]
+                toggle_list = ["-> ", "   ", "   ", "   ", "   ", "   "]
             time.sleep(0.1)
 
         elif toggleCount < len(page_list) and toggleCount == 5:
             toggle_list[0] = "-> "
-            toggle_list[1] = ""
-            toggle_list[2] = ""
-            toggle_list[3] = ""
-            toggle_list[4] = ""
-            toggle_list[5] = ""
+            toggle_list[1] = "   "
+            toggle_list[2] = "   "
+            toggle_list[3] = "   "
+            toggle_list[4] = "   "
+            toggle_list[5] = "   "
             toggleCount = 0
             time.sleep(0.1)
 
         elif toggleCount >= len(page_list):
             toggle_list[0] = "-> "
-            toggle_list[1] = ""
-            toggle_list[2] = ""
-            toggle_list[3] = ""
-            toggle_list[4] = ""
-            toggle_list[5] = ""
+            toggle_list[1] = "   "
+            toggle_list[2] = "   "
+            toggle_list[3] = "   "
+            toggle_list[4] = "   "
+            toggle_list[5] = "   "
             toggleCount = 0
             time.sleep(0.1)
         else:
@@ -440,11 +441,11 @@ while True:
                 toggle_list[5] = ""
             else:
                 toggle_list[0] = "-> "
-                toggle_list[1] = ""
-                toggle_list[2] = ""
-                toggle_list[3] = ""
-                toggle_list[4] = ""
-                toggle_list[5] = ""
+                toggle_list[1] = "   "
+                toggle_list[2] = "   "
+                toggle_list[3] = "   "
+                toggle_list[4] = "   "
+                toggle_list[5] = "   "
             time.sleep(0.1)
 
         elif dayCount == 1:
@@ -466,11 +467,11 @@ while True:
                 toggle_list[5] = ""
             else:
                 toggle_list[0] = "-> "
-                toggle_list[1] = ""
-                toggle_list[2] = ""
-                toggle_list[3] = ""
-                toggle_list[4] = ""
-                toggle_list[5] = ""
+                toggle_list[1] = "   "
+                toggle_list[2] = "   "
+                toggle_list[3] = "   "
+                toggle_list[4] = "   "
+                toggle_list[5] = "   "
             time.sleep(0.1)
 
         elif dayCount == 2:
@@ -492,11 +493,11 @@ while True:
                 toggle_list[5] = ""
             else:
                 toggle_list[0] = "-> "
-                toggle_list[1] = ""
-                toggle_list[2] = ""
-                toggle_list[3] = ""
-                toggle_list[4] = ""
-                toggle_list[5] = ""
+                toggle_list[1] = "   "
+                toggle_list[2] = "   "
+                toggle_list[3] = "   "
+                toggle_list[4] = "   "
+                toggle_list[5] = "   "
             time.sleep(0.1)
 
         elif dayCount == 3:
@@ -518,11 +519,11 @@ while True:
                 toggle_list[5] = ""
             else:
                 toggle_list[0] = "-> "
-                toggle_list[1] = ""
-                toggle_list[2] = ""
-                toggle_list[3] = ""
-                toggle_list[4] = ""
-                toggle_list[5] = ""
+                toggle_list[1] = "   "
+                toggle_list[2] = "   "
+                toggle_list[3] = "   "
+                toggle_list[4] = "   "
+                toggle_list[5] = "   "
             time.sleep(0.1)
 
         elif dayCount == 4:
@@ -544,11 +545,11 @@ while True:
                 toggle_list[5] = ""
             else:
                 toggle_list[0] = "-> "
-                toggle_list[1] = ""
-                toggle_list[2] = ""
-                toggle_list[3] = ""
-                toggle_list[4] = ""
-                toggle_list[5] = ""
+                toggle_list[1] = "   "
+                toggle_list[2] = "   "
+                toggle_list[3] = "   "
+                toggle_list[4] = "   "
+                toggle_list[5] = "   "
             time.sleep(0.1)
         else:
             continue

@@ -154,6 +154,14 @@ while True:
                 # get the children list
                 task_list, task_id_list = js.getChildrenName(time_str, page_list[toggleCount], True)
 
+                # initial the toggle_inside
+                toggle_inside_list[0] = "-> "
+                toggle_inside_list[1] = ""
+                toggle_inside_list[2] = ""
+                toggle_inside_list[3] = ""
+                toggle_inside_list[4] = ""
+                toggle_inside_list[5] = ""
+
                 while True:
                     content_list = ["", "", "", "", "", "", "", ""]
                     bracket_list = ["", "", "", "", "", ""]
@@ -164,32 +172,16 @@ while True:
                             bracket_list[item] = "[x]"
                         elif task_list[item][1] == False:
                             bracket_list[item] = "[ ]"
-                        
+
                         content_list[item+2] = task_list[item][0]
-                    
-                    # TODO
+            
                     # button for confirming selections
                     if GPIO.input(17) == False:
                         js.updateTodoSubtask(task_id_list[toggleInsideCount])
                     
-                    # TODO
                     # button for picking subtasks by "->"
                     if GPIO.input(5) == False:
-
                         if toggleInsideCount < len(task_list) and toggleInsideCount == 0:
-                            toggle_inside_list[0] = "-> "
-                            toggle_inside_list[1] = ""
-                            toggle_inside_list[2] = ""
-                            toggle_inside_list[3] = ""
-                            toggle_inside_list[4] = ""
-                            toggle_inside_list[5] = ""
-                            toggleInsideCount += 1
-                            
-                            if toggleInsideCount >= len(task_list):
-                                toggleInsideCount = 0
-                            time.sleep(0.1)
-
-                        elif toggleInsideCount < len(task_list) and toggleInsideCount == 1:
                             toggle_inside_list[0] = ""
                             toggle_inside_list[1] = "-> "
                             toggle_inside_list[2] = ""
@@ -200,22 +192,10 @@ while True:
                             
                             if toggleInsideCount >= len(task_list):
                                 toggleInsideCount = 0
+                                toggle_inside_list = ["-> ", "", "", "", "", ""]
                             time.sleep(0.1)
 
-                        elif toggleInsideCount < len(task_list) and toggleInsideCount == 2:
-                            toggle_inside_list[0] = ""
-                            toggle_inside_list[1] = ""
-                            toggle_inside_list[2] = "-> "
-                            toggle_inside_list[3] = ""
-                            toggle_inside_list[4] = ""
-                            toggle_inside_list[5] = ""
-                            toggleInsideCount += 1
-                            
-                            if toggleInsideCount >= len(task_list):
-                                toggleInsideCount = 0
-                            time.sleep(0.1)
-
-                        elif toggleInsideCount < len(task_list) and toggleInsideCount == 3:
+                        elif toggleInsideCount < len(task_list) and toggleInsideCount == 1:
                             toggle_inside_list[0] = ""
                             toggle_inside_list[1] = ""
                             toggle_inside_list[2] = ""
@@ -226,9 +206,24 @@ while True:
                             
                             if toggleInsideCount >= len(task_list):
                                 toggleInsideCount = 0
+                                toggle_inside_list = ["-> ", "", "", "", "", ""]
                             time.sleep(0.1)
 
-                        elif toggleInsideCount < len(task_list) and toggleInsideCount == 4:
+                        elif toggleInsideCount < len(task_list) and toggleInsideCount == 2:
+                            toggle_inside_list[0] = ""
+                            toggle_inside_list[1] = ""
+                            toggle_inside_list[2] = ""
+                            toggle_inside_list[3] = "-> "
+                            toggle_inside_list[4] = ""
+                            toggle_inside_list[5] = ""
+                            toggleInsideCount += 1
+                            
+                            if toggleInsideCount >= len(task_list):
+                                toggleInsideCount = 0
+                                toggle_inside_list = ["-> ", "", "", "", "", ""]
+                            time.sleep(0.1)
+
+                        elif toggleInsideCount < len(task_list) and toggleInsideCount == 3:
                             toggle_inside_list[0] = ""
                             toggle_inside_list[1] = ""
                             toggle_inside_list[2] = ""
@@ -239,9 +234,10 @@ while True:
                             
                             if toggleInsideCount >= len(task_list):
                                 toggleInsideCount = 0
+                                toggle_inside_list = ["-> ", "", "", "", "", ""]
                             time.sleep(0.1)
 
-                        elif toggleInsideCount < len(task_list) and toggleInsideCount == 5:
+                        elif toggleInsideCount < len(task_list) and toggleInsideCount == 4:
                             toggle_inside_list[0] = ""
                             toggle_inside_list[1] = ""
                             toggle_inside_list[2] = ""
@@ -252,6 +248,21 @@ while True:
                             
                             if toggleInsideCount >= len(task_list):
                                 toggleInsideCount = 0
+                                toggle_inside_list = ["-> ", "", "", "", "", ""]
+                            time.sleep(0.1)
+
+                        elif toggleInsideCount < len(task_list) and toggleInsideCount == 5:
+                            toggle_inside_list[0] = "-> "
+                            toggle_inside_list[1] = ""
+                            toggle_inside_list[2] = ""
+                            toggle_inside_list[3] = ""
+                            toggle_inside_list[4] = ""
+                            toggle_inside_list[5] = ""
+                            toggleInsideCount += 1
+                            
+                            if toggleInsideCount >= len(task_list):
+                                toggleInsideCount = 0
+                                toggle_inside_list = ["-> ", "", "", "", "", ""]
                             time.sleep(0.1)
                     
                         elif toggleInsideCount >= len(task_list):

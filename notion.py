@@ -293,23 +293,22 @@ while True:
                         toggleInsideCount = 0
                         break
 
-                    # print(toggle_inside_list)
-                    # print(bracket_list)
-
-                    # Write two lines of text.
-                    draw.text((x, top), 	content_list[0], font = font, fill = 255)
-                    draw.text((x, top+9),	content_list[1], font = font, fill = 255)
-                    draw.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)
-                    draw.text((x, top+25),	toggle_inside_list[1] + bracket_list[1] + content_list[3], font = font, fill = 255)
-                    draw.text((x, top+33),	toggle_inside_list[2] + bracket_list[2] + content_list[4], font = font, fill = 255)
-                    draw.text((x, top+41),	toggle_inside_list[3] + bracket_list[3] + content_list[5], font = font, fill = 255)
-                    draw.text((x, top+49),	toggle_inside_list[4] + bracket_list[4] + content_list[6], font = font, fill = 255)
-                    draw.text((x, top+57),	toggle_inside_list[5] + bracket_list[5] + content_list[7], font = font, fill = 255)
+                    # # Write two lines of text.
+                    # draw.text((x, top), 	content_list[0], font = font, fill = 255)
+                    # draw.text((x, top+9),	content_list[1], font = font, fill = 255)
+                    # draw.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)
+                    # draw.text((x, top+25),	toggle_inside_list[1] + bracket_list[1] + content_list[3], font = font, fill = 255)
+                    # draw.text((x, top+33),	toggle_inside_list[2] + bracket_list[2] + content_list[4], font = font, fill = 255)
+                    # draw.text((x, top+41),	toggle_inside_list[3] + bracket_list[3] + content_list[5], font = font, fill = 255)
+                    # draw.text((x, top+49),	toggle_inside_list[4] + bracket_list[4] + content_list[6], font = font, fill = 255)
+                    # draw.text((x, top+57),	toggle_inside_list[5] + bracket_list[5] + content_list[7], font = font, fill = 255)
                     
-                    # Display image.
-                    disp.image(image)
-                    disp.display()
-                    time.sleep(0.1)
+                    # # Display image.
+                    # disp.image(image)
+                    # disp.display()
+                    # time.sleep(0.1)
+
+                    textDraw(content_list, toggle_inside_list, bracket_list)
 
         except:
             continue
@@ -583,3 +582,23 @@ while True:
     disp.display()
     time.sleep(.1)
 
+
+def textDraw(content_list, toggle_inside_list, bracket_list):
+    # Write two lines of text.
+    draw.text((x, top), 	content_list[0], font = font, fill = 255)
+    draw.text((x, top+9),	content_list[1], font = font, fill = 255)
+    draw.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)
+    draw.text((x, top+25),	toggle_inside_list[1] + bracket_list[1] + content_list[3], font = font, fill = 255)
+    draw.text((x, top+33),	toggle_inside_list[2] + bracket_list[2] + content_list[4], font = font, fill = 255)
+    draw.text((x, top+41),	toggle_inside_list[3] + bracket_list[3] + content_list[5], font = font, fill = 255)
+    draw.text((x, top+49),	toggle_inside_list[4] + bracket_list[4] + content_list[6], font = font, fill = 255)
+    draw.text((x, top+57),	toggle_inside_list[5] + bracket_list[5] + content_list[7], font = font, fill = 255)
+    
+    # Display image.
+    disp.image(image)
+    disp.display()
+    time.sleep(0.1)
+
+    print(toggle_inside_list)
+    print(bracket_list)
+    print(content_list)

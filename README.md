@@ -26,7 +26,7 @@ git clone https://github.com/JAckZ97/Notion_OLED.git
 ```
 nano secret_key.txt
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example like following:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example like following:
 ```
 secret_neSXGaJ1YP2q0hsNOjxxxxxxxxxxxxxxxxxxxxxxxxx
 9bc98e7cba3a46539xxxxxxxxxxxxxxx

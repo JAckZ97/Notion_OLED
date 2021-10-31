@@ -584,6 +584,9 @@ while True:
 
 
 def textDraw(content_list, toggle_inside_list, bracket_list):
+    # Draw a black filled box to clear the image.
+    draw.rectangle((0,0,width,height), outline=0, fill=0)
+
     # Write two lines of text.
     draw.text((x, top), 	content_list[0], font = font, fill = 255)
     draw.text((x, top+9),	content_list[1], font = font, fill = 255)

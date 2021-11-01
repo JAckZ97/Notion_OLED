@@ -147,11 +147,11 @@ while True:
             # task has children
             elif children_list[toggleCount] == True:
 
-                # update the newest information
-                db.readDatabase()
-                time.sleep(0.1)
-                js.resetBlockContent()
-                time.sleep(0.1)
+                # # update the newest information
+                # db.readDatabase()
+                # time.sleep(0.1)
+                # js.resetBlockContent()
+                # time.sleep(0.1)
 
                 # get the children list
                 task_list, task_id_list = js.getChildrenName(time_str, page_list[toggleCount], True)
@@ -309,6 +309,13 @@ while True:
                     # draw.text((x, top+57),	toggle_inside_list[5] + bracket_list[5] + content_list[7], font = font, fill = 255)
                     
                     draw.text((x, top), str(counter), font = font, fill = 255)
+
+                    # Display image.
+                    disp.image(image)
+                    disp.display()
+                    time.sleep(0.1)
+
+                    draw.text((x, top), "", font = font, fill = 255)
 
                     # Display image.
                     disp.image(image)

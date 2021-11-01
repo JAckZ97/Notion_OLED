@@ -93,6 +93,7 @@ the_day_before_yesterday_str = datetime.strftime(the_day_before_yesterday, '%Y-%
 tomorrow_str = datetime.strftime(tomorrow, '%Y-%m-%d')
 the_day_after_tomorrow_str = datetime.strftime(the_day_after_tomorrow, '%Y-%m-%d')
 
+counter = 0
 
 while True:
     # Draw a black filled box to clear the image.
@@ -100,25 +101,26 @@ while True:
 
     # button for reset local database
     if GPIO.input(16) == False:
-        # Write two lines of text.
-        draw.text((x, top), 	"Resetting!", font = font, fill = 255)
-        draw.text((x, top+9),	"", font = font, fill = 255)
-        draw.text((x, top+17),	"", font = font, fill = 255)
-        draw.text((x, top+25),	"", font = font, fill = 255)
-        draw.text((x, top+33),	"", font = font, fill = 255)
-        draw.text((x, top+41),	"", font = font, fill = 255)
-        draw.text((x, top+49),	"", font = font, fill = 255)
-        draw.text((x, top+57),	"", font = font, fill = 255)
+        # # Write two lines of text.
+        # draw.text((x, top), 	"Resetting!", font = font, fill = 255)
+        # draw.text((x, top+9),	"", font = font, fill = 255)
+        # draw.text((x, top+17),	"", font = font, fill = 255)
+        # draw.text((x, top+25),	"", font = font, fill = 255)
+        # draw.text((x, top+33),	"", font = font, fill = 255)
+        # draw.text((x, top+41),	"", font = font, fill = 255)
+        # draw.text((x, top+49),	"", font = font, fill = 255)
+        # draw.text((x, top+57),	"", font = font, fill = 255)
 
-        # Display image.
-        disp.image(image)
-        disp.display()
-        time.sleep(0.1)
+        # # Display image.
+        # disp.image(image)
+        # disp.display()
+        # time.sleep(0.1)
 
-        db.readDatabase()
-        time.sleep(0.1)
-        js.resetBlockContent()
-        time.sleep(0.1)
+        # db.readDatabase()
+        # time.sleep(0.1)
+        # js.resetBlockContent()
+        # time.sleep(0.1)
+        counter += 1
 
     # button for confirming selections
     if GPIO.input(17) == False:
@@ -147,18 +149,17 @@ while True:
             # task has children
             elif children_list[toggleCount] == True:
 
-                # # update the newest information
-                # db.readDatabase()
-                # time.sleep(0.1)
-                # js.resetBlockContent()
-                # time.sleep(0.1)
+                # update the newest information
+                db.readDatabase()
+                time.sleep(0.1)
+                js.resetBlockContent()
+                time.sleep(0.1)
 
                 # get the children list
                 task_list, task_id_list = js.getChildrenName(time_str, page_list[toggleCount], True)
                 sub_task_status_list = [1, 1, 1, 1, 1, 1]
                 content_list = ["", "", "", "", "", "", "", ""]
                 bracket_list = ["", "", "", "", "", ""]
-                counter = 0
 
                 for item in range(0, len(task_list)):
                     if task_list[item][1] == True:
@@ -298,31 +299,21 @@ while True:
                         counter += 1
                         time.sleep(0.1)
 
-                    # Write two lines of text.
-                    # draw.text((x, top), 	content_list[0], font = font, fill = 255)
-                    # draw.text((x, top+9),	content_list[1], font = font, fill = 255)
-                    # draw.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)
-                    # draw.text((x, top+25),	toggle_inside_list[1] + bracket_list[1] + content_list[3], font = font, fill = 255)
-                    # draw.text((x, top+33),	toggle_inside_list[2] + bracket_list[2] + content_list[4], font = font, fill = 255)
-                    # draw.text((x, top+41),	toggle_inside_list[3] + bracket_list[3] + content_list[5], font = font, fill = 255)
-                    # draw.text((x, top+49),	toggle_inside_list[4] + bracket_list[4] + content_list[6], font = font, fill = 255)
-                    # draw.text((x, top+57),	toggle_inside_list[5] + bracket_list[5] + content_list[7], font = font, fill = 255)
-                    
-                    draw.text((x, top), str(counter), font = font, fill = 255)
+
+                    Write two lines of text.
+                    draw.text((x, top), 	content_list[0], font = font, fill = 255)
+                    draw.text((x, top+9),	content_list[1], font = font, fill = 255)
+                    draw.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)
+                    draw.text((x, top+25),	toggle_inside_list[1] + bracket_list[1] + content_list[3], font = font, fill = 255)
+                    draw.text((x, top+33),	toggle_inside_list[2] + bracket_list[2] + content_list[4], font = font, fill = 255)
+                    draw.text((x, top+41),	toggle_inside_list[3] + bracket_list[3] + content_list[5], font = font, fill = 255)
+                    draw.text((x, top+49),	toggle_inside_list[4] + bracket_list[4] + content_list[6], font = font, fill = 255)
+                    draw.text((x, top+57),	toggle_inside_list[5] + bracket_list[5] + content_list[7], font = font, fill = 255)
 
                     # Display image.
                     disp.image(image)
                     disp.display()
                     time.sleep(0.1)
-
-                    draw.text((x, top), "", font = font, fill = 255)
-
-                    # Display image.
-                    disp.image(image)
-                    disp.display()
-                    time.sleep(0.1)
-
-                    # textDraw(content_list, toggle_inside_list, bracket_list)
 
         except:
             continue
@@ -581,41 +572,20 @@ while True:
             continue
 
 
-    # Write two lines of text.
-    draw.text((x, top), 	text_list[0], font = font, fill = 255)
-    draw.text((x, top+9),	text_list[1], font = font, fill = 255)
-    draw.text((x, top+17),	toggle_list[0] + text_list[2], font = font, fill = 255)
-    draw.text((x, top+25),	toggle_list[1] + text_list[3], font = font, fill = 255)
-    draw.text((x, top+33),	toggle_list[2] + text_list[4], font = font, fill = 255)
-    draw.text((x, top+41),	toggle_list[3] + text_list[5], font = font, fill = 255)
-    draw.text((x, top+49),	toggle_list[4] + text_list[6], font = font, fill = 255)
-    draw.text((x, top+57),	toggle_list[5] + text_list[7], font = font, fill = 255)
+    # # Write two lines of text.
+    # draw.text((x, top), 	text_list[0], font = font, fill = 255)
+    # draw.text((x, top+9),	text_list[1], font = font, fill = 255)
+    # draw.text((x, top+17),	toggle_list[0] + text_list[2], font = font, fill = 255)
+    # draw.text((x, top+25),	toggle_list[1] + text_list[3], font = font, fill = 255)
+    # draw.text((x, top+33),	toggle_list[2] + text_list[4], font = font, fill = 255)
+    # draw.text((x, top+41),	toggle_list[3] + text_list[5], font = font, fill = 255)
+    # draw.text((x, top+49),	toggle_list[4] + text_list[6], font = font, fill = 255)
+    # draw.text((x, top+57),	toggle_list[5] + text_list[7], font = font, fill = 255)
+
+    draw.text((x, top), 	str(counter), font = font, fill = 255)
 
     # Display image.
     disp.image(image)
     disp.display()
     time.sleep(.1)
 
-
-# def textDraw(content_list, toggle_inside_list, bracket_list):
-#     # Draw a black filled box to clear the image.
-#     draw.rectangle((0,0,width,height), outline=0, fill=0)
-
-#     # Write two lines of text.
-#     draw.text((x, top), 	content_list[0], font = font, fill = 255)
-#     draw.text((x, top+9),	content_list[1], font = font, fill = 255)
-#     draw.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)
-#     draw.text((x, top+25),	toggle_inside_list[1] + bracket_list[1] + content_list[3], font = font, fill = 255)
-#     draw.text((x, top+33),	toggle_inside_list[2] + bracket_list[2] + content_list[4], font = font, fill = 255)
-#     draw.text((x, top+41),	toggle_inside_list[3] + bracket_list[3] + content_list[5], font = font, fill = 255)
-#     draw.text((x, top+49),	toggle_inside_list[4] + bracket_list[4] + content_list[6], font = font, fill = 255)
-#     draw.text((x, top+57),	toggle_inside_list[5] + bracket_list[5] + content_list[7], font = font, fill = 255)
-    
-#     # Display image.
-#     disp.image(image)
-#     disp.display()
-#     time.sleep(0.1)
-
-#     print(toggle_inside_list)
-#     print(bracket_list)
-#     print(content_list)

@@ -300,7 +300,7 @@ while True:
                         time.sleep(0.1)
 
 
-                    Write two lines of text.
+                    # Write two lines of text.
                     draw.text((x, top), 	content_list[0], font = font, fill = 255)
                     draw.text((x, top+9),	content_list[1], font = font, fill = 255)
                     draw.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)

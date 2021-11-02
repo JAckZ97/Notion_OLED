@@ -130,6 +130,6 @@ dmypy.json
 
 
 notion
-test.py
+# test.py
 test.json
 secret_key.txt

@@ -106,6 +106,7 @@ the_day_after_tomorrow_str = datetime.strftime(the_day_after_tomorrow, '%Y-%m-%d
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0,0,width,height), outline=0, fill=0)
+    draw1.rectangle((0,0,width1,height1), outline=0, fill=0)
 
     # button for reset local database
     if GPIO.input(16) == False:

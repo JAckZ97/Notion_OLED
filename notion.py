@@ -25,34 +25,34 @@ SPI_DEVICE = 0
 
 # 128x64 display with hardware I2C:
 disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST)
-disp1 = Adafruit_SSD1306.SSD1306_128_64(rst=RST)
+# disp1 = Adafruit_SSD1306.SSD1306_128_64(rst=RST)
 
 # Initialize library.
 disp.begin()
-disp1.begin()
+# disp1.begin()
 
 # Clear display.
 disp.clear()
 disp.display()
-disp1.clear()
-disp1.display()
+# disp1.clear()
+# disp1.display()
 
 # Create blank image for drawing.
 # Make sure to create image with mode '1' for 1-bit color.
 width = disp.width
 height = disp.height
 image = Image.new('1', (width, height))
-width1 = disp1.width
-height1 = disp1.height
-image1 = Image.new('1', (width1, height1))
+# width1 = disp1.width
+# height1 = disp1.height
+# image1 = Image.new('1', (width1, height1))
 
 # Get drawing object to draw on image.
 draw = ImageDraw.Draw(image)
-draw1 = ImageDraw.Draw(image1)
+# draw1 = ImageDraw.Draw(image1)
 
 # Draw a black filled box to clear the image.
 draw.rectangle((0,0,width,height), outline=0, fill=0)
-draw1.rectangle((0,0,width1,height1), outline=0, fill=0)
+# draw1.rectangle((0,0,width1,height1), outline=0, fill=0)
 
 # Draw some shapes.
 # First define some constants to allow easy resizing of shapes.
@@ -106,7 +106,7 @@ the_day_after_tomorrow_str = datetime.strftime(the_day_after_tomorrow, '%Y-%m-%d
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0,0,width,height), outline=0, fill=0)
-    draw1.rectangle((0,0,width1,height1), outline=0, fill=0)
+    # draw1.rectangle((0,0,width1,height1), outline=0, fill=0)
 
     # button for reset local database
     if GPIO.input(16) == False:
@@ -309,35 +309,35 @@ while True:
                         time.sleep(0.1)
 
 
-                    # # Write two lines of text.
-                    # draw.text((x, top), 	content_list[0], font = font, fill = 255)
-                    # draw.text((x, top+9),	content_list[1], font = font, fill = 255)
-                    # draw.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)
-                    # draw.text((x, top+25),	toggle_inside_list[1] + bracket_list[1] + content_list[3], font = font, fill = 255)
-                    # draw.text((x, top+33),	toggle_inside_list[2] + bracket_list[2] + content_list[4], font = font, fill = 255)
-                    # draw.text((x, top+41),	toggle_inside_list[3] + bracket_list[3] + content_list[5], font = font, fill = 255)
-                    # draw.text((x, top+49),	toggle_inside_list[4] + bracket_list[4] + content_list[6], font = font, fill = 255)
-                    # draw.text((x, top+57),	toggle_inside_list[5] + bracket_list[5] + content_list[7], font = font, fill = 255)
-
-                    # # Display image.
-                    # disp.image(image)
-                    # disp.display()
-                    # time.sleep(0.1)
-
                     # Write two lines of text.
-                    draw1.text((x, top), 	content_list[0], font = font, fill = 255)
-                    draw1.text((x, top+9),	content_list[1], font = font, fill = 255)
-                    draw1.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)
-                    draw1.text((x, top+25),	toggle_inside_list[1] + bracket_list[1] + content_list[3], font = font, fill = 255)
-                    draw1.text((x, top+33),	toggle_inside_list[2] + bracket_list[2] + content_list[4], font = font, fill = 255)
-                    draw1.text((x, top+41),	toggle_inside_list[3] + bracket_list[3] + content_list[5], font = font, fill = 255)
-                    draw1.text((x, top+49),	toggle_inside_list[4] + bracket_list[4] + content_list[6], font = font, fill = 255)
-                    draw1.text((x, top+57),	toggle_inside_list[5] + bracket_list[5] + content_list[7], font = font, fill = 255)
+                    draw.text((x, top), 	content_list[0], font = font, fill = 255)
+                    draw.text((x, top+9),	content_list[1], font = font, fill = 255)
+                    draw.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)
+                    draw.text((x, top+25),	toggle_inside_list[1] + bracket_list[1] + content_list[3], font = font, fill = 255)
+                    draw.text((x, top+33),	toggle_inside_list[2] + bracket_list[2] + content_list[4], font = font, fill = 255)
+                    draw.text((x, top+41),	toggle_inside_list[3] + bracket_list[3] + content_list[5], font = font, fill = 255)
+                    draw.text((x, top+49),	toggle_inside_list[4] + bracket_list[4] + content_list[6], font = font, fill = 255)
+                    draw.text((x, top+57),	toggle_inside_list[5] + bracket_list[5] + content_list[7], font = font, fill = 255)
 
                     # Display image.
-                    disp1.image(image)
-                    disp1.display()
+                    disp.image(image)
+                    disp.display()
                     time.sleep(0.1)
+
+                    # # Write two lines of text.
+                    # draw1.text((x, top), 	content_list[0], font = font, fill = 255)
+                    # draw1.text((x, top+9),	content_list[1], font = font, fill = 255)
+                    # draw1.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)
+                    # draw1.text((x, top+25),	toggle_inside_list[1] + bracket_list[1] + content_list[3], font = font, fill = 255)
+                    # draw1.text((x, top+33),	toggle_inside_list[2] + bracket_list[2] + content_list[4], font = font, fill = 255)
+                    # draw1.text((x, top+41),	toggle_inside_list[3] + bracket_list[3] + content_list[5], font = font, fill = 255)
+                    # draw1.text((x, top+49),	toggle_inside_list[4] + bracket_list[4] + content_list[6], font = font, fill = 255)
+                    # draw1.text((x, top+57),	toggle_inside_list[5] + bracket_list[5] + content_list[7], font = font, fill = 255)
+
+                    # # Display image.
+                    # disp1.image(image)
+                    # disp1.display()
+                    # time.sleep(0.1)
 
         except:
             continue

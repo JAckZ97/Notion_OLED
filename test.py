@@ -102,9 +102,9 @@ while True:
             disp.display()
             time.sleep(0.1)
 
-    draw.text((x, top), 	str(counter), font = font, fill = 255)
-    # Display image.
-    disp.image(image)
-    disp.display()
-    time.sleep(.1)
+    # draw.text((x, top), 	str(counter), font = font, fill = 255)
+    # # Display image.
+    # disp.image(image)
+    # disp.display()
+    # time.sleep(.1)
 

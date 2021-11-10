@@ -2,19 +2,19 @@
 Using notion API to retrieve daily tasks on OLED screen
 
 ### Current Demo
-<i> Restting </i>  
-<img src="https://raw.githubusercontent.com/JAckZ97/Notion_OLED/main/Image/IMG_1380.JPG" width="200" height="150" />  
-
 <i> Overlook </i>  
-<img src="https://raw.githubusercontent.com/JAckZ97/Notion_OLED/main/Image/IMG_1384.jpg" width="200" height="150" /> 
+<img src="https://raw.githubusercontent.com/JAckZ97/Notion_OLED/main/Image/IMG_1384.jpg" width="400" height="300" /> 
+
+<i> Restting </i>  
+<img src="https://raw.githubusercontent.com/JAckZ97/Notion_OLED/main/Image/IMG_1380.JPG" width="400" height="300" />  
 
 <i> Task list </i>  
-<img src="https://raw.githubusercontent.com/JAckZ97/Notion_OLED/main/Image/IMG_1382.JPG" width="200" height="150" />
-<img src="https://raw.githubusercontent.com/JAckZ97/Notion_OLED/main/Image/Screen%20Shot%202021-11-09%20at%2011.38.03%20PM.png" width="145" height="150" />
+<img src="https://raw.githubusercontent.com/JAckZ97/Notion_OLED/main/Image/IMG_1382.JPG" width="400" height="300" />
+<img src="https://raw.githubusercontent.com/JAckZ97/Notion_OLED/main/Image/Screen%20Shot%202021-11-09%20at%2011.38.03%20PM.png" width="290" height="300" />
 
 <i> Sub-task list </i>  
-<img src="https://raw.githubusercontent.com/JAckZ97/Notion_OLED/main/Image/IMG_1383.JPG" width="200" height="150" />
-<!-- <img src="https://raw.githubusercontent.com/JAckZ97/Notion_OLED/main/Image/Screen%20Shot%202021-11-09%20at%2011.38.24%20PM.png" width="400" height="300" /> -->
+<img src="https://raw.githubusercontent.com/JAckZ97/Notion_OLED/main/Image/IMG_1383.JPG" width="400" height="300" />
+<img src="https://raw.githubusercontent.com/JAckZ97/Notion_OLED/main/Image/Screen%20Shot%202021-11-09%20at%2011.53.43%20PM.png" width="400" height="300" />
 
 
 ### Install step

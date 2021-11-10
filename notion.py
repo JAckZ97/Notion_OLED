@@ -562,7 +562,7 @@ while True:
     # button for leave sub-task page 
     if GPIO.input(26) == False and subtask_flag == 1:
         toggleInsideCount = 0
-        subtask_flag == 0
+        subtask_flag = 0
 
     if subtask_flag == 0:
         # Write two lines of text.

@@ -83,9 +83,6 @@ js = JsonFileController()
 dayCount = 0
 toggleCount = 0
 toggleInsideCount = 0
-# flag for sub task UI
-subtask_flag = 0
-
 text_list = ["", "", "", "", "", "", "", ""]
 toggle_list = ["", "", "", "", "", ""]
 toggle_inside_list = ["", "", "", "", "", ""]
@@ -135,7 +132,7 @@ while True:
         # counter += 1
 
     # button for confirming selections
-    if GPIO.input(17) == False and subtask_flag == 0:
+    if GPIO.input(17) == False:
         if dayCount == 1:
             page_list, children_list = js.getPageNameListWithChildrenStatus(today_str)
             time_str = js.getTodayDate()
@@ -160,7 +157,6 @@ while True:
 
             # task has children
             elif children_list[toggleCount] == True:
-                subtask_flag = 1
 
                 # # update the newest information
                 # db.readDatabase()
@@ -191,14 +187,163 @@ while True:
                 toggle_inside_list[4] = "   "
                 toggle_inside_list[5] = "   "
 
-                # get subtask title                  
-                content_list[0] = page_list[toggleCount]
+                while True:
+                    # get subtask title                  
+                    content_list[0] = page_list[toggleCount]
+            
+                    # button for confirming selections
+                    if GPIO.input(17) == False:
+                        if sub_task_status_list[toggleInsideCount] == 1:
+                            bracket_list[toggleInsideCount] = "[ ]"
+                            sub_task_status_list[toggleInsideCount] = 0
+                        elif sub_task_status_list[toggleInsideCount] == 0:
+                            bracket_list[toggleInsideCount] = "[x]"
+                            sub_task_status_list[toggleInsideCount] = 1
+                            
+                        js.updateTodoSubtask(task_id_list[toggleInsideCount])
+                    
+                    # button for picking subtasks by "->"
+                    if GPIO.input(5) == False:
+                        if toggleInsideCount < len(task_list) and toggleInsideCount == 0:
+                            toggle_inside_list[0] = "   "
+                            toggle_inside_list[1] = "-> "
+                            toggle_inside_list[2] = "   "
+                            toggle_inside_list[3] = "   "
+                            toggle_inside_list[4] = "   "
+                            toggle_inside_list[5] = "   "
+                            toggleInsideCount += 1
+                            
+                            if toggleInsideCount >= len(task_list):
+                                toggleInsideCount = 0
+                                toggle_inside_list = ["-> ", "   ", "   ", "   ", "   ", "   "]
+                            time.sleep(0.1)
+
+                        elif toggleInsideCount < len(task_list) and toggleInsideCount == 1:
+                            toggle_inside_list[0] = "   "
+                            toggle_inside_list[1] = "   "
+                            toggle_inside_list[2] = "-> "
+                            toggle_inside_list[3] = "   "
+                            toggle_inside_list[4] = "   "
+                            toggle_inside_list[5] = "   "
+                            toggleInsideCount += 1
+                            
+                            if toggleInsideCount >= len(task_list):
+                                toggleInsideCount = 0
+                                toggle_inside_list = ["-> ", "   ", "   ", "   ", "   ", "   "]
+                            time.sleep(0.1)
+
+                        elif toggleInsideCount < len(task_list) and toggleInsideCount == 2:
+                            toggle_inside_list[0] = "   "
+                            toggle_inside_list[1] = "   "
+                            toggle_inside_list[2] = "   "
+                            toggle_inside_list[3] = "-> "
+                            toggle_inside_list[4] = "   "
+                            toggle_inside_list[5] = "   "
+                            toggleInsideCount += 1
+                            
+                            if toggleInsideCount >= len(task_list):
+                                toggleInsideCount = 0
+                                toggle_inside_list = ["-> ", "   ", "   ", "   ", "   ", "   "]
+                            time.sleep(0.1)
+
+                        elif toggleInsideCount < len(task_list) and toggleInsideCount == 3:
+                            toggle_inside_list[0] = "   "
+                            toggle_inside_list[1] = "   "
+                            toggle_inside_list[2] = "   "
+                            toggle_inside_list[3] = "   "
+                            toggle_inside_list[4] = "-> "
+                            toggle_inside_list[5] = "   "
+                            toggleInsideCount += 1
+                            
+                            if toggleInsideCount >= len(task_list):
+                                toggleInsideCount = 0
+                                toggle_inside_list = ["-> ", "   ", "   ", "   ", "   ", "   "]
+                            time.sleep(0.1)
+
+                        elif toggleInsideCount < len(task_list) and toggleInsideCount == 4:
+                            toggle_inside_list[0] = "   "
+                            toggle_inside_list[1] = "   "
+                            toggle_inside_list[2] = "   "
+                            toggle_inside_list[3] = "   "
+                            toggle_inside_list[4] = "   "
+                            toggle_inside_list[5] = "-> "
+                            toggleInsideCount += 1
+                            
+                            if toggleInsideCount >= len(task_list):
+                                toggleInsideCount = 0
+                                toggle_inside_list = ["-> ", "   ", "   ", "   ", "   ", "   "]
+                            time.sleep(0.1)
+
+                        elif toggleInsideCount < len(task_list) and toggleInsideCount == 5:
+                            toggle_inside_list[0] = "-> "
+                            toggle_inside_list[1] = "   "
+                            toggle_inside_list[2] = "   "
+                            toggle_inside_list[3] = "   "
+                            toggle_inside_list[4] = "   "
+                            toggle_inside_list[5] = "   "
+                            toggleInsideCount += 1
+                            
+                            if toggleInsideCount >= len(task_list):
+                                toggleInsideCount = 0
+                                toggle_inside_list = ["-> ", "   ", "   ", "   ", "   ", "   "]
+                            time.sleep(0.1)
+                    
+                        elif toggleInsideCount >= len(task_list):
+                            toggle_inside_list[0] = "-> "
+                            toggle_inside_list[1] = "   "
+                            toggle_inside_list[2] = "   "
+                            toggle_inside_list[3] = "   "
+                            toggle_inside_list[4] = "   "
+                            toggle_inside_list[5] = "   "
+                            toggleInsideCount = 0
+                            time.sleep(0.1)
+                        else:
+                            continue
+
+                    if GPIO.input(26) == False:
+                        toggleInsideCount = 0
+                        break
+
+                    if GPIO.input(16) == False:
+                        counter += 1
+                        time.sleep(0.1)
+
+
+                    # Write two lines of text.
+                    draw.text((x, top), 	content_list[0], font = font, fill = 255)
+                    draw.text((x, top+9),	content_list[1], font = font, fill = 255)
+                    draw.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)
+                    draw.text((x, top+25),	toggle_inside_list[1] + bracket_list[1] + content_list[3], font = font, fill = 255)
+                    draw.text((x, top+33),	toggle_inside_list[2] + bracket_list[2] + content_list[4], font = font, fill = 255)
+                    draw.text((x, top+41),	toggle_inside_list[3] + bracket_list[3] + content_list[5], font = font, fill = 255)
+                    draw.text((x, top+49),	toggle_inside_list[4] + bracket_list[4] + content_list[6], font = font, fill = 255)
+                    draw.text((x, top+57),	toggle_inside_list[5] + bracket_list[5] + content_list[7], font = font, fill = 255)
+
+                    # Display image.
+                    disp.image(image)
+                    disp.display()
+                    time.sleep(0.1)
+
+                    # # Write two lines of text.
+                    # draw1.text((x, top), 	content_list[0], font = font, fill = 255)
+                    # draw1.text((x, top+9),	content_list[1], font = font, fill = 255)
+                    # draw1.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)
+                    # draw1.text((x, top+25),	toggle_inside_list[1] + bracket_list[1] + content_list[3], font = font, fill = 255)
+                    # draw1.text((x, top+33),	toggle_inside_list[2] + bracket_list[2] + content_list[4], font = font, fill = 255)
+                    # draw1.text((x, top+41),	toggle_inside_list[3] + bracket_list[3] + content_list[5], font = font, fill = 255)
+                    # draw1.text((x, top+49),	toggle_inside_list[4] + bracket_list[4] + content_list[6], font = font, fill = 255)
+                    # draw1.text((x, top+57),	toggle_inside_list[5] + bracket_list[5] + content_list[7], font = font, fill = 255)
+
+                    # # Display image.
+                    # disp1.image(image)
+                    # disp1.display()
+                    # time.sleep(0.1)
 
         except:
             continue
                 
     # button for picking tasks by "->"
-    if GPIO.input(5) == False and subtask_flag == 0:
+    if GPIO.input(5) == False:
         if dayCount == 1:
             page_list, children_list = js.getPageNameListWithChildrenStatus(today_str)
         elif dayCount == 2:
@@ -317,7 +462,7 @@ while True:
             continue
 
     # button for switching days
-    if GPIO.input(26) == False and subtask_flag == 0:
+    if GPIO.input(26) == False:
         if dayCount == 0:
             text_list[0] = js.getTodayDate()
             page_list, children_list = js.getPageNameListWithChildrenStatus(today_str)
@@ -450,153 +595,20 @@ while True:
         else:
             continue
 
-    # button for confirming selections
-    if GPIO.input(17) == False and subtask_flag == 1:
-        if sub_task_status_list[toggleInsideCount] == 1:
-            bracket_list[toggleInsideCount] = "[ ]"
-            sub_task_status_list[toggleInsideCount] = 0
-        elif sub_task_status_list[toggleInsideCount] == 0:
-            bracket_list[toggleInsideCount] = "[x]"
-            sub_task_status_list[toggleInsideCount] = 1
-            
-        js.updateTodoSubtask(task_id_list[toggleInsideCount])
-    
-    # button for picking subtasks by "->"
-    if GPIO.input(5) == False and subtask_flag == 1:
-        if toggleInsideCount < len(task_list) and toggleInsideCount == 0:
-            toggle_inside_list[0] = "   "
-            toggle_inside_list[1] = "-> "
-            toggle_inside_list[2] = "   "
-            toggle_inside_list[3] = "   "
-            toggle_inside_list[4] = "   "
-            toggle_inside_list[5] = "   "
-            toggleInsideCount += 1
-            
-            if toggleInsideCount >= len(task_list):
-                toggleInsideCount = 0
-                toggle_inside_list = ["-> ", "   ", "   ", "   ", "   ", "   "]
-            time.sleep(0.1)
 
-        elif toggleInsideCount < len(task_list) and toggleInsideCount == 1:
-            toggle_inside_list[0] = "   "
-            toggle_inside_list[1] = "   "
-            toggle_inside_list[2] = "-> "
-            toggle_inside_list[3] = "   "
-            toggle_inside_list[4] = "   "
-            toggle_inside_list[5] = "   "
-            toggleInsideCount += 1
-            
-            if toggleInsideCount >= len(task_list):
-                toggleInsideCount = 0
-                toggle_inside_list = ["-> ", "   ", "   ", "   ", "   ", "   "]
-            time.sleep(0.1)
+    # Write two lines of text.
+    draw.text((x, top), 	text_list[0], font = font, fill = 255)
+    draw.text((x, top+9),	text_list[1], font = font, fill = 255)
+    draw.text((x, top+17),	toggle_list[0] + text_list[2], font = font, fill = 255)
+    draw.text((x, top+25),	toggle_list[1] + text_list[3], font = font, fill = 255)
+    draw.text((x, top+33),	toggle_list[2] + text_list[4], font = font, fill = 255)
+    draw.text((x, top+41),	toggle_list[3] + text_list[5], font = font, fill = 255)
+    draw.text((x, top+49),	toggle_list[4] + text_list[6], font = font, fill = 255)
+    draw.text((x, top+57),	toggle_list[5] + text_list[7], font = font, fill = 255)
+    # draw.text((x, top), 	str(counter), font = font, fill = 255)
 
-        elif toggleInsideCount < len(task_list) and toggleInsideCount == 2:
-            toggle_inside_list[0] = "   "
-            toggle_inside_list[1] = "   "
-            toggle_inside_list[2] = "   "
-            toggle_inside_list[3] = "-> "
-            toggle_inside_list[4] = "   "
-            toggle_inside_list[5] = "   "
-            toggleInsideCount += 1
-            
-            if toggleInsideCount >= len(task_list):
-                toggleInsideCount = 0
-                toggle_inside_list = ["-> ", "   ", "   ", "   ", "   ", "   "]
-            time.sleep(0.1)
-
-        elif toggleInsideCount < len(task_list) and toggleInsideCount == 3:
-            toggle_inside_list[0] = "   "
-            toggle_inside_list[1] = "   "
-            toggle_inside_list[2] = "   "
-            toggle_inside_list[3] = "   "
-            toggle_inside_list[4] = "-> "
-            toggle_inside_list[5] = "   "
-            toggleInsideCount += 1
-            
-            if toggleInsideCount >= len(task_list):
-                toggleInsideCount = 0
-                toggle_inside_list = ["-> ", "   ", "   ", "   ", "   ", "   "]
-            time.sleep(0.1)
-
-        elif toggleInsideCount < len(task_list) and toggleInsideCount == 4:
-            toggle_inside_list[0] = "   "
-            toggle_inside_list[1] = "   "
-            toggle_inside_list[2] = "   "
-            toggle_inside_list[3] = "   "
-            toggle_inside_list[4] = "   "
-            toggle_inside_list[5] = "-> "
-            toggleInsideCount += 1
-            
-            if toggleInsideCount >= len(task_list):
-                toggleInsideCount = 0
-                toggle_inside_list = ["-> ", "   ", "   ", "   ", "   ", "   "]
-            time.sleep(0.1)
-
-        elif toggleInsideCount < len(task_list) and toggleInsideCount == 5:
-            toggle_inside_list[0] = "-> "
-            toggle_inside_list[1] = "   "
-            toggle_inside_list[2] = "   "
-            toggle_inside_list[3] = "   "
-            toggle_inside_list[4] = "   "
-            toggle_inside_list[5] = "   "
-            toggleInsideCount += 1
-            
-            if toggleInsideCount >= len(task_list):
-                toggleInsideCount = 0
-                toggle_inside_list = ["-> ", "   ", "   ", "   ", "   ", "   "]
-            time.sleep(0.1)
-    
-        elif toggleInsideCount >= len(task_list):
-            toggle_inside_list[0] = "-> "
-            toggle_inside_list[1] = "   "
-            toggle_inside_list[2] = "   "
-            toggle_inside_list[3] = "   "
-            toggle_inside_list[4] = "   "
-            toggle_inside_list[5] = "   "
-            toggleInsideCount = 0
-            time.sleep(0.1)
-        else:
-            continue
-
-    # button for leave sub-task page 
-    if GPIO.input(26) == False and subtask_flag == 1:
-        toggleInsideCount = 0
-        subtask_flag == 0
-
-    if subtask_flag == 0:
-        # Write two lines of text.
-        draw.text((x, top), 	text_list[0], font = font, fill = 255)
-        draw.text((x, top+9),	text_list[1], font = font, fill = 255)
-        draw.text((x, top+17),	toggle_list[0] + text_list[2], font = font, fill = 255)
-        draw.text((x, top+25),	toggle_list[1] + text_list[3], font = font, fill = 255)
-        draw.text((x, top+33),	toggle_list[2] + text_list[4], font = font, fill = 255)
-        draw.text((x, top+41),	toggle_list[3] + text_list[5], font = font, fill = 255)
-        draw.text((x, top+49),	toggle_list[4] + text_list[6], font = font, fill = 255)
-        draw.text((x, top+57),	toggle_list[5] + text_list[7], font = font, fill = 255)
-        # draw.text((x, top), 	str(counter), font = font, fill = 255)
-
-        # Display image.
-        disp.image(image)
-        disp.display()
-        time.sleep(.1)
-    
-    elif subtask_flag == 1:
-        # Write two lines of text.
-        draw.text((x, top), 	content_list[0], font = font, fill = 255)
-        draw.text((x, top+9),	content_list[1], font = font, fill = 255)
-        draw.text((x, top+17),	toggle_inside_list[0] + bracket_list[0] + content_list[2], font = font, fill = 255)
-        draw.text((x, top+25),	toggle_inside_list[1] + bracket_list[1] + content_list[3], font = font, fill = 255)
-        draw.text((x, top+33),	toggle_inside_list[2] + bracket_list[2] + content_list[4], font = font, fill = 255)
-        draw.text((x, top+41),	toggle_inside_list[3] + bracket_list[3] + content_list[5], font = font, fill = 255)
-        draw.text((x, top+49),	toggle_inside_list[4] + bracket_list[4] + content_list[6], font = font, fill = 255)
-        draw.text((x, top+57),	toggle_inside_list[5] + bracket_list[5] + content_list[7], font = font, fill = 255)
-
-        # Display image.
-        disp.image(image)
-        disp.display()
-        time.sleep(0.1)
-
-    else:
-        continue
+    # Display image.
+    disp.image(image)
+    disp.display()
+    time.sleep(.1)
 

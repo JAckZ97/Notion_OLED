@@ -2,7 +2,20 @@
 Using notion API to retrieve daily tasks on OLED screen
 
 ### Current Demo
-- youtube link
+<i> Restting </i>  
+<img src="https://raw.githubusercontent.com/JAckZ97/Notion_OLED/main/Image/IMG_1380.JPG" width="200" height="150" />  
+
+<i> Overlook </i>  
+<img src="https://raw.githubusercontent.com/JAckZ97/Notion_OLED/main/Image/IMG_1384.jpg" width="200" height="150" /> 
+
+<i> Task list </i>  
+<img src="https://raw.githubusercontent.com/JAckZ97/Notion_OLED/main/Image/IMG_1382.JPG" width="200" height="150" />
+<img src="https://raw.githubusercontent.com/JAckZ97/Notion_OLED/main/Image/Screen%20Shot%202021-11-09%20at%2011.38.03%20PM.png" width="145" height="150" />
+
+<i> Sub-task list </i>  
+<img src="https://raw.githubusercontent.com/JAckZ97/Notion_OLED/main/Image/IMG_1383.JPG" width="200" height="150" />
+<!-- <img src="https://raw.githubusercontent.com/JAckZ97/Notion_OLED/main/Image/Screen%20Shot%202021-11-09%20at%2011.38.24%20PM.png" width="400" height="300" /> -->
+
 
 ### Install step
 0. Enable your I2C Interface:

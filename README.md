@@ -43,5 +43,8 @@ python3 notion.py
 - [x] Resetting page
 - [x] Sub-task page content
 - [x] POST to Notion database
-- [ ] Fix toggle and bracket in sub-task page
+- [x] Fix toggle and bracket in sub-task page
 - [ ] Scroll bar in task page and sub-task page
+- [ ] Line 462 try catch exception
+- [ ] Add necessary try catch exceptions
+- [ ] Clean the code

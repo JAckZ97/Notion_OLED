@@ -162,11 +162,11 @@ while True:
             elif children_list[toggleCount] == True:
                 subtask_flag = 1
 
-                # # update the newest information
-                # db.readDatabase()
-                # time.sleep(0.1)
-                # js.resetBlockContent()
-                # time.sleep(0.1)
+                # update the newest information
+                db.readDatabase()
+                time.sleep(0.1)
+                js.resetBlockContent()
+                time.sleep(0.1)
 
                 # get the children list
                 task_list, task_id_list = js.getChildrenName(time_str, page_list[toggleCount], True)

@@ -154,6 +154,10 @@ while True:
         else:
             continue
 
+        if len(page_list) > 6:
+            del page_list[6:len(page_list)]
+            del children_list[6:len(children_list)]
+
         try:
             if children_list[toggleCount] == False:
                 continue

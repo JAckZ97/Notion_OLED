@@ -104,12 +104,38 @@ yesterday_str = datetime.strftime(yesterday, '%Y-%m-%d')
 the_day_before_yesterday_str = datetime.strftime(the_day_before_yesterday, '%Y-%m-%d')
 tomorrow_str = datetime.strftime(tomorrow, '%Y-%m-%d')
 the_day_after_tomorrow_str = datetime.strftime(the_day_after_tomorrow, '%Y-%m-%d')
+temp_date_str = time.localtime()
 # counter = 0
 
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0,0,width,height), outline=0, fill=0)
     # draw1.rectangle((0,0,width1,height1), outline=0, fill=0)
+
+    # reset local datebase if new day start
+    if temp_date_str[:3] != time.localtime()[:3]:
+        # Write two lines of text.
+        draw.text((x, top), 	"Resetting!", font = font, fill = 255)
+        draw.text((x, top+9),	"", font = font, fill = 255)
+        draw.text((x, top+17),	"", font = font, fill = 255)
+        draw.text((x, top+25),	"", font = font, fill = 255)
+        draw.text((x, top+33),	"", font = font, fill = 255)
+        draw.text((x, top+41),	"", font = font, fill = 255)
+        draw.text((x, top+49),	"", font = font, fill = 255)
+        draw.text((x, top+57),	"", font = font, fill = 255)
+
+        # Display image.
+        disp.image(image)
+        disp.display()
+        time.sleep(0.1)
+
+        db.readDatabase()
+        time.sleep(0.1)
+        js.resetBlockContent()
+        time.sleep(0.1)
+        # counter += 1
+        # ----------------------------------------
+        
 
     # button for reset local database
     if GPIO.input(16) == False:

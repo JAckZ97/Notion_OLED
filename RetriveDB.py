@@ -100,33 +100,31 @@ class DatabaseController:
         # print(response.status_code)
         # print(response.text)
 
-    def createNewTODOforTmr(self, nextDay, notDoneTaskList:list):
-        
-        def addNewTask(task):
-            new_task = {
-                "object": "block",
-                "type": "to_do",
-                "to_do": {
-                    "text": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": new_task
-                            },
-                            "plain_text": new_task
-                        }
-                    ]
-                }
+    def addNewTask(self, task):
+        new_task = {}
+        new_task = {
+            "object": "block",
+            "type": "to_do",
+            "to_do": {
+                "text": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "content": task
+                        },
+                        "plain_text": task
+                    }
+                ]
             }
+        }
+        return new_task
 
-            return new_task
-            
-
+    def createNewTODOforTmr(self, nextDay, notDoneTaskList:list):
         createUrl = "https://api.notion.com/v1/pages"
         new_task_list = []
 
         for item in notDoneTaskList:
-            new_task_list.append(addNewTask(item))
+            new_task_list.append(self.addNewTask(item))
 
         createData = {
             "parent": { "database_id": self.database_id },
@@ -158,7 +156,7 @@ class DatabaseController:
                     "type": "multi_select"
                 }
             },
-            "children": [
+            "children":
                 # {
                 #     "object": "block",
                 #     "type": "to_do",
@@ -191,18 +189,19 @@ class DatabaseController:
                 #     }
                 # }
                 new_task_list
-            ]
         }
 
         data = json.dumps(createData)
         response = requests.request("POST", createUrl, headers=self.headers, data=data)
+        print(new_task_list)
         print(response.status_code)
         print(response.text)
 
 
 db = DatabaseController()
 # db.readDatabase()
-db.createNewTODOforTmr("2021-12-10",["task1", "task2", "task3"])
+# db.createNewTODOforTmr("2021-12-10",["task1", "task2", "task3"])
+# db.addNewTask(task)
 # readPage(page_id, headers)
 # readBlock(page_id, headers)
 # readBlockChildren(page_id, headers)

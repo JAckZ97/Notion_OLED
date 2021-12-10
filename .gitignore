@@ -131,6 +131,7 @@ dmypy.json
 
 notion
 test1.py
+test.py
 test.json
 secret_key.txt
 Notion_copy.py

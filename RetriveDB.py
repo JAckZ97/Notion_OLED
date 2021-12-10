@@ -101,11 +101,32 @@ class DatabaseController:
         # print(response.text)
 
     def createNewTODOforTmr(self, nextDay, notDoneTaskList:list):
+        
+        def addNewTask(task):
+            new_task = {
+                "object": "block",
+                "type": "to_do",
+                "to_do": {
+                    "text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": new_task
+                            },
+                            "plain_text": new_task
+                        }
+                    ]
+                }
+            }
+
+            return new_task
+            
+
         createUrl = "https://api.notion.com/v1/pages"
+        new_task_list = []
 
         for item in notDoneTaskList:
-            pass
-            # TODO
+            new_task_list.append(addNewTask(item))
 
         createData = {
             "parent": { "database_id": self.database_id },
@@ -138,38 +159,38 @@ class DatabaseController:
                 }
             },
             "children": [
-                {
-                    "object": "block",
-                    "type": "to_do",
-                    "to_do": {
-                        "text": [
-                            {
-                                "type": "text",
-                                "text": {
-                                    "content": "task1"
-                                },
-                                "plain_text": "task1"
-                            }
-                        ]
-                    }
-                },
+                # {
+                #     "object": "block",
+                #     "type": "to_do",
+                #     "to_do": {
+                #         "text": [
+                #             {
+                #                 "type": "text",
+                #                 "text": {
+                #                     "content": "task1"
+                #                 },
+                #                 "plain_text": "task1"
+                #             }
+                #         ]
+                #     }
+                # },
 
-                {
-                    "object": "block",
-                    "type": "to_do",
-                    "to_do": {
-                        "text": [
-                            {
-                                "type": "text",
-                                "text": {
-                                    "content": "task2"
-                                },
-                                "plain_text": "task2"
-                            }
-                        ]
-                    }
-                }
-
+                # {
+                #     "object": "block",
+                #     "type": "to_do",
+                #     "to_do": {
+                #         "text": [
+                #             {
+                #                 "type": "text",
+                #                 "text": {
+                #                     "content": "task2"
+                #                 },
+                #                 "plain_text": "task2"
+                #             }
+                #         ]
+                #     }
+                # }
+                new_task_list
             ]
         }
 
@@ -181,7 +202,7 @@ class DatabaseController:
 
 db = DatabaseController()
 # db.readDatabase()
-db.createNewTODOforTmr("2021-12-10",["task1"])
+db.createNewTODOforTmr("2021-12-10",["task1", "task2", "task3"])
 # readPage(page_id, headers)
 # readBlock(page_id, headers)
 # readBlockChildren(page_id, headers)

@@ -62,3 +62,5 @@ python3 notion.py
 - [x] Line 462 try catch exception
 - [x] Add necessary try catch exceptions
 - [x] Clean the code
+- [ ] Reset day feature
+- [ ] Add unfinished TODO to tomorrow's TODO

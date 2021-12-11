@@ -193,12 +193,12 @@ class DatabaseController:
 
         data = json.dumps(createData)
         response = requests.request("POST", createUrl, headers=self.headers, data=data)
-        print(new_task_list)
-        print(response.status_code)
-        print(response.text)
+        # print(new_task_list)
+        # print(response.status_code)
+        # print(response.text)
 
 
-db = DatabaseController()
+# db = DatabaseController()
 # db.readDatabase()
 # db.createNewTODOforTmr("2021-12-10",["task1", "task2", "task3"])
 # db.addNewTask(task)

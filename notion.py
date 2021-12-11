@@ -114,6 +114,52 @@ while True:
 
     # reset local datebase if new day start
     if temp_date_str[:3] != time.localtime()[:3]:
+
+        unfinished_task_list = []
+        
+        if dayCount == 1:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(today_str)
+            time_str = js.getTodayDate()
+        elif dayCount == 2:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(yesterday_str)
+            time_str = js.getYesterdayDate()
+        elif dayCount == 3:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(the_day_before_yesterday_str)
+            time_str = js.getTheDayBeforeYesterdayDate()
+        elif dayCount == 4:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(the_day_after_tomorrow_str)
+            time_str = js.getTheDayAfterTmrDate()
+        elif dayCount == 0:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(tomorrow_str)
+            time_str = js.getTmrDate()
+        else:
+            continue
+
+        try:
+            if children_list[toggleCount] == False:
+                continue
+            # task has children
+            elif children_list[toggleCount] == True:
+
+                try:
+                    # get the children list
+                    task_list, task_id_list = js.getChildrenName(time_str, "TODO", True)
+
+                    for item in range(0, len(task_list)):
+                        if task_list[item][1] == True:
+                            pass
+                        elif task_list[item][1] == False:
+                            unfinished_task_list.append(task_list[item][0])
+                except:
+                    continue
+        except:
+            continue
+
+        # Create new TODO for tmr 
+        db.createNewTODOforTmr(tomorrow_str,unfinished_task_list)
+        # TODO: delet unfinished task of today????
+        # ----------------------------------------
+
         # Write two lines of text.
         draw.text((x, top), 	"Resetting!", font = font, fill = 255)
         draw.text((x, top+9),	"", font = font, fill = 255)
@@ -135,7 +181,6 @@ while True:
         time.sleep(0.1)
         # counter += 1
         # ----------------------------------------
-        
 
     # button for reset local database
     if GPIO.input(16) == False:
@@ -594,6 +639,51 @@ while True:
         toggleInsideCount = 0
         subtask_flag = 0
 
+    # for testing purpose
+    if GPIO.input(16) == False and subtask_flag == 1:
+        unfinished_task_list = []
+        
+        if dayCount == 1:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(today_str)
+            time_str = js.getTodayDate()
+        elif dayCount == 2:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(yesterday_str)
+            time_str = js.getYesterdayDate()
+        elif dayCount == 3:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(the_day_before_yesterday_str)
+            time_str = js.getTheDayBeforeYesterdayDate()
+        elif dayCount == 4:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(the_day_after_tomorrow_str)
+            time_str = js.getTheDayAfterTmrDate()
+        elif dayCount == 0:
+            page_list, children_list = js.getPageNameListWithChildrenStatus(tomorrow_str)
+            time_str = js.getTmrDate()
+        else:
+            continue
+
+        try:
+            if children_list[toggleCount] == False:
+                continue
+            # task has children
+            elif children_list[toggleCount] == True:
+
+                try:
+                    # get the children list
+                    task_list, task_id_list = js.getChildrenName(time_str, "TODO", True)
+
+                    for item in range(0, len(task_list)):
+                        if task_list[item][1] == True:
+                            pass
+                        elif task_list[item][1] == False:
+                            unfinished_task_list.append(task_list[item][0])
+                except:
+                    continue
+        except:
+            continue
+
+        # Create new TODO for tmr 
+        db.createNewTODOforTmr(tomorrow_str,unfinished_task_list)
+        
     if subtask_flag == 0:
         # Write two lines of text.
         draw.text((x, top), 	text_list[0], font = font, fill = 255)
